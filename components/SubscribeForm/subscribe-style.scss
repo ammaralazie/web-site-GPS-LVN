@@ -1,0 +1,54 @@
+$wave-deco-light: '/images/saas2/deco-wave-light.png';
+$wave-deco-dark: '/images/saas2/deco-wave-dark.png';
+
+.root {
+  position: relative;
+  text-align: center;
+  margin-bottom: $spacing12;
+  z-index: 10;
+  .container {
+    position: relative;
+    @include breakpoints-down(xs) {
+      padding: spacing(0, 1) !important
+    }
+  }
+}
+
+.form {
+  position: relative;
+  margin-top: $spacing2
+}
+
+.field {
+  padding-right: 150px;
+  padding-left: $spacing3;
+  color: #fff;
+  width: 100%;
+  border-radius: 56px;
+  @include palette-background-paper;
+  border: 1px solid $palette-primary-main;
+  ::v-deep &.v-text-field.v-text-field--solo:not(.v-text-field--solo-flat) > .v-input__control > .v-input__slot {
+    box-shadow: none;
+    margin-bottom: 0;
+    background: none;
+  }
+  ::v-deep .v-text-field__details {
+    display: none
+  }
+}
+
+.button {
+  position: absolute;
+  @include right($spacing1);
+  top: 7px;
+  width: 140px;
+  &.v-btn--contained:not(.v-btn--round).v-size--default {
+    @include breakpoints-down(xs) {
+      padding-left: $spacing1;
+      padding-right: $spacing1;
+      min-width: 0;
+      width: auto;
+      font-size: 14px;
+    }
+  }
+}

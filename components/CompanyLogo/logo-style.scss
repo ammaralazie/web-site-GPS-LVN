@@ -1,0 +1,24 @@
+.logo-container {
+  &.container {
+    @include breakpoints-down(xs) {
+      padding: 0 !important
+    }
+  }
+}
+
+.root {
+  display: flex;
+  @include breakpoints-up(sm) {
+    justify-content: center;
+  }
+  @include breakpoints-down(xs) {
+    overflow-x: auto
+  }
+  img {
+    height: 64px;
+    margin: $spacing4;
+    @include breakpoints-down(xs) {
+      margin: $spacing3
+    }
+  }
+}
