@@ -85,6 +85,7 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/store/index.js',
     '~/plugins/vue-fragment-config',
     '~/plugins/vue-wow-config',
     { src: '~plugins/i18n-config.js' },
