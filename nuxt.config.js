@@ -5,7 +5,7 @@ import { theme } from './config/vuetify.options'
 import languages from './static/lang/languages'
 import brand from './static/text/brand'
 
-module.exports = {
+export default {
   /*
   ** Headers of the page
   */
