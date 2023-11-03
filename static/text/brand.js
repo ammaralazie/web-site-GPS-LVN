@@ -1,13 +1,13 @@
 const brand = {
   saas2: {
-    name: 'Software',
-    desc: 'Awrora Software | Vue Landing Page Template',
-    prefix: 'awrora',
-    footerText: 'Awrora Theme 2022',
-    logoText: 'Awrora Theme',
-    projectName: 'SaaS2 Theme',
-    url: 'awrora1.indisains.com/saas2',
-    img: '/static/images/saas2-logo.png'
+    name: 'GPS LVN',
+    desc: 'GPS LVN',
+    prefix: 'GPS LVN',
+    footerText: 'GPS LVN 2023',
+    logoText: 'GPS LVN',
+    projectName: 'GPS LVN ',
+    url: '',
+    img: '/static/images/gpslvnLogo.png'
   }
 }
 

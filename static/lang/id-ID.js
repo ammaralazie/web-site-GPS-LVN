@@ -137,7 +137,7 @@ export default () => {
         "footer_history": "sejarah",
         "footer_contact": "hubungi kami",
         "footer_locations": "lokasi",
-        "footer_resources": "resources",
+        "footer_resources": "Product",
         "footer_resources_name": "resource name",
         "footer_resources_another": "resource another",
         "footer_resources_final": "resource final",

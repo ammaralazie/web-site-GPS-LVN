@@ -22,8 +22,8 @@
               <v-row>
                 <v-col md="6" cols="12" class="px-sm-6 d-flex align-center">
                   <div class="text">
-                    <h4 class="use-text-title2">{{ $t('saas2.banner_title') + ' ' + $t('saas2.banner_titlestrong') }}</h4>
-                    <h5 class="use-text-subtitle2">{{ $t('saas2.banner_subtitle') }}</h5>
+                    <h4 class="use-text-title2">{{ $t('saas2.slid1-title')}}</h4>
+                    <h5 class="use-text-subtitle2">{{ $t('saas2.slid1-subtitle') }}</h5>
                     <div class="btn-area">
                       <v-btn
                         text
@@ -89,10 +89,12 @@
                 <v-col md="6" cols="12" class="px-sm-6 d-flex align-center">
                   <div class="text">
                     <h4 class="use-text-title2">
-                      {{ $t('saas2.banner_title') + ' ' + $t('saas2.banner_titlestrong') }}
+                      {{ $t('saas2.slid2-title')}}
                     </h4>
                     <h5 class="use-text-subtitle2">
-                      {{ $t('saas2.banner_subtitle') }}
+                      <span>
+                        {{ $t('saas2.slid2-subtitle') }}
+                      </span>
                     </h5>
                     <div class="btn-area">
                       <v-btn
@@ -125,8 +127,8 @@
               <v-row justify="end">
                 <v-col cols="12" class="px-sm-6">
                   <div class="text text-center">
-                    <h4 class="use-text-title2">{{ $t('saas2.banner_title') + ' ' + $t('saas2.banner_titlestrong') }}</h4>
-                    <h5 class="use-text-subtitle2">{{ $t('saas2.banner_subtitle') }}</h5>
+                    <h4 class="use-text-title2">{{ $t('saas2.slid3-title')}}</h4>
+                    <h5 class="use-text-subtitle2">{{ $t('saas2.slid3-subtitle') }}</h5>
                     <div class="btn-area">
                       <v-btn
                         text
@@ -184,18 +186,24 @@
               :class="{ active: currentSlide === 0 }"
               @click="gotoSlide(0)"
               text
+              class="text-center"
             >
-              <strong>First Slide</strong>
-              Interdum et malesuada fames ac ante
+              <strong>{{$t('saas2.Personal tracking')}}</strong>
+              <div class="ma-auto">
+                {{ $t('saas2.Customization and Scalability') }}
+              </div>
             </v-btn>
             <v-divider class="divider" vertical inset />
             <v-btn
               :class="{ active: currentSlide === 1 }"
               @click="gotoSlide(1)"
               text
+              class="text-center"
             >
-              <strong>Second Slide</strong>
-              Interdum et malesuada fames ac ante
+              <strong class="ma-auto">{{$t('saas2.Tracking Server')}}</strong>
+              <div class="ma-auto">
+                {{ $t('saas2.slid2-subtitle1') }}
+              </div>
             </v-btn>
             <v-divider class="divider" vertical inset />
             <v-btn
@@ -203,8 +211,8 @@
               @click="gotoSlide(2)"
               text
             >
-              <strong>Third Slide</strong>
-              Interdum et malesuada fames ac ante
+              <strong>{{$t('saas2.fleet management')}}</strong>
+              {{ $t('saas2.Data privacy and security') }}
             </v-btn>
           </nav>
         </v-container>

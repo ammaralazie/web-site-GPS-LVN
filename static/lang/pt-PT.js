@@ -133,7 +133,7 @@ export default () => {
         "footer_history": "história",
         "footer_contact": "contacte-nos",
         "footer_locations": "locations",
-        "footer_resources": "recursos",
+        "footer_resources": "Product",
         "footer_resources_name": "nome dos recursos",
         "footer_resources_another": "recursos outro",
         "footer_resources_final": "recursos finais",

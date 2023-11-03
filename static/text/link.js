@@ -5,7 +5,7 @@ const link = {
     team: '/about/team',
     blog: '/blog',
     blogDetail: '/blog/detail-blog',
-    login: '/login',
+    login: 'https://track.gpslvn.com',
     register: '/register',
     contact: '/contact',
     contactMap: '/contact/with-map',

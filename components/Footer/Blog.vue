@@ -38,7 +38,7 @@
           <v-btn
             v-for="(item, index) in news"
             :key="index"
-            text     
+            text
             class="blog-item"
             href="#"
           >
