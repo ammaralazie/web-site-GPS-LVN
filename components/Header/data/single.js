@@ -1,3 +1,3 @@
-const single = ['feature', 'integration', 'testimonials', 'blog']
+const single = ['feature', 'applications', 'testimonials', 'blog']
 
 export default single

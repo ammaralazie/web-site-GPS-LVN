@@ -2,16 +2,9 @@
   <div class="root">
     <div v-if="loaded" class="carousel">
       <slick :options="settings">
-        <div
-          v-for="(item, index) in newsContent"
-          :key="index"
-        >
+        <div v-for="(item, index) in newsContent" :key="index">
           <div class="item">
-            <news-card
-              :img="item.img"
-              :text="item.text"
-              :type="item.type"
-            />
+            <news-card :img="item.img" :text="item.text" :type="item.type" />
           </div>
         </div>
       </slick>
@@ -29,40 +22,34 @@ import NewsCard from '../../Cards/NewsEventCard'
 
 const newsContent = [
   {
-    text:
-      'Sed imperdiet enim ligula, vitae viverra justo porta vel. Duis eget felis bibendum, pretium mi sed, placerat ante.',
-    img: imgAPI.photo[1],
-    type: 'caption_news'
+    text: 'Export of high-frequiency(up to100Hz) crash data buffer',
+    img: '/images/lottie/json/export-data.json',
+    type: 'caption_export_data'
   },
   {
-    text:
-      'Sed imperdiet enim ligula, vitae viverra justo porta vel. Duis eget felis bibendum, pretium mi sed, placerat ante.',
+    text: 'Fully configuring rewarding points based on performance',
     img: imgAPI.photo[2],
-    type: 'caption_news'
+    type: 'caption_drive_coins'
   },
   {
-    text:
-      'Sed imperdiet enim ligula, vitae viverra justo porta vel. Duis eget felis bibendum, pretium mi sed, placerat ante.',
+    text: 'Driving parameters and detailed analysis of a vehicle utilization',
     img: imgAPI.photo[3],
-    type: 'caption_event'
+    type: 'caption_driving_details'
   },
   {
-    text:
-      'Sed imperdiet enim ligula, vitae viverra justo porta vel. Duis eget felis bibendum, pretium mi sed, placerat ante.',
+    text: 'Fully configuring model to identify inefficient drivers',
     img: imgAPI.photo[4],
-    type: 'caption_news'
+    type: 'caption_eco_driving'
   },
   {
-    text:
-      'Sed imperdiet enim ligula, vitae viverra justo porta vel. Duis eget felis bibendum, pretium mi sed, placerat ante.',
+    text: 'Realtime Driver rankings based on driving parameters',
     img: imgAPI.photo[5],
-    type: 'caption_event'
+    type: 'caption_leaderboard'
   },
   {
-    text:
-      'Sed imperdiet enim ligula, vitae viverra justo porta vel. Duis eget felis bibendum, pretium mi sed, placerat ante.',
+    text: 'Recorded mileage with parameters of driving',
     img: imgAPI.photo[6],
-    type: 'caption_news'
+    type: 'caption_mileage_tracker'
   }
 ]
 

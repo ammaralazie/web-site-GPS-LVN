@@ -21,7 +21,7 @@ export default {
       { name: 'msapplication-TileColor', content: '#FFFFFF' },
       { name: 'msapplication-TileImage', content: '/favicons/ms-icon-144x144.png' },
       // PWA primary color
-      { name: 'theme-color', content: theme.primary},
+      { name: 'theme-color', content: theme.primary },
       // Facebook
       { property: 'author', content: 'awrora' },
       { property: 'og:site_name', content: 'awrora.ux-maestro.com' },
@@ -66,6 +66,12 @@ export default {
     ]
   },
   /*
+    * add same of configration for router
+  */
+  router: {
+    middleware: ['performance', 'vistPages']
+  },
+  /*
   ** Customize the progress-bar color
   */
   loading: { color: theme.primary },
@@ -85,6 +91,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/lottie-vue-player.client.js',
     '~/store/index.js',
     '~/plugins/vue-fragment-config',
     '~/plugins/vue-wow-config',
@@ -93,14 +100,13 @@ export default {
     { src: '~/plugins/vue-lightbox-config', ssr: false },
     { src: '~/plugins/caroussel-config', ssr: false },
     { src: '~/plugins/countup-config', ssr: false },
-    { src: '~/plugins/vue-scroll-nav', ssr: false }
+    { src: '~/plugins/vue-scroll-nav', ssr: false },
+    { src: '~/plugins/vue-cookies', ssr: false }
   ],
   /*
   ** Nuxt.js dev-modules
   */
-  buildModules: [
-    '@nuxtjs/vuetify',
-  ],
+  buildModules: ['@nuxtjs/vuetify'],
   /*
   ** Nuxt.js modules
   */
@@ -180,7 +186,7 @@ export default {
       vus: { cacheBusting: true },
       scss: { sourceMap: false }
     },
-    extend (config, ctx) {
+    extend(config, ctx) {
       config.plugins.push(
         new FilterWarningsPlugin({
           exclude: /Critical dependency: the request of a dependency is an expression/
@@ -203,7 +209,7 @@ export default {
   layoutTransition: {
     name: 'layout',
     mode: 'out-in',
-    beforeEnter (el) {
+    beforeEnter(el) {
       console.log('Before enter...');
     },
     afterLeave(el) {

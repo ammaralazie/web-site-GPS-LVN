@@ -1,18 +1,22 @@
 <template>
   <v-container class="logo-container">
     <div class="root">
-      <img
-        v-for="(logo, index) in logos"
-        :key="index"
-        :src="logo"
-        :alt="'logo' + index"
-      >
+      <a  v-for="(logo, index) in logos" :key="index">
+        <v-btn class="buttonLogos" text>
+          <img :src="logo" :alt="'logo' + index">
+        </v-btn>
+      </a>
     </div>
   </v-container>
 </template>
 
 <style lang="scss" scoped>
 @import './logo-style.scss';
+.buttonLogos {
+  &:hover {
+    background-color: unset;
+  }
+}
 </style>
 
 <script>
@@ -20,12 +24,12 @@ export default {
   data() {
     return {
       logos: [
-        '/images/logos/architect.png',
-        '/images/logos/cloud.png',
-        '/images/logos/coin.png',
-        '/images/logos/mobile.png',
-        '/images/logos/profile.png',
-        '/images/logos/saas.png'
+        '/images/aciasell-logo.svg',
+        '/images/logos/ITPC-removebg-preview.png',
+        '/images/logos/zain-logo-removebg-preview.png',
+        '/images/logos/شركة_السلام_العامة-removebg-preview.png',
+        '/images/logos/شركة_العلام_و_الاتصالات-removebg-preview.png',
+        '/images/logos/Asiacell_logo-removebg-preview.png'
       ]
     }
   }

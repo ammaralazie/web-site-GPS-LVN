@@ -1,130 +1,41 @@
 <template>
   <div class="root">
-    <div class="decoration-bg">
-      <svg class="wave">
-        <use xlink:href="/images/saas2/deco-bg2.svg#main" />
-      </svg>
-    </div>
     <v-container>
-      <v-row class="spacing6" justify="center">
-        <v-col lg="9" cols="12" class="py-0 py-sm-6 px-6">
-          <title-main align="center">
-            <span>
-              {{ $t('saas2.feature_title1') }}
-              <strong>
-                {{ $t('saas2.feature_titlestrong1') }}
-              </strong>
-            </span>
-          </title-main>
-          <h6 class="text-center use-text-subtitle2">
-            {{ $t('saas2.feature_desc3') }}
-          </h6>
-          <div class="list">
-            <u-animate-container>
-              <v-row class="mb-sm-15">
-                <v-col
-                  sm="6"
-                  cols="12"
-                  class="px-sm-8"
-                >
-                  <u-animate
-                    :offset="-100"
-                    name="fadeInUpShort"
-                    delay="0.5s"
-                    duration="0.5s"
-                  >
-                    <div class="text-sm-end text-center">
-                      <figure class="illustration left">
-                        <img
-                          class="img-2d3d"
-                          :src="imgAPI.saas2[16]"
-                          :data-2d="imgAPI.saas2[15]"
-                          :data-3d="imgAPI.saas2[16]"
-                          alt="background"
-                        />
-                      </figure>
-                      <h3 class="use-text-primary use-text-subtitle">
-                        Ut sed eros finibus
-                      </h3>
-                      <p class="use-text-subtitle2">Quisque a consequat ante, at volutpat enim. Aenean sit amet magna vel magna fringilla fermentum.</p>
-                    </div>
-                  </u-animate>
+      <v-row>
+        <v-col cols="12" lg="6" md="6" sm="12" xs="12">
+          <v-resposive>
+            <img src="images/mobile-app.png">
+          </v-resposive>
+          <h2 class="text-center mt-2">Create your own tracking app</h2>
+        </v-col>
+        <v-col cols="12" lg="6" md="6" sm="12" xs="12">
+          <v-row>
+            <v-col class="d-flex align-center justify-end">
+              <img width="200px" src="images/gpslvnLogo.png">
+            </v-col>
+            <v-col cols="12" lg="6" md="6" sm="12" xs="12">
+              <div class="text-h3">GPS LVN</div>
+              <div class="text-h4">Location tracking and safe driving app</div>
+            </v-col>
+          </v-row>
+          <v-row>
+            <v-col cols="12">
+              <div class="text-h4 text-center">Try it for free</div>
+            </v-col>
+            <v-col cols="12">
+              <v-row>
+                <v-col cols="12" lg="6" md="6" sm="12" xs="12">
+                  <div>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, ipsam?
+                  </div>
                 </v-col>
-                <v-col
-                  sm="6"
-                  cols="12"
-                  class="px-sm-8"
-                >
-                  <u-animate
-                    :offset="-100"
-                    name="fadeInUpShort"
-                    delay="0.8s"
-                    duration="0.5s"
-                  >
-                    <div>
-                      <ul class="list-primary">
-                        <li v-for="(item, index) in integration1" :key="index">
-                          <v-icon>{{ item.icon }}</v-icon>
-                          {{ item.title }}
-                        </li>
-                      </ul>
-                    </div>
-                  </u-animate>
+                <v-col cols="12" lg="6" md="6" sm="12" xs="12">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore, possimus! Sapiente, eos. At amet
+                  nesciunt aut esse non dolorem natus eos quae, nisi qui, neque odit tempore fuga possimus praesentium.
                 </v-col>
               </v-row>
-              <v-row :class="[isMobile ? 'column-reverse' : 'row']">
-                <v-col
-                  sm="6"
-                  cols="12"
-                  class="px-sm-8"
-                >
-                  <u-animate
-                    :offset="-100"
-                    name="fadeInUpShort"
-                    delay="0.8s"
-                    duration="0.5s"
-                  >
-                    <div>
-                      <ul class="list-secondary">
-                        <li v-for="(item, index) in integration2" :key="index">
-                          {{ item.title }}
-                          <v-icon>{{ item.icon }}</v-icon>
-                        </li>
-                      </ul>
-                    </div>
-                  </u-animate>
-                </v-col>
-                <v-col
-                  sm="6"
-                  cols="12"
-                  class="px-sm-8"
-                >
-                  <u-animate
-                    :offset="-100"
-                    name="fadeInUpShort"
-                    delay="0.5s"
-                    duration="0.5s"
-                  >
-                    <div class="text-sm-start text-center">
-                      <figure class="illustration">
-                        <img
-                          class="img-2d3d"
-                          :src="imgAPI.saas2[18]"
-                          :data-2d="imgAPI.saas2[17]"
-                          :data-3d="imgAPI.saas2[18]"
-                          alt="background"
-                        />
-                      </figure>
-                      <h3 class="use-text-secondary use-text-subtitle">
-                        Ut sed eros finibus
-                      </h3>
-                      <p class="use-text-subtitle2">Quisque a consequat ante, at volutpat enim. Aenean sit amet magna vel magna fringilla fermentum.</p>
-                    </div>
-                  </u-animate>
-                </v-col>
-              </v-row>
-            </u-animate-container>
-          </div>
+            </v-col>
+          </v-row>
         </v-col>
       </v-row>
     </v-container>

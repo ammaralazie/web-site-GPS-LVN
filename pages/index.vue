@@ -15,7 +15,7 @@
         <section id="feature">
           <feature />
         </section>
-        <section id="integration" class="space-top">
+        <section id="applications" class="space-top">
           <integration />
         </section>
         <section id="testimonials" class="space-top">

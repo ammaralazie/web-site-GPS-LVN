@@ -132,3 +132,15 @@
     }
   }
 }
+
+.cardFeatuer{
+  &:hover{
+    cursor: pointer;
+    transform: scale(1.01) translateY(-5px);
+    transition: transform .3s ease;
+  }
+}
+
+.v-responsive__content{
+  margin: auto !important;
+}

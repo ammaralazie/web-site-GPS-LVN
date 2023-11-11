@@ -11,20 +11,20 @@
           <div class="counter-item">
             <div class="text">
               <h3 class="use-text-title">
+                +
                 <span
                   v-if="loaded"
                   v-countUp:onWindowScroll.once="{
                     watchedElId: 'watched_counter',
                     startValue: 0,
-                    endValue: 12,
+                    endValue: 142,
                     options: { duration: 1 }
                   }"
                 />
-                {{ $t('saas2.counter_month') }}
               </h3>
               <p class="use-text-subtitle">
-                <v-icon>mdi-reply</v-icon>
-                {{ $t('saas2.counter_free') }}
+                <v-icon>mdi-server-security</v-icon>
+                {{ $t('saas2.online_servers') }}
               </p>
             </div>
           </div>
@@ -38,10 +38,10 @@
                   v-countUp:onWindowScroll.once="{
                     watchedElId: 'watched_counter',
                     startValue: 0,
-                    endValue: 80,
+                    endValue: 53,
                     options: { duration: 1 }
                   }"
-                />M
+                />K
               </h3>
               <p class="use-text-subtitle">
                 <v-icon>mdi-account-multiple</v-icon>
@@ -59,14 +59,14 @@
                   v-countUp:onWindowScroll.once="{
                     watchedElId: 'watched_counter',
                     startValue: 0,
-                    endValue: 180,
+                    endValue: 67,
                     options: { duration: 1 }
                   }"
                 />K
               </h3>
-              <p class="use-text-subtitle">
-                <v-icon>mdi-layers</v-icon>
-                {{ $t('saas2.counter_providers') }}
+              <p class="use-text-subtitle" style="white-space:nowrap">
+                <v-icon>mdi-car-connected</v-icon>
+                {{ $t('saas2.GPS devices online') }}
               </p>
             </div>
           </div>

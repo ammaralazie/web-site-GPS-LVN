@@ -42,7 +42,7 @@
               </h6>
               <ul>
                 <li v-for="(item, index) in footer.description" :key="index">
-                  <nuxt-link :to="footer.link[index]">
+                  <nuxt-link :to="`/${lang}/${footer.link[index]}`">
                     {{ $t("saas2." + item) }}
                   </nuxt-link>
                 </li>
@@ -53,10 +53,10 @@
         <v-col md="3" cols="12" class="pa-4">
           <div class="socmed">
             <v-btn v-for="(item, index) in socialMediaIcons" :key="index" link text icon class="button">
-                <a :href="item.link" target="_blank">
-                  <span :class="item.icon" />
-                </a>
-              </v-btn>
+              <a :href="item.link" target="_blank">
+                <span :class="item.icon" />
+              </a>
+            </v-btn>
 
           </div>
           <v-select :items="langList" :value="lang" v-model="lang" label="" outlined class="select-lang"
@@ -112,41 +112,34 @@ export default {
           'in-vehicle-data',
           'driver-engagements'
         ],
-        link: [
-          '#',
-          '#',
-          '#',
-          '#',
-          '#',
-          '#'
-        ]
+        link: ['#', '#', '#', '#', '#', '#']
       },
       {
         title: 'legal',
         description: ['Privacy policy', 'Terms of use'],
-        link: ['#', '#'],
-      },
+        link: [`privacy_policy`, '#']
+      }
     ],
     socialMediaIcons: [
       {
-        icon: "ion-logo-facebook icon",
-        link: "https://www.facebook.com/Gpslvn"
+        icon: 'ion-logo-facebook icon',
+        link: 'https://www.facebook.com/Gpslvn'
       },
       {
-        icon: "ion-logo-twitter icon",
-        link: "https://twitter.com/gpslvn"
+        icon: 'ion-logo-twitter icon',
+        link: 'https://twitter.com/gpslvn'
       },
       {
-        icon: "ion-logo-instagram icon",
-        link: "https://www.instagram.com/gpslvn/"
+        icon: 'ion-logo-instagram icon',
+        link: 'https://www.instagram.com/gpslvn/'
       },
       {
-        icon: "ion-logo-linkedin icon",
-        link: "https://iq.linkedin.com/company/gpslvn"
+        icon: 'ion-logo-linkedin icon',
+        link: 'https://iq.linkedin.com/company/gpslvn'
       },
       {
-        icon: "ion-logo-youtube icon",
-        link: "https://www.youtube.com/@gpslvn2259"
+        icon: 'ion-logo-youtube icon',
+        link: 'https://www.youtube.com/@gpslvn2259'
       }
     ]
   }),
@@ -156,7 +149,7 @@ export default {
   computed: {
     langList: function () {
       const list = []
-      this.$i18n.locales.map((item) => {
+      this.$i18n.locales.map(item => {
         list.push({ text: this.$t('common.' + item.code), value: item.code })
       })
       return list
@@ -168,18 +161,18 @@ export default {
     isDesktop() {
       const mdUp = this.$store.state.breakpoints.mdUp
       return mdUp.indexOf(this.$mq) > -1
-    },
+    }
   },
   methods: {
     switchLang: function (val) {
       this.$i18n.setLocale(val)
-    },
+    }
   },
   props: {
     extend: {
       type: Boolean,
-      default: false,
-    },
-  },
+      default: false
+    }
+  }
 }
 </script>
