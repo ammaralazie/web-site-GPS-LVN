@@ -167,7 +167,7 @@
                 v-else></TextSide>
                 <v-row v-if="feature.btn && !feature.imageSide.right">
                   <v-col cols="12" class="mt-2">
-                    <v-btn color="success">{{ feature.btn }}</v-btn>
+                    <v-btn color="success">{{ $t(feature.btn) }}</v-btn>
                   </v-col>
                 </v-row>
             </v-col>
@@ -177,7 +177,7 @@
                 v-else></TextSide>
                 <v-row v-if="feature.btn && feature.imageSide.right">
                   <v-col cols="12">
-                    <v-btn color="success">{{ feature.btn }}</v-btn>
+                    <v-btn color="success">{{ $t(feature.btn) }}</v-btn>
                   </v-col>
                 </v-row>
             </v-col>

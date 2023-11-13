@@ -245,6 +245,179 @@ export default () => {
         news_readmore: 'read more',
         footer_waiting: 'What are you waiting for?'
       },
+      use_automation_in_every:
+        'Use automation in every section of your business. Such as asset tracking, manage daily activities, get automatic calculation of finance .That’s why to ensure the best profitability you should have an vehicle management system.',
+      'Ensure the best profitability': 'Ensure the best profitability',
+      get_all_inventory_records:
+        'Get all inventory records such as stock in hand, vehicle wise parts use report etc. We have designed an expense management system to take your inventory & expenses under control.',
+      'Manage inventory & expenses under control':
+        'Manage inventory & expenses under control',
+      automation_system_makes_easy:
+        'An automation system makes easy dealing of your daily activities. You can specify your functionality as admins, superadmins inventory manager & other employees activities. And have the system for monetising their performance to make them competent.',
+      'Own a competent workforce': 'Own a competent workforce',
+      organization_get_reports:
+        'A computer based management system brings a supersonic speed to manage an organization, get reports & ensure sustainable business growth. Having an automation system will help you to be the market leader',
+      'Be the market leader of your industry':
+        'Be the market leader of your industry',
+      computer_based_management_system:
+        'A computer based management system brings a supersonic speed to manage an organization, get reports & ensure sustainable business growth. Having an automation system will help you to be the market leader',
+      'Take authentic decision': 'Take authentic decision',
+      'Manage your vehicle from home': 'Manage your vehicle from home',
+      gps_lvn_includes:
+        'GPS LVN includes an integrated system that helps you to keep all your information in one place. You can view your all data at a glance at any time, get instant reports & can be able to make authentic decisions.',
+
+      alert_Center_to_Make:
+        'Alert Center to Make This Software Always Up-to-date!!!',
+      alert_center_is_important:
+        'Alert center is important to know any alarming situation of any vehicle. Vehicle’s insurance, fitness, engine, road permit etc. can be an alarming situation, the alert center will inform the user. An automatic alarm center is adjusted with our vehicle management system to keep you always up to date.',
+      'Purchase Now': 'Purchase Now',
+
+      'Assign role': 'Assign role',
+      'Manage role': 'Manage role',
+      'Manage user access role': 'Manage user access role',
+      'Role Permission System': 'Role Permission System',
+      after_adding_users:
+        'After adding users, you can provide a role based access control system. You can specify your employee and offer them particular responsibility. This module can help you to assign any particular role to the users. It can ensure the security of your system because the users can only perform their assigned tasks.',
+
+      'Add user': 'Add user',
+      'Manage user': 'Add user',
+      'User Management System': 'User Management System',
+      this_module_can_allow:
+        'This module can allow you to add a user by creating a new user profile through a user management system.Also, you can get a comprehensive list of your added users that will assist you to manage all users.This section is designed on the right corner of the header menu named by profile.We integrate here the following options.',
+
+      'Real Time Reports': 'Real Time Reports',
+      Accurate_reports_ensure:
+        'Accurate reports ensure your business profitability, but it will be very time consuming when you prepare your overall reports manually. To solve such problems, the Vehicle Management System has an excellent module that can be able to generate the following reports accurately and automatically.',
+
+      'Employee Reports': 'Employee Reports',
+      'Vehicle Reports': 'Vehicle Reports',
+      'Driver Reports': 'Driver Reports',
+      'Vehicle Requisition': 'Vehicle Requisition',
+      'Renewal Reports': 'Renewal Reports',
+      'Refuel Requisition Details': 'Refuel Requisition Details',
+      'Purchase Details': 'Purchase Details',
+      'Expense Details': 'Expense Details',
+      'Maintenance Requisition Details': 'Maintenance Requisition Details',
+      'Pick & Drop Requisition Reports': 'Pick & Drop Requisition Reports',
+
+      'Manage Approval Authority': 'Manage Approval Authority',
+      'Maintenance Requisition': 'Maintenance Requisition',
+      'Maintenance Service': 'Maintenance Service',
+      'Maintenance System': 'Maintenance System',
+
+      To_operate_the_entire:
+        'To operate the entire system, you need to keep records of all maintenance services and the user needs to update the service form when they want to take any services. This module can allow you to do this. The users can provide their requirements to take the maintenance service and this module can be able to receive it and calculate the total cost automatically.',
+
+      Suitable: 'Suitable for:',
+
+      driving_behavior:
+        'ZenRoad is more advance than any existing vehicle logbook app, mileage tracker, insurance app, driving behavior tracker, trip log app, vehicle logger, tracker app, driving app, app telematics, etc.',
+
+      we_have_unlocked:
+        'We have unlocked the source-code of ZenRoad – our flagman driving monitoring app – to help community create products that improve driver safety and efficiency as well as create a new experience for car lovers',
+      free_tracking_and_safe_driving:
+        'Free tracking and safe-driving app to collect location, driving style, driving behaviors, driving patterns, lifestyle patterns, vehicle data, and monitor car crashes.Initially, this app has been designed to showcase telematics SDK and Platform capabilities.',
+
+      'Shared mobility': 'Shared mobility',
+      'Gig economy': 'Gig economy',
+      'Newly licensed drivers': 'Newly licensed drivers',
+      'Vehicle logging app': 'Vehicle logging app',
+      'E-driving schools': 'E-driving schools',
+
+      'Defensive driving': ' Defensive driving',
+      'UBI Insurance': 'UBI Insurance',
+      'Teenage drivers': 'Teenage drivers',
+      'Family members': 'Family members',
+      'Transportation companies': 'Transportation companies',
+
+      Automatic: 'Automatic',
+      'On-demand': 'On-demand',
+      Tagging: 'Tagging',
+      Scheduled: 'Scheduled',
+
+      'Monitor driving': 'Monitor driving',
+      'Real time data': 'Real time data',
+      'Driving behavior': 'Driving behavior',
+      'In-vehicle data': 'In-vehicle data',
+
+      'Distracted driving': 'Distracted driving',
+      'Speed limit violation': 'Speed limit violation',
+      'Driving habits': 'Driving habits',
+      'Trip log and waypoints': 'Trip log and waypoints',
+      Locations: 'Locations',
+
+      'GPS Data (location, speed, etc)': 'GPS Data (location, speed, etc)',
+      'Sensors data (Accelerometer, gyro, etc)':
+        'Sensors data (Accelerometer, gyro, etc)',
+      'Device status': 'Device status',
+      'Enriched location data': 'Enriched location data',
+      personal_details: 'Personal details',
+
+      safe_driving: 'Safe driving',
+      trip_details: 'Trip details',
+      api_access: 'API access',
+      engagements: 'Engagements',
+
+      data_hub: 'DataHub',
+      trip_log: 'Trip log',
+      user_profile: 'User profile',
+      telematics_sdk: 'Telematics SDK',
+
+      etc: 'Etc...',
+      gps_tracking_app: 'GPS tracking app',
+      app_to_track_visits: 'App to track visits',
+      vehicle_logging_app: 'Vehicle logging app',
+      driving_coach_app: 'Driving coach app',
+      location_tracking_app: 'Location tracking app',
+      insurance_app: 'Insurance app',
+      driving_style_tracker_app: 'Driving style tracker app',
+      mileage_tracker_app: 'Mileage tracker app',
+      trip_log_app: 'Trip log app',
+      donec_sit_amet_nulla: 'Donec sit amet nulla',
+      cras_convallis_lacus_orci: 'Cras convallis lacus orci',
+      interdum_et_malesuada: 'Interdum et malesuada',
+      nulla_vehicula: 'Nulla vehicula',
+      vestibulum_a_massa: 'Vestibulum a massa',
+
+      tracking_software:
+        'Tracking software helps e-commerce companies in real-time monitoring of shipments, optimizing routes for deliveries, and on- time delivery.It also enhances the customer experience by providing them visibility of estimated time of arrival.',
+      e_eommerce: 'E-Commerce',
+      the_businesses:
+        'The businesses can track their delivery agents, delivery vans, bikes, etc. in real-time with tracking solutions inside their own mobile applications. It helps in allocating the nearest delivery agent to the location and deliver product and services on- time, Safely and on budget.Timely deliveries keep food fresh and increase positive ratings.',
+      food_delivery: 'Food Delivery',
+      tours_and_travel:
+        'Tours and travel agencies operate huge numbers of vehicles and take responsibility for tourists’ safety. Tracking them with mobile telematics technology can help in maintaining the punctuality of the vehicles and overall road and trip safety.Automatic alerts about the detected crash and real- time location can be sent.',
+      tour: 'Tour and Travels',
+      parents_usually:
+        'Parents usually wait at the stop for the school bus and care about kids’ safety. With the telematics SDK integrated inside the school mobile application, parents can exactly know where the bus is, how safely it is driven, and accordingly reach the stop within time without being too early or too late.',
+      school_buses: 'School buses',
+      in_the_cab:
+        'In the Cab service business, the telematics app allows users to allot the nearest cab when customers book online automatically.Without Mobile telematics, efficient and optimal use of the fleet is not possible.It can also help In field- based service businesses such as on the spot car repair or car breakdown assistance business.',
+      taxi_and: 'Taxi and cab services',
+      who_can: 'Who can benefit from using the tracking and safe-driving app',
+      ready_to_go: 'Ready to go solution for:',
+      tracking_mode: 'Tracking mode',
+      drive_mode: 'Drive Mode',
+      collected_data: 'Collected data',
+      driven_by: 'driven by GPS LVN telematics suite',
+      powerful_solution: 'Powerful solution',
+      based_on:
+        'Based on requirements, we provide a full set of data management services including storage (short-term and long- term).However, we also support flexible data management options, where the client has option to export data to own server at any moment.',
+      telematics_data: 'Telematics data',
+      the_app:
+        'The app is integrated with Google Firebase. Use this service for Authentication and personal data hosting.',
+      we_respect:
+        'We respect data privacy and follow personal data protection regulations. That is why using the open-source telematics app you have an option to manage the personal data of the app users and host it in a region that is suitable for you.',
+      data_managment: 'DATA MANAGEMENT',
+      hosting_option: 'HOSTING OPTIONS',
+      data: 'data',
+      login_details: 'Login and personal details',
+      host_personal: 'Host personal data on your side',
+      full_function: 'Full function driving monitoring mobile app',
+      try_it: 'Try it for free',
+      location_tracking: 'Location tracking and safe driving app',
+      name_app: 'GPS LVN',
+      created_app: 'Create your own tracking app',
       section82:
         'If you have any questions regarding privacy while using the Application, or have questions about our practices, please contact us via email at info@gpslvn.com.',
       section81: '12 CONTACT US',

@@ -6,7 +6,7 @@
           <v-resposive>
             <img height="80%" src="images/Group-2717.png">
           </v-resposive>
-          <h2 class="text-center mt-4">Create your own tracking app</h2>
+          <h2 class="text-center mt-4">{{ $t('created_app') }}</h2>
         </v-col>
         <v-col cols="12" lg="6" md="6" sm="12" xs="12">
           <v-row>
@@ -14,13 +14,13 @@
               <img width="200px" src="images/gpslvnLogo.png">
             </v-col>
             <v-col cols="12" lg="6" md="6" sm="12" xs="12">
-              <div class="text-h3">GPS LVN</div>
-              <div class="text-h4">Location tracking and safe driving app</div>
+              <div class="text-h3">{{ $t('name_app') }}</div>
+              <div class="text-h4">{{ $t('location_tracking') }}</div>
             </v-col>
           </v-row>
           <v-row>
             <v-col cols="12">
-              <div class="text-h4 text-center">Try it for free</div>
+              <div class="text-h4 text-center">{{ $t('try_it') }}</div>
             </v-col>
             <v-col cols="12">
               <v-row>
@@ -55,7 +55,7 @@
       </v-row>
       <v-row>
         <v-col cols="12" lg="6" md="6" sm="12" xs="12">
-          <div class="text-h5">Suitable for:
+          <div class="text-h5">{{ $t('Suitable') }}
           </div>
           <v-row>
             <v-col v-for="item in items" :key="item" cols="12" lg="6" md="6" sm="12" xs="12">
@@ -70,32 +70,29 @@
         </v-col>
         <v-col cols="12" lg="6" md="6" sm="12" xs="12">
           <div class="mb-2">
-            Free tracking and safe-driving app to collect location, driving style, driving behaviors, driving
-            patterns, lifestyle patterns, vehicle data, and monitor car crashes. Initially, this app has been
-            designed
-            to showcase telematics SDK and Platform capabilities.
+            {{ $t('free_tracking_and_safe_driving') }}
           </div>
 
           <div class="mb-2">
-            We have unlocked the source-code of ZenRoad – our flagman driving monitoring app – to help community
-            create products that improve driver safety and efficiency as well as create a new experience for car
-            lovers
+            {{ $t('we_have_unlocked') }}
           </div>
 
           <div>
-            ZenRoad is more advance than any existing vehicle logbook app, mileage tracker, insurance app, driving
-            behavior tracker, trip log app, vehicle logger, tracker app, driving app, app telematics, etc.
+            {{ $t('driving_behavior') }}
           </div>
         </v-col>
       </v-row>
-      <div class="text-h3 text-center mt-7">Full function driving monitoring mobile app</div>
+      <div class="text-h3 text-center mt-7">{{ $t('full_function') }}</div>
       <no-ssr>
         <v-divider class="my-3"></v-divider>
       </no-ssr>
       <v-row class="mt-4">
         <v-col class="leftItems" cols="12" lg="4" md="4" sm="12" xs="12">
-          <div class="text-h4 text-right" v-for="leftItem in leftItems" :key="leftItem">
-            {{ leftItem.title }}
+          <div :class="lang == 'en' ? 'text-h4 text-right d-flex' : 'text-h4 text-left d-flex'"
+            v-for="leftItem in leftItems" :key="leftItem">
+            <div>
+              {{ $t(leftItem.title) }}
+            </div>
             <no-ssr>
               <v-icon right class="text-h4">{{ leftItem.icon }}</v-icon>
             </no-ssr>
@@ -107,25 +104,26 @@
           </no-ssr>
         </v-col>
         <v-col class="rightItems" cols="12" lg="4" md="4" sm="12" xs="12">
-          <div class="text-h4 text-left" v-for="rightItem in rightItems" :key="leftItem">
+          <div :class="lang == 'en' ? 'text-h4 text-left d-flex' : 'text-h4 text-right d-flex'"
+            v-for="rightItem in rightItems" :key="rightItem">
             <no-ssr>
               <v-icon right class="text-h4">{{ rightItem.icon }}</v-icon>
             </no-ssr>
-            {{ rightItem.title }}
+            <div>{{ $t(rightItem.title) }}</div>
           </div>
         </v-col>
       </v-row>
-      <div class="text-h3 text-center mt-7">Host personal data on your side</div>
+      <div class="text-h3 text-center mt-7">{{ $t('host_personal') }}</div>
       <no-ssr>
         <v-divider class="my-4"></v-divider>
       </no-ssr>
       <v-row>
         <v-col cols="12" lg="4" md="4" sm="12" xs="12">
-          <div class="text-h5 text-center mt-7">Login and personal details</div>
+          <div class="text-h5 text-center mt-7">{{ $t('login_details') }}</div>
           <no-ssr>
             <v-divider class="my-4"></v-divider>
           </no-ssr>
-          <div class="text-h4">Data</div>
+          <div class="text-h4">{{ $t('data') }}</div>
           <v-col v-for="item in dataleftitems" :key="item" cols="12">
             <no-ssr>
               <v-icon left class="notranslate" color="success">
@@ -134,7 +132,7 @@
             </no-ssr>
             {{ $t(item) }}
           </v-col>
-          <div class="text-h4">HOSTING OPTIONS</div>
+          <div class="text-h4">{{ $t('hosting_option') }}</div>
           <v-row>
             <v-col cols="12" lg="6" md="6" xs="12" sm="12" class="d-flex align-center justify-center">
               <no-ssr>
@@ -154,16 +152,13 @@
               </div>
             </v-col>
           </v-row>
-          <div class="text-h5 text-center mt-7">DATA MANAGEMENT</div>
+          <div class="text-h5 text-center mt-7">{{ $t('data_managment') }}</div>
           <v-col cols="12">
             <p>
-              We respect data privacy and follow personal data protection regulations. That is why using the open-source
-              telematics app you have an option to manage the personal data of the app users and host it in a region that
-              is
-              suitable for you.
+              {{ $t('we_respect') }}
             </p>
             <p>
-              The app is integrated with Google Firebase. Use this service for Authentication and personal data hosting.
+              {{ $t('the_app') }}
             </p>
           </v-col>
         </v-col>
@@ -173,12 +168,12 @@
           </no-ssr>
         </v-col>
         <v-col cols="12" lg="4" md="4" sm="12" xs="12">
-          <div class="text-h5 text-center mt-7">Telematics data</div>
+          <div class="text-h5 text-center mt-7">{{ $t('telematics_data') }}</div>
           <no-ssr>
             <v-divider class="my-4"></v-divider>
           </no-ssr>
           <v-row>
-            <div class="text-h4">Data</div>
+            <div class="text-h4">{{ $t('data') }}</div>
             <v-col v-for="item in datarightitems" :key="item" cols="12">
               <no-ssr>
                 <v-icon left class="notranslate" color="success">
@@ -187,7 +182,7 @@
               </no-ssr>
               {{ $t(item) }}
             </v-col>
-            <v-col cols=12 class="text-h5">HOSTING OPTIONS</v-col>
+            <v-col cols=12 class="text-h5">{{ $t('hosting_option') }}</v-col>
             <v-col cols=12>
               <div>
                 > US
@@ -200,12 +195,10 @@
               </div>
             </v-col>
             <v-col cols=12>
-              <div cols="12" class="text-h5">DATA MANAGEMENT</div>
+              <div cols="12" class="text-h5">{{ $t('data_managment') }}</div>
               <v-col cols="12">
                 <p>
-                  Based on requirements, we provide a full set of data management services including storage (short-term
-                  and long-term). However, we also support flexible data management options, where the client has option
-                  to export data to own server at any moment.
+                  {{ $t('based_on') }}
                 </p>
               </v-col>
             </v-col>
@@ -213,8 +206,8 @@
         </v-col>
       </v-row>
       <div class="text-h3 text-center mt-7">
-        <div>Powerful solution</div>
-        <div>driven by GPS LVN telematics suite</div>
+        <div>{{ $t('powerful_solution') }}</div>
+        <div>{{ $t('driven_by') }}</div>
       </div>
       <no-ssr>
         <v-divider class="my-4"></v-divider>
@@ -229,7 +222,7 @@
           <v-row>
             <v-col cols="12" lg="4" md="4" sm="12" xs="12">
               <div class="text-h5 mx-2 mb-3">
-                Collected data
+                {{ $t('collected_data') }}
               </div>
               <div class="mb-2" v-for="item in firstSection" :key="item">
                 <no-ssr>
@@ -237,12 +230,12 @@
                     mdi-checkbox-marked-circle
                   </v-icon>
                 </no-ssr>
-                <span>{{ item }}</span>
+                <span>{{ $t(item) }}</span>
               </div>
             </v-col>
             <v-col cols="12" lg="4" md="4" sm="12" xs="12">
               <div class="text-h5 mx-2 mb-3">
-                Drive mode
+                {{ $t('drive_mode') }}
               </div>
               <div class="mb-2" v-for="item in secondeSection" :key="item">
                 <no-ssr>
@@ -250,12 +243,12 @@
                     mdi-checkbox-marked-circle
                   </v-icon>
                 </no-ssr>
-                <span>{{ item }}</span>
+                <span>{{ $t(item) }}</span>
               </div>
             </v-col>
             <v-col cols="12" lg="4" md="4" sm="12" xs="12">
               <div class="text-h5 mx-2 mb-3">
-                Tracking mode
+                {{ $t('tracking_mode') }}
               </div>
               <div class="mb-2" v-for="item in thirdSection" :key="item">
                 <no-ssr>
@@ -263,11 +256,10 @@
                     mdi-checkbox-marked-circle
                   </v-icon>
                 </no-ssr>
-                <span>{{ item }}</span>
+                <span>{{ $t(item) }}</span>
               </div>
             </v-col>
-            <v-col cols="12" class="text-h5 text-center">Ready to go solution for:
-            </v-col>
+            <v-col cols="12" class="text-h5 text-center">{{ $t('ready_to_go') }}</v-col>
           </v-row>
           <v-row>
             <v-col cols="12" lg="6" md="6" sm="12" xs="12">
@@ -277,7 +269,7 @@
                     mdi-checkbox-marked-circle
                   </v-icon>
                 </no-ssr>
-                <span>{{ item }}</span>
+                <span>{{ $t(item) }}</span>
               </div>
             </v-col>
             <v-col cols="12" lg="6" md="6" sm="12" xs="12">
@@ -287,14 +279,14 @@
                     mdi-checkbox-marked-circle
                   </v-icon>
                 </no-ssr>
-                <span>{{ item }}</span>
+                <span>{{ $t(item) }}</span>
               </div>
             </v-col>
           </v-row>
         </v-col>
       </v-row>
       <div class="text-h3 text-center mt-7">
-        Who can benefit from using the tracking and safe-driving app
+        {{ $t('who_can') }}
       </div>
       <no-ssr>
         <v-divider class="my-4"></v-divider>
@@ -302,58 +294,46 @@
       <v-row>
         <v-col cols="12" lg="4" md="4" xs="12" sm=12>
           <div class="text-h4 mb-5">
-            Taxi and cab services
+            {{ $t('taxi_and') }}
           </div>
           <p>
-            In the Cab service business, the telematics app allows users to allot the nearest cab when customers book
-            online automatically. Without Mobile telematics, efficient and optimal use of the fleet is not possible. It
-            can also help In field-based service businesses such as on the spot car repair or car breakdown assistance
-            business.
+            {{ $t('in_the_cab') }}
           </p>
         </v-col>
 
         <v-col cols="12" lg="4" md="4" xs="12" sm=12>
           <div class="text-h4 mb-5">
-            School buses
+            {{ $t('school_buses') }}
           </div>
           <p>
-            Parents usually wait at the stop for the school bus and care about kids’ safety. With the telematics SDK
-            integrated inside the school mobile application, parents can exactly know where the bus is, how safely it is
-            driven, and accordingly reach the stop within time without being too early or too late.
+            {{ $t('parents_usually') }}
           </p>
         </v-col>
 
         <v-col cols="12" lg="4" md="4" xs="12" sm=12>
           <div class="text-h4 mb-5">
-            Tour and Travels
+            {{ $t('tour') }}
           </div>
           <p>
-            Tours and travel agencies operate huge numbers of vehicles and take responsibility for tourists’ safety.
-            Tracking them with mobile telematics technology can help in maintaining the punctuality of the vehicles and
-            overall road and trip safety. Automatic alerts about the detected crash and real-time location can be sent.
+            {{ $t('tours_and_travel') }}
           </p>
         </v-col>
 
         <v-col cols="12" lg="6" md="6" xs="12" sm=12>
           <div class="text-h4 mb-5">
-            Food delivery
+            {{ $t('food_delivery') }}
           </div>
           <p>
-            The businesses can track their delivery agents, delivery vans, bikes, etc. in real-time with tracking
-            solutions inside their own mobile applications.
-            It helps in allocating the nearest delivery agent to the location and deliver product and services on-time,
-            Safely and on budget. Timely deliveries keep food fresh and increase positive ratings.
+            {{ $t('the_businesses') }}
           </p>
         </v-col>
 
         <v-col cols="12" lg="6" md="6" xs="12" sm=12>
           <div class="text-h4 mb-5">
-            E-Commerce
+            {{ $t('e_eommerce') }}
           </div>
           <p>
-            Tracking software helps e-commerce companies in real-time monitoring of shipments, optimizing routes for
-            deliveries, and on-time delivery. It also enhances the customer experience by providing them visibility of
-            estimated time of arrival.
+            {{ $t('tracking_software') }}
           </p>
         </v-col>
       </v-row>
@@ -388,35 +368,36 @@ export default {
   },
   data() {
     return {
+      lang: 'en',
       imgAPI: imgAPI,
       integration1: [
         {
           icon: 'mdi-magnify',
-          title: 'Vestibulum a massa'
+          title: 'vestibulum_a_massa'
         },
         {
           icon: 'mdi-shuffle-variant',
-          title: 'Interdum et malesuada'
+          title: 'interdum_et_malesuada'
         },
         {
           icon: 'mdi-layers',
-          title: 'Cras convallis lacus orci'
+          title: 'cras_convallis_lacus_orci'
         },
         {
           icon: 'mdi-rss',
-          title: 'Nulla vehicula'
+          title: 'nulla_vehicula'
         },
         {
           icon: 'mdi-speedometer',
-          title: 'Interdum et malesuada'
+          title: 'interdum_et_malesuada'
         },
         {
           icon: 'mdi-thumb-up',
-          title: 'Cras convallis lacus orci'
+          title: 'cras_convallis_lacus_orci'
         },
         {
           icon: 'mdi-cloud-upload',
-          title: 'Donec sit amet nulla'
+          title: 'vestibulum_a_massa'
         },
         {
           icon: 'mdi-wrench',
@@ -426,80 +407,80 @@ export default {
       integration2: [
         {
           icon: 'mdi-access-point',
-          title: 'Vestibulum a massa'
+          title: 'vestibulum_a_massa'
         },
         {
           icon: 'mdi-shuffle-variant',
-          title: 'Interdum et malesuada'
+          title: 'interdum_et_malesuada'
         },
         {
           icon: 'mdi-poll',
-          title: 'Cras convallis lacus orci'
+          title: 'cras_convallis_lacus_orci'
         },
         {
           icon: 'mdi-plus-circle',
-          title: 'Nulla vehicula'
+          title: 'nulla_vehicula'
         },
         {
           icon: 'mdi-chart-pie',
-          title: 'Interdum et malesuada'
+          title: 'interdum_et_malesuada'
         },
         {
           icon: 'mdi-account-multiple',
-          title: 'Cras convallis lacus orci'
+          title: 'cras_convallis_lacus_orci'
         },
         {
           icon: 'mdi-source-merge',
-          title: 'Donec sit amet nulla'
+          title: 'donec_sit_amet_nulla'
         },
         {
           icon: 'mdi-sync',
-          title: 'Donec sit amet nulla'
+          title: 'donec_sit_amet_nulla'
         }
       ],
       items: [
-        'Trip log app',
-        'Mileage tracker app',
-        'Driving style tracker app',
-        'Insurance app',
-        'Location tracking app',
-        'Driving coach app',
-        'Vehicle logging app',
-        'App to track visits',
-        'GPS tracking app',
-        'Etc...'
+        'trip_log_app',
+        'mileage_tracker_app',
+        'driving_style_tracker_app',
+        'insurance_app',
+        'location_tracking_app',
+        'driving_coach_app',
+        'vehicle_logging_app',
+        'app_to_track_visits',
+        'gps_tracking_app',
+        'etc'
       ],
       leftItems: [
         {
-          title: 'Telematics SDK',
+          title: 'telematics_sdk',
           icon: 'mdi-cards'
         },
         {
-          title: 'User profile',
+          title: 'user_profile',
           icon: 'mdi-badge-account'
         },
-        { title: 'Trip log', icon: 'mdi-go-kart-track' },
+        { title: 'trip_log', icon: 'mdi-go-kart-track' },
         {
-          title: 'DataHub',
+          title: 'data_hub',
           icon: 'mdi-database'
         }
       ],
       rightItems: [
         {
-          title: 'Engagements',
+          title: 'engagements',
           icon: 'mdi-cube-unfolded'
         },
         {
-          title: 'API access',
+          title: 'api_access',
           icon: 'mdi-code-tags-check'
         },
-        { title: 'Trip details', icon: 'mdi-details' },
+        { title: 'trip_details', icon: 'mdi-details' },
         {
-          title: 'Safe driving',
+          title: 'safe_driving',
           icon: 'mdi-go-kart'
         }
       ],
-      dataleftitems: ['Login and password', 'Personal details'],
+      dataleftitems: ['login_details', 'personal_details'],
       datarightitems: [
         'GPS Data (location, speed, etc)',
         'Sensors data (Accelerometer, gyro, etc)',
@@ -536,6 +517,11 @@ export default {
       ]
     }
   },
+
+  mounted() {
+    this.lang = this.$i18n.locale
+  },
+
   computed: {
     isMobile() {
       const xsDown = this.$store.state.breakpoints.xsDown

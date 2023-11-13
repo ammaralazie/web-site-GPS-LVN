@@ -108,8 +108,7 @@ export const state = () => ({
       },
       textForm: {
         title: 'Maintenance System',
-        detail:
-          'To operate the entire system, you need to keep records of all maintenance services and the user needs to update the service form when they want to take any services. This module can allow you to do this. The users can provide their requirements to take the maintenance service and this module can be able to receive it and calculate the total cost automatically.',
+        detail: 'To_operate_the_entire',
         items: [
           'Maintenance Service',
           'Maintenance Requisition',
@@ -125,8 +124,7 @@ export const state = () => ({
       },
       textForm: {
         title: 'Real Time Reports',
-        detail:
-          'Accurate reports ensure your business profitability, but it will be very time consuming when you prepare your overall reports manually. To solve such problems, the Vehicle Management System has an excellent module that can be able to generate the following reports accurately and automatically.',
+        detail: 'Accurate_reports_ensure',
         items: [
           'Employee Reports',
           'Vehicle Reports',
@@ -143,14 +141,13 @@ export const state = () => ({
     },
     {
       imageSide: {
-        right: false,
-        left: true,
+        right: true,
+        left: false,
         imageUrl: '/images/saas2/featuerForm6.jpg'
       },
       textForm: {
         title: 'User Management System',
-        detail:
-          'This module can allow you to add a user by creating a new user profile through a user management system.Also, you can get a comprehensive list of your added users that will assist you to manage all users.This section is designed on the right corner of the header menu named by profile.We integrate here the following options.',
+        detail: 'this_module_can_allow',
         items: ['Add user', 'Manage user']
       }
     },
@@ -162,21 +159,19 @@ export const state = () => ({
       },
       textForm: {
         title: 'Role Permission System',
-        detail:
-          'After adding users, you can provide a role based access control system. You can specify your employee and offer them particular responsibility. This module can help you to assign any particular role to the users. It can ensure the security of your system because the users can only perform their assigned tasks.',
+        detail: 'after_adding_users',
         items: ['Assign role', 'Manage role', 'Manage user access role']
       }
     },
     {
       imageSide: {
-        right: false,
-        left: true,
+        right: true,
+        left: false,
         imageUrl: '/images/saas2/featuerForm6.jpg'
       },
       textForm: {
-        title: 'Alert Center to Make This Software Always Up-to-date!!!',
-        detail:
-          'Alert center is important to know any alarming situation of any vehicle. Vehicle’s insurance, fitness, engine, road permit etc. can be an alarming situation, the alert center will inform the user. An automatic alarm center is adjusted with our vehicle management system to keep you always up to date.',
+        title: 'alert_Center_to_Make',
+        detail: 'alert_center_is_important'
       },
       btn: 'Purchase Now'
     }
@@ -265,39 +260,33 @@ export const state = () => ({
   bigCards: [
     {
       title: 'Manage your vehicle from home',
-      subtitle:
-        'GPS LVN includes an integrated system that helps you to keep all your information in one place. You can view your all data at a glance at any time, get instant reports & can be able to make authentic decisions.',
+      subtitle: 'gps_lvn_includes',
       img: '/images/lottie/manage-vehicle-from-home.png'
     },
 
     {
       title: 'Take authentic decision',
-      subtitle:
-        'A computer based management system brings a supersonic speed to manage an organization, get reports & ensure sustainable business growth. Having an automation system will help you to be the market leader',
+      subtitle: 'computer_based_management_system',
       img: '/images/lottie/authentic-decision.png'
     },
     {
       title: 'Be the market leader of your industry',
-      subtitle:
-        'A computer based management system brings a supersonic speed to manage an organization, get reports & ensure sustainable business growth. Having an automation system will help you to be the market leader',
+      subtitle: 'organization_get_reports',
       img: '/images/lottie/market-leader-of-industry.png'
     },
     {
       title: 'Own a competent workforce',
-      subtitle:
-        'An automation system makes easy dealing of your daily activities. You can specify your functionality as admins, superadmins inventory manager & other employees activities. And have the system for monetising their performance to make them competent.',
+      subtitle: 'automation_system_makes_easy',
       img: '/images/lottie/competent-workforce.png'
     },
     {
       title: 'Manage inventory & expenses under control',
-      subtitle:
-        'Get all inventory records such as stock in hand, vehicle wise parts use report etc. We have designed an expense management system to take your inventory & expenses under control.',
+      subtitle: 'get_all_inventory_records',
       img: '/images/lottie/inventory-expense.png'
     },
     {
       title: 'Ensure the best profitability',
-      subtitle:
-        'Use automation in every section of your business. Such as asset tracking, manage daily activities, get automatic calculation of finance .That’s why to ensure the best profitability you should have an vehicle management system.',
+      subtitle: 'use_automation_in_every',
       img: '/images/lottie/ensuring-profitability.png'
     }
   ],
