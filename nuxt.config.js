@@ -220,6 +220,6 @@ export default {
   ** Application Port
   */
   server: {
-    port: 8010, // default: 3000
+    port: 3012, // default: 3000
   }
 }
