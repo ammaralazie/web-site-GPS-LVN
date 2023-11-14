@@ -18,6 +18,7 @@
 		"pm2:dev": "cross-env NODE_OPTIONS=--openssl-legacy-provider node_modules/nuxt/bin/nuxt.js",
 		"dev": "cross-env NODE_OPTIONS=--openssl-legacy-provider nuxt",
 		"build": "cross-env NODE_OPTIONS=--openssl-legacy-provider nuxt build",
+    "build_server": "nuxt build",
 		"start": "nuxt start",
 		"heroku-postbuild": "npm run build",
 		"generate": "nuxt generate",
