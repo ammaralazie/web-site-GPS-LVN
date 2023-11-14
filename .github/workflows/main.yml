@@ -1,0 +1,35 @@
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup SSH connection
+        uses: webfactory/ssh-agent@v0.5.3
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: SSH into server and perform actions
+        run: |
+          # Define backup folder path
+          backup_folder="/www/wwwroot/sas.gpslvn.com/old_code"
+          # Define SSH command to execute on the remote server
+          ssh_command="cd /www/wwwroot/sas.gpslvn.com/web-site-GPS-LVN && \
+          if [ ! -d '$backup_folder' ]; then \
+          echo 'Creating backup folder...'; \
+          mkdir -p '$backup_folder'; \
+          fi && \
+          cp -r * '$backup_folder/' && \
+          git pull origin main && \
+          yarn && \
+          yarn build_server && \
+          pm2 restart 'WEB SITE GPS LVN'"
+          # Execute the SSH command on the remote server
+          ssh -o StrictHostKeyChecking=no -p 22 ${{ secrets.USERNAME }}@${{ secrets.HOST }} "$ssh_command"
