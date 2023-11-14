@@ -1,7 +1,7 @@
 {
 	"name": "saas2-theme",
 	"version": "1.0.0",
-	"description": "Awrora VueJs Saas2 Theme",
+	"description": "GPS LVN VueJs Saas2 Theme",
 	"keywords": [
 		"software",
 		"service",
@@ -10,7 +10,7 @@
 		"corporate",
 		"modern"
 	],
-	"author": "Awrora Theme",
+	"author": "GPS LVN Theme",
 	"license": "Envato",
 	"main": "index.js",
 	"private": true,
