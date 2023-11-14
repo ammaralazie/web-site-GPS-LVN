@@ -135,7 +135,7 @@
                       <v-col sm="6" cols="12" class="pa-0">
                         <p>
                           <v-icon class="icon">mdi-email</v-icon>
-                          hello@awrora.com
+                          hello@gpslavn.com
                         </p>
                       </v-col>
                       <v-col sm="12" cols="12" class="pa-0">

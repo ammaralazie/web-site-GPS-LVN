@@ -23,14 +23,14 @@ export default {
       // PWA primary color
       { name: 'theme-color', content: theme.primary },
       // Facebook
-      { property: 'author', content: 'awrora' },
+      { property: 'author', content: 'GPS LVN' },
       { property: 'og:site_name', content: 'sas.gpslvn.com' },
       { property: 'og:locale', content: 'en_US' },
       { property: 'og:type', content: 'website' },
       // Twitter
       { property: 'twitter:site', content: 'sas.gpslvn.com' },
       { property: 'twitter:domain', content: 'sas.gpslvn.com' },
-      { property: 'twitter:creator', content: 'awrora' },
+      { property: 'twitter:creator', content: 'GPS LVN' },
       { property: 'twitter:card', content: 'summary' },
       { property: 'twitter:image:src', content: '/images/logo.png' },
       { property: 'og:url', content: brand.saas2.url },
@@ -220,6 +220,6 @@ export default {
   ** Application Port
   */
   server: {
-    port: 8010, // default: 3000
+    port: 3012, // default: 3000
   }
 }
