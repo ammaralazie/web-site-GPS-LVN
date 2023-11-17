@@ -4,9 +4,10 @@ import nodeExternals from 'webpack-node-externals'
 import { theme } from './config/vuetify.options'
 import languages from './static/lang/languages'
 import brand from './static/text/brand'
+import link from './static/text/link'
 
 export default {
-    mode: 'universal'
+  mode: 'universal',
   /*
   ** Headers of the page
   */
@@ -229,8 +230,8 @@ export default {
         shouldPreload: (file, type) => {
           return ['script', 'style', 'font'].includes(type)
         },
-        scroll: function(el, binding) {
-          let f = function(evt) {
+        scroll: function (el, binding) {
+          let f = function (evt) {
             if (binding.value(evt, el)) {
               window.removeEventListener('scroll', f)
             }
@@ -295,9 +296,9 @@ export default {
     routes: async () => {
       // Generate dynamic routes here
       // Example:
-      const dynamicRoutes = await fetchDynamicRoutes();
-      return dynamicRoutes;
-    },
+      const dynamicRoutes = Object.values(link.saas2)
+      return dynamicRoutes.map(route => `/${route}`)
+    }
   },
   server: {
     port: 3012 // default: 3000
