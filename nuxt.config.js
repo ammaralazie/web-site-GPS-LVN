@@ -293,12 +293,7 @@ export default {
     cacheTime: 1000 * 60 * 15,
     gzip: true,
     exclude: [],
-    routes: async () => {
-      // Generate dynamic routes here
-      // Example:
-      const dynamicRoutes = Object.values(link.saas2) || [];
-      return dynamicRoutes.map(route => `/${route}`);
-    }
+
   },
   server: {
     port: 3012 // default: 3000
