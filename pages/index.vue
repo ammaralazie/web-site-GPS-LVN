@@ -58,6 +58,7 @@ import Hidden from '~/components/Hidden'
 import Corner from '~/components/Home/Corner'
 import Notification from '~/components/Notification'
 import brand from '~/static/text/brand'
+import SEO from '~/mixins/SEO.js'
 
 export default {
   components: {
@@ -75,9 +76,15 @@ export default {
     Notification,
     'main-footer': Footer
   },
-  head() {
+  mixins: [SEO],
+  data() {
     return {
-      title: brand.saas2.desc
+      seo: {
+        title: 'GPS LVN',
+        description:
+          'Vehicle Management System Software (GPS LVN) is the most modern system to manage large vehicles and fleets.This software will manage every single piece of data of your all vehicles.',
+        image: 'images/gpslvnLogo.png'
+      }
     }
   }
 }
