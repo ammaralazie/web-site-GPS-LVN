@@ -6,6 +6,7 @@ import languages from './static/lang/languages'
 import brand from './static/text/brand'
 
 export default {
+    mode: 'universal'
   /*
   ** Headers of the page
   */
@@ -132,6 +133,7 @@ export default {
     ],
     ['nuxt-gmaps', { key: '' }],
     '@nuxtjs/i18n',
+    '@nuxtjs/sitemap'
   ],
   i18n: {
     locales: languages,
@@ -219,6 +221,20 @@ export default {
   /*
   ** Application Port
   */
+  
+  sitemap: {
+    path: '/sitemap.xml', // The path where the sitemap will be generated
+    hostname: 'https://sas.gpslvn.com', // The full URL of your website
+    cacheTime: 1000 * 60 * 15, // Cache time in milliseconds (e.g., 15 minutes)
+    gzip: true, // Enable Gzip compression
+    exclude: [], // Pages to exclude from the sitemap
+    routes: async () => {
+      // Generate dynamic routes here
+      // Example:
+      const dynamicRoutes = await fetchDynamicRoutes();
+      return dynamicRoutes;
+    },
+  },
   server: {
     port: 3012, // default: 3000
   }
