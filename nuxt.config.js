@@ -198,7 +198,8 @@ export default {
     ],
     ['nuxt-gmaps', { key: '' }],
     '@nuxtjs/i18n',
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    '@nuxtjs/robots'
   ],
   i18n: {
     locales: languages,
