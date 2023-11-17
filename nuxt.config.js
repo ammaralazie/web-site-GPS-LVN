@@ -288,16 +288,16 @@ export default {
   */
 
   sitemap: {
-    path: '/sitemap.xml', // The path where the sitemap will be generated
-    hostname: 'https://sas.gpslvn.com', // The full URL of your website
-    cacheTime: 1000 * 60 * 15, // Cache time in milliseconds (e.g., 15 minutes)
-    gzip: true, // Enable Gzip compression
-    exclude: [], // Pages to exclude from the sitemap
+    path: '/sitemap.xml',
+    hostname: 'https://sas.gpslvn.com',
+    cacheTime: 1000 * 60 * 15,
+    gzip: true,
+    exclude: [],
     routes: async () => {
       // Generate dynamic routes here
       // Example:
-      const dynamicRoutes = Object.values(link.saas2)
-      return dynamicRoutes?.map(route => `/${route}`)
+      const dynamicRoutes = Object.values(link.saas2) || [];
+      return dynamicRoutes.map(route => `/${route}`);
     }
   },
   server: {
