@@ -297,7 +297,7 @@ export default {
       // Generate dynamic routes here
       // Example:
       const dynamicRoutes = Object.values(link.saas2)
-      return dynamicRoutes.map(route => `/${route}`)
+      return dynamicRoutes?.map(route => `/${route}`)
     }
   },
   server: {
