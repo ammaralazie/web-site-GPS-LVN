@@ -294,13 +294,13 @@ export default {
     gzip: true, // Enable Gzip compression
     exclude: [], // Pages to exclude from the sitemap
     i18n: true,
-    filter ({ routes, options }) {
+    filter({ routes, options }) {
       if (options.hostname === 'example.com') {
         return routes.filter(route => route.locale === 'en')
       }
       return routes.filter(route => route.locale === 'ar')
     },
-    routes:Object.values(link.saas2)
+    routes: Object.values(link.saas2)
   },
   server: {
     port: 3012 // default: 3000
