@@ -402,6 +402,7 @@ export default () => {
       data_managment: 'إدارة البيانات',
       hosting_option: 'خيارات الاستضافة',
       data: 'البيانات',
+      // eslint-disable-next-line no-dupe-keys
       login_details: 'تسجيل الدخول وتفاصيل الشخصية',
       host_personal: 'استضافة البيانات الشخصية على جانبك',
       full_function: 'تطبيق مراقبة القيادة بكامل وظائفه',

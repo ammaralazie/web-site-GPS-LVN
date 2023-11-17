@@ -6,7 +6,7 @@ const brand = {
     footerText: 'GPS LVN 2023',
     logoText: 'GPS LVN',
     projectName: 'GPS LVN ',
-    url: '',
+    url: 'https://sas.gpslvn.com/ar',
     img: '/static/images/gpslvnLogo.png'
   }
 }

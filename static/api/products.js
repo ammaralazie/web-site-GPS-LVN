@@ -52,6 +52,7 @@ const products = [
     radio: 'radio-a'
   },
   {
+    /*  */
     title: 'Ut sed eros finibus',
     img: imgAPI.photo[27],
     category: 'cat-e',
