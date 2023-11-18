@@ -138,7 +138,7 @@
       </v-row>
       <v-row style="position: relative;z-index:10" class="mt-4">
         <v-col cols="12" lg="3" md="3" sm="6" xs="12" v-for="item in lottie" :key="item.title">
-          <v-card link class="cardFeatuer" height="240px" style="display: grid">
+          <v-card link class="cardFeatuer elevation-3" height="240px" style="display: grid">
             <div class="justify-center align-center ma-auto" style="display: grid;">
               <img :src="item.image" class="ma-auto mb-2" />
               <div class="px-2 text-center text-capitalize font-weight-bold mt-2">{{ $t(item.title) }}</div>
@@ -290,20 +290,19 @@ Manage driver
 Manage license
 Driver performance
 Manage requisition approval
-`;
+`
 
     // Split the string into an array by line breaks
-    const lines = inputString.trim().split('\n');
+    const lines = inputString.trim().split('\n')
 
     // Convert the string values to an object where keys are based on the values
-    const resultObject = {};
+    const resultObject = {}
     lines.forEach((line, index) => {
-      const key = line.replace(/[^a-zA-Z ]/g, '').replace(/ /g, '_').toLowerCase;
-      resultObject[key] = line;
-    });
+      const key = line.replace(/[^a-zA-Z ]/g, '').replace(/ /g, '_').toLowerCase
+      resultObject[key] = line
+    })
 
-    console.log(resultObject);
-
+    console.log(resultObject)
   },
   computed: {
     isDesktop() {

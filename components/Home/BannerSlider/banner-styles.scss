@@ -17,7 +17,7 @@ $wave-deco-dark: '/images/saas2/deco-wave-dark.png';
     content: "";
     position: absolute;
     background-image: linear-gradient(120deg, $palette-primary-main, $palette-secondary-main);
-    opacity: 0.15;
+    opacity: 0.10;
     width: 100%;
     height: 100%;
     top: 0;
@@ -112,7 +112,7 @@ $wave-deco-dark: '/images/saas2/deco-wave-dark.png';
   content: "";
   margin-top: -240px;
   @include breakpoints-down(md) {
-    margin-top: -160px;  
+    margin-top: -160px;
   }
 }
 
@@ -160,7 +160,7 @@ $wave-deco-dark: '/images/saas2/deco-wave-dark.png';
 .deco-wrap {
   width: 100%;
   height: 100%;
-  @media only screen and (min-width: 1400px) { 
+  @media only screen and (min-width: 1400px) {
     display: none;
   }
 }
@@ -213,7 +213,7 @@ $wave-deco-dark: '/images/saas2/deco-wave-dark.png';
     @include palette-text-secondary;
     margin-bottom: $spacing4
   }
-  
+
 }
 
 .btn-area {
@@ -226,7 +226,7 @@ $wave-deco-dark: '/images/saas2/deco-wave-dark.png';
   }
   .v-btn.v-btn--contained {
     @include breakpoints-up(sm) {
-      width: 200px;  
+      width: 200px;
     }
   }
   .v-btn.v-btn--text {

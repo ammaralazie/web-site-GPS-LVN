@@ -25,7 +25,7 @@ const sample = [
     ]
   },
   {
-    name: 'Form',
+    name: 'Resoures',
     thumb: imgAPI.ui[1],
     child: [
       {

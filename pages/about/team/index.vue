@@ -1,3 +1,4 @@
+<template>
   <div class="main-wrap">
     <main-header />
     <banner>

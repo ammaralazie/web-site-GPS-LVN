@@ -18,12 +18,11 @@
                 <logo type="landscape" />
               </a>
             </div>
-            <div class="main-menu" v-if="isDesktop && loaded">
-              <header-menu :menu-primary="menuPrimary" :menu-secondary="menuSecondary" :single-nav="home" />
-            </div>
+            <v-spacer></v-spacer>
             <user-menu />
           </nav>
         </div>
+
       </v-container>
     </v-app-bar>
   </fragment>
@@ -41,6 +40,7 @@ import MixedNav from './TopNav/MixedNav'
 import MixedMobile from './SideNav/MixedMobile'
 import navMenu from './data/single'
 import samplePages from './data/sample-pages'
+
 
 let counter = 0
 function createData(name, link, offset) {
@@ -68,6 +68,7 @@ export default {
       openNavMobile: null,
       menuSecondary: samplePages,
       menuPrimary: [
+        createData(navMenu[0], 'products'),
         createData(navMenu[1], '#' + navMenu[1]),
         createData(navMenu[2], '#' + navMenu[2]),
         createData(navMenu[3], '#' + navMenu[3]),

@@ -2,9 +2,10 @@ import moment from 'moment'
 moment.locale('en')
 
 export default () => {
-  return new Promise(function(resolve) {
+  return new Promise(function (resolve) {
     resolve({
       common: {
+        header_products: 'Products',
         title: 'A simple example',
         subtitle: "It's a blank-page. Start to build your'e page from here.",
         error_with_status: 'An error occurred on server',
@@ -157,6 +158,7 @@ export default () => {
         footer_news: 'news'
       },
       saas2: {
+        header_products: 'Products',
         caption_mileage_tracker: 'mileage tracker',
         caption_leaderboard: 'leaderboard',
         caption_eco_driving: 'eco driving',
@@ -171,7 +173,7 @@ export default () => {
           'With this module, you can get an overall synopsis of your system. This module can be able to represent the expense summary and maintenance cost through pie-chart and line chart. Moreover, these graphical representations help to enhance the users experience. This module can provide the following aspects as well.',
         firFomtTitle: 'Some Exclusive Module of Vehicle Management Software',
         'GPS devices online': 'GPS devices online',
-        online_servers: 'Local Active Server ',
+        online_servers: 'Local Server ',
         'slid3-title': 'Fleet management made easy',
         'slid3-subtitle':
           "You won't need any specialized tracking system for company vehicles - with GPSLVN smart app, you can keep a close eye on your fleet in a few simple clicks.Manage everything through our user- friendly administrative system - fuel log entries, costs and many other features necessary for the management of your company's vehicles.",

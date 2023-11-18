@@ -41,7 +41,7 @@
                   <no-ssr>
                     <qrcode value="set yorr link here" @change="onDataUrlChange" :options="{
                       color: {
-                        dark: '#FFC72C',
+                        dark: '#215bad',
                         light: '#0000000',
                       },
                       width: 250,
@@ -88,15 +88,20 @@
       </no-ssr>
       <v-row class="mt-4">
         <v-col class="leftItems" cols="12" lg="4" md="4" sm="12" xs="12">
-          <div :class="lang == 'en' ? 'text-h4 text-right d-flex' : 'text-h4 text-left d-flex'"
-            v-for="leftItem in leftItems" :key="leftItem">
-            <div>
-              {{ $t(leftItem.title) }}
-            </div>
-            <no-ssr>
-              <v-icon right class="text-h4">{{ leftItem.icon }}</v-icon>
-            </no-ssr>
-          </div>
+          <no-ssr>
+            <v-card v-for="leftItem in leftItems" :key="leftItem" class="elevation-3">
+              <v-card-text>
+                <div :class="lang == 'en' ? 'text-h4 text-right d-flex' : 'text-h4 text-left d-flex'">
+                  <div>
+                    {{ $t(leftItem.title) }}
+                  </div>
+                  <no-ssr>
+                    <v-icon right class="text-h4">{{ leftItem.icon }}</v-icon>
+                  </no-ssr>
+                </div>
+              </v-card-text>
+            </v-card>
+          </no-ssr>
         </v-col>
         <v-col cols="12" lg="4" md="4" sm="12" xs="12">
           <no-ssr>
@@ -104,13 +109,18 @@
           </no-ssr>
         </v-col>
         <v-col class="rightItems" cols="12" lg="4" md="4" sm="12" xs="12">
-          <div :class="lang == 'en' ? 'text-h4 text-left d-flex' : 'text-h4 text-right d-flex'"
-            v-for="rightItem in rightItems" :key="rightItem">
-            <no-ssr>
-              <v-icon right class="text-h4">{{ rightItem.icon }}</v-icon>
-            </no-ssr>
-            <div>{{ $t(rightItem.title) }}</div>
-          </div>
+          <no-ssr>
+            <v-card v-for="rightItem in rightItems" :key="rightItem" class="elevation-3">
+              <v-card-text>
+                <div :class="lang == 'en' ? 'text-h4 text-right d-flex' : 'text-h4 text-left d-flex'">
+                  <no-ssr>
+                    <v-icon right class="text-h4">{{ rightItem.icon }}</v-icon>
+                  </no-ssr>
+                  <div>{{ $t(rightItem.title) }}</div>
+                </div>
+              </v-card-text>
+            </v-card>
+          </no-ssr>
         </v-col>
       </v-row>
       <div class="text-h3 text-center mt-7">{{ $t('host_personal') }}</div>

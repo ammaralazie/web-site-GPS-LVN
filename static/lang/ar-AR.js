@@ -2,9 +2,10 @@ import moment from 'moment'
 moment.locale('ar')
 
 export default () => {
-  return new Promise(function(resolve) {
+  return new Promise(function (resolve) {
     resolve({
       common: {
+        header_products: 'المنتجات',
         title: 'مثال بسيط',
         subtitle: 'إنها صفحة فارغة. ابدأ في إنشاء صفحتك من هنا.',
         error_with_status: 'حدث خطأ على الخادم',
@@ -46,6 +47,7 @@ export default () => {
         register_title: 'تشرفت بمعرفتك :)',
         register_subtitle: 'فقط سجل للانضمام إلينا',
         accept: 'قبول',
+        header_resources: 'المصادر',
         header_language: 'لغة',
         header_theme: 'وضع السمة',
         header_dark: 'داكن',
@@ -153,6 +155,7 @@ export default () => {
         footer_news: 'أخبار'
       },
       saas2: {
+        header_products: 'المنتجات',
         caption_mileage_tracker: 'تعقب الاميال',
         caption_leaderboard: 'المتصدرين',
         caption_eco_driving: 'القيادة البيئية',
@@ -167,7 +170,7 @@ export default () => {
         firstFormdetail:
           'باستخدام هذه الوحدة، يمكنك الحصول على ملخص شامل لنظامك. يمكن أن تكون هذه الوحدة قادرة على تمثيل ملخص النفقات وتكلفة الصيانة من خلال المخطط الدائري والمخطط الخطي. علاوة على ذلك، تساعد هذه التمثيلات الرسومية على تحسين تجربة المستخدمين. يمكن أن توفر هذه الوحدة الجوانب التالية أيضًا.',
         'GPS devices online': 'أجهزه جي بي اس أونلاين',
-        online_servers: 'الخوادم النشطة المحلية',
+        online_servers: 'الخوادم المحلية',
         'slid3-title': 'إدارة الأسطول بسهولة',
         'slid3-subtitle':
           'لن تحتاج إلى أي نظام تتبع متخصص لمركبات الشركة - مع تطبيق لڤن الذكي، يمكنك مراقبة أسطولك بسهولة بضغطات بسيطة. قم بإدارة كل شيء من خلال نظام الإدارة الخاص بنا والذي يسهل الاستخدام - سجلات سجلات الوقود، التكاليف والعديد من الميزات الأخرى الضرورية لإدارة مركبات شركتك.',
@@ -632,7 +635,7 @@ export default () => {
       'Why Does an Intelligent Fleet Management Agency Owner Use a Vehicle Management System?':
         'لماذا يستخدم مالك وكالة إدارة الأسطول الذكية نظام إدارة المركبات؟',
       'PHP and Laravel Framework': 'لغة PHP و اطارعمل لارفل',
-      'Vehicle Tracking System (Add-ons)': 'نظام تتبع المركبات (الإضافات)',
+      'Vehicle Tracking System': 'نظام تتبع المركبات',
       'Usability & Accessibility': 'سهولة الاستخدام وإمكانية الوصول',
       'Allows Customization': 'يسمح بالتخصيص',
       'Fleet Alert System': 'نظام تنبيه الأسطول',

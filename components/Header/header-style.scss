@@ -1,6 +1,6 @@
-$flag: '/images/flag-logo.png';
+$flag: "/images/flag-logo.png";
 
-@mixin flag-icon{
+@mixin flag-icon {
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -14,19 +14,19 @@ $flag: '/images/flag-logo.png';
     background-position: 0 3px;
   }
   &.zh {
-    background-position: 0 -12px
+    background-position: 0 -12px;
   }
   &.en {
-    background-position: 0 -28px
+    background-position: 0 -28px;
   }
   &.de {
-    background-position: 0 -44px
+    background-position: 0 -44px;
   }
   &.id {
-    background-position: 0 -62px
+    background-position: 0 -62px;
   }
   &.pt {
-    background-position: 0 -79px
+    background-position: 0 -79px;
   }
 }
 
@@ -34,7 +34,7 @@ $flag: '/images/flag-logo.png';
   @include palette-background-paper;
   width: 200px;
   .v-list {
-    border-radius: 0
+    border-radius: 0;
   }
 }
 
@@ -56,7 +56,7 @@ $flag: '/images/flag-logo.png';
       #main-wrap & {
         padding: 0;
         @include breakpoints-up(md) {
-          padding: 0 $spacing3
+          padding: 0 $spacing3;
         }
       }
     }
@@ -69,7 +69,11 @@ $flag: '/images/flag-logo.png';
     position: fixed;
     top: 0;
     &.v-app-bar.v-toolbar.v-sheet {
-      @include use-theme(box-shadow, 0px 1px 36px -16px $palette-primary-main, 0px 1px 36px -16px $palette-common-black);
+      @include use-theme(
+        box-shadow,
+        0px 1px 36px -16px $palette-primary-main,
+        0px 1px 36px -16px $palette-common-black
+      );
       @include palette-background-paper;
     }
     .vertical-divider {
@@ -78,7 +82,7 @@ $flag: '/images/flag-logo.png';
     ::v-deep .logo {
       img {
         transform: scale(0.7);
-        margin-right: 0
+        margin-right: 0;
       }
     }
     nav {
@@ -86,12 +90,13 @@ $flag: '/images/flag-logo.png';
     }
   }
   &.no-shadow {
-    box-shadow: none !important
+    box-shadow: none !important;
   }
 }
 
-.v-toolbar__content, .v-toolbar__extension {
-  padding: 0
+.v-toolbar__content,
+.v-toolbar__extension {
+  padding: 0;
 }
 
 .header-content {
@@ -108,7 +113,7 @@ $flag: '/images/flag-logo.png';
     }
     & > * {
       @include breakpoints-up(sm) {
-        margin: 0 $spacing1
+        margin: 0 $spacing1;
       }
     }
     .menu-setting {
@@ -119,7 +124,7 @@ $flag: '/images/flag-logo.png';
 
 .logo {
   @include breakpoints-between(sm, lg) {
-    flex: 1
+    flex: 1;
   }
   & a {
     text-decoration: none;
@@ -128,7 +133,7 @@ $flag: '/images/flag-logo.png';
   &.start-mobile {
     flex: 0;
     @include breakpoints-down(xs) {
-      margin: spacing(1, 2)
+      margin: spacing(1, 2);
     }
   }
 }
@@ -136,11 +141,11 @@ $flag: '/images/flag-logo.png';
 .nav-menu {
   width: 100%;
   @include breakpoints-down(xs) {
-    justify-content: space-between
+    justify-content: space-between;
   }
   .scrollactive-nav {
     list-style: none;
-    .v-btn  {
+    .v-btn {
       margin: 0 $spacing1;
       list-style: none;
       position: relative;
@@ -158,7 +163,7 @@ $flag: '/images/flag-logo.png';
         overflow: hidden;
       }
       &:after {
-        content: '';
+        content: "";
         height: 7px;
         border-radius: 8px;
         width: 0;
@@ -173,7 +178,7 @@ $flag: '/images/flag-logo.png';
         opacity: 0.5;
         &:after {
           width: 20px;
-          background: $palette-primary-main
+          background: $palette-primary-main;
         }
       }
       &.active {
@@ -189,17 +194,18 @@ $flag: '/images/flag-logo.png';
     & img {
       @include breakpoints-down(xs) {
         height: 32px;
-        width: 32px
+        width: 32px;
       }
     }
   }
 }
 
-.main-menu, .multi-menu  {
+.main-menu,
+.multi-menu {
   flex: 1;
   .v-btn.v-btn--flat:not(.v-btn--round).v-size--default {
     text-transform: capitalize;
-    padding: spacing(1, 1.5)
+    padding: spacing(1, 1.5);
   }
 }
 
@@ -223,7 +229,7 @@ $flag: '/images/flag-logo.png';
   border-left: 1px solid;
   @include palette-divider;
   height: 100%;
-  min-height: $spacing6
+  min-height: $spacing6;
 }
 
 .setting {
@@ -232,17 +238,18 @@ $flag: '/images/flag-logo.png';
     @include palette-text-secondary;
   }
   .active {
-    transform: rotate(30deg)
+    transform: rotate(30deg);
   }
 }
 
-.mode-menu, .lang-menu {
-  text-transform: capitalize
+.mode-menu,
+.lang-menu {
+  text-transform: capitalize;
 }
 
 .mode-menu {
   ::v-deep .v-list-item__content {
-    overflow: visible
+    overflow: visible;
   }
 }
 
@@ -251,19 +258,20 @@ $flag: '/images/flag-logo.png';
   justify-content: flex-start;
   label {
     text-transform: capitalize;
-    padding: $spacing1 $spacing2
+    padding: $spacing1 $spacing2;
   }
 }
 
 .v-list-item__content {
-  padding: 0
+  padding: 0;
 }
 
 .mobile-menu {
   @include margin-right($spacing1);
   .bar {
     @include palette-background-text-secondary;
-    &:after, &:before {
+    &:after,
+    &:before {
       @include palette-background-text-secondary;
     }
   }
@@ -275,7 +283,7 @@ $flag: '/images/flag-logo.png';
   padding: spacing(10, 2, 0);
   z-index: 90;
   @include breakpoints-down(xs) {
-    width: 100% !important
+    width: 100% !important;
   }
 }
 
@@ -285,12 +293,13 @@ $flag: '/images/flag-logo.png';
   font-size: 14px;
 }
 
-.main-menu, .multi-menu  {
+.main-menu,
+.multi-menu {
   flex: 1;
   .v-btn:not(.v-btn--round).v-size--default {
     text-transform: capitalize;
     padding: spacing(1, 1.5);
-    margin: spacing(0, 0.5)
+    margin: spacing(0, 0.5);
   }
 }
 
@@ -321,17 +330,51 @@ $flag: '/images/flag-logo.png';
   }
 }
 
+
+.rounded-menu2 {
+  border-radius: 10px;
+  padding: $spacing1 / 2;
+  ::v-deep .v-list-item {
+    border-radius: $rounded-small;
+    margin-bottom: $spacing1 / 2;
+  }
+}
+
 /* Top Mega Menu */
-.mega-menu-root {
+.mega-menu-root,.mega-menu-root2 {
   background: transparent;
   box-shadow: none !important;
 }
+.mega-menu-root2{
+  top: 70px !important;
+}
 
+/* Style for the entire scrollbar */
+::-webkit-scrollbar {
+  width: 8px; /* Set the width of the scrollbar */
+}
 
-.mega-menu {
+/* Track */
+::-webkit-scrollbar-track {
+  background: inherit;
+  width: 3px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Corner */
+::-webkit-scrollbar-corner {
+  background: #f1f1f1;
+}
+
+.mega-menu,
+.mega-menu2 {
   background: transparent;
   position: relative;
-  margin-top: 20px;
   box-shadow: none;
   border-radius: 0;
   max-height: 480px;
@@ -340,15 +383,18 @@ $flag: '/images/flag-logo.png';
     background: none;
   }
   .container.max-md {
-    max-width: 960px
+    max-width: 960px;
   }
 }
-
+.mega-menu2 {
+  @include palette-background-paper;
+  max-height: 91.5vh;
+}
 .thumb-menu {
   width: 200px;
   height: 78px;
   border-radius: $rounded-small;
-  margin: spacing(0, 1, 2)
+  margin: spacing(0, 1, 2);
 }
 
 .button-item {
@@ -374,7 +420,10 @@ $flag: '/images/flag-logo.png';
 .v-application.theme--dark {
   .button-item {
     &:after {
-      box-shadow: 0px 1px 3px 0px rgba(64, 64, 64, 1), 0px 1px 1px 0px rgba(42, 42, 42, 1), 0px 2px 1px -1px rgba(20, 20, 20, 1)
+      box-shadow:
+        0px 1px 3px 0px rgba(64, 64, 64, 1),
+        0px 1px 1px 0px rgba(42, 42, 42, 1),
+        0px 2px 1px -1px rgba(20, 20, 20, 1);
     }
   }
 }
@@ -391,7 +440,7 @@ $flag: '/images/flag-logo.png';
   text-transform: uppercase;
   font-weight: $font-bold;
   font-size: 11px;
-  @include use-theme(color, $palette-primary-dark, $palette-primary-light)
+  @include use-theme(color, $palette-primary-dark, $palette-primary-light);
 }
 
 /* Search */
@@ -444,12 +493,12 @@ $flag: '/images/flag-logo.png';
   width: 100%;
   position: fixed;
   z-index: 50;
-  height: 100%
+  height: 100%;
 }
 
 .hamburger {
   padding: 0;
-  margin: spacing(0, 1)
+  margin: spacing(0, 1);
 }
 
 .hamburger-logo {
@@ -462,7 +511,7 @@ $flag: '/images/flag-logo.png';
   z-index: 90;
   min-width: 300px;
   @include breakpoints-down(xs) {
-    width: 100% !important
+    width: 100% !important;
   }
   .menu {
     padding: spacing(12, 5, 2, 5);
@@ -494,7 +543,7 @@ $flag: '/images/flag-logo.png';
           color: $palette-primary-main;
           background: none;
           &:before {
-            width: 100%
+            width: 100%;
           }
         }
       }
@@ -508,23 +557,24 @@ $flag: '/images/flag-logo.png';
   }
   .divider-sidebar {
     background: rgba(255, 255, 255, 0.2);
-    margin: spacing(3, 0)
+    margin: spacing(3, 0);
   }
 }
 
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  opacity: 0
+  opacity: 0;
 }
 
 .nuxt-link-active {
-  color: blue !Important
+  color: blue !important;
 }
 
 .nuxt-link-exact-active {
-  color: orange !important
+  color: orange !important;
 }
 
 .current {
@@ -533,5 +583,5 @@ $flag: '/images/flag-logo.png';
 }
 
 .arrow-icon {
-  @include rtl-flip
+  @include rtl-flip;
 }
