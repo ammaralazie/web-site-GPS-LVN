@@ -421,10 +421,10 @@ export default () => {
       name_app: 'GPS LVN',
       created_app: 'Create your own tracking app',
       section82:
-        'If you have any questions regarding privacy while using the Application, or have questions about our practices, please contact us via email at info@gpslvn.com.',
+        'If you have any questions regarding privacy while using the Application, or have questions about our practices, please contact us via email at privacy@gpslvn.com.',
       section81: '12 CONTACT US',
       section80:
-        'By using the Application, you are consenting to our processing of your information as set forth in this Privacy Policy now and as amended by us. “Processing,” means using cookies on a computer/ hand held device or using or touching information in any way, including, but not limited to, collecting,     storing, deleting, using, combining and       disclosing information, all of which activities will take place in the United States.If you reside outside the United States your information will be transferred, processed and stored there under United States privacy standards.',
+        'By using the Application, you are consenting to our processing of your information as set forth in this Privacy Policy now and as amended by us. “Processing,” means using cookies on a computer/ hand held device or using or touching information in any way, including, but not limited to, collecting,     storing, deleting, using, combining and       disclosing information, all of which activities will take place in the Iraqi Ministry of Communications.If you reside outside the Iraq your information will be transferred, processed and stored there under Iraq privacy standards.',
       section79: '11 YOUR CONSENT',
       section78:
         'This Privacy Policy may be updated from time to time for any reason. We will notify each paid subscriber of any changes to our Privacy Policy at the email address that was provided during the purchasing process.You are advised to consult this Privacy Policy regularly for any changes, as continued use is deemed approval of all changes.',
@@ -433,12 +433,12 @@ export default () => {
         'We are concerned about safeguarding the confidentiality of your information. We provide physical, electronic, and procedural safeguards to protect information we process and maintain.For example, we limit access to this information to authorized employees and contractors who need to know that information in order to operate, develop or improve our Application.Please be aware that, although we endeavor to provide reasonable security for information we process and maintain, no security system can prevent all potential security breaches.',
       section75: '9 SECURITY',
       section74:
-        'We do not use the Application to knowingly solicit data from or market to children under the age of 18. If a parent or guardian becomes aware that his or her child has provided us with information without their consent, he or she should contact us at info@gpslvn.com',
+        'We do not use the Application to knowingly solicit data from or market to children under the age of 18. If a parent or guardian becomes aware that his or her child has provided us with information without their consent, he or she should contact us at privacy@gpslvn.com',
       section73: '8 CHILDREN',
       section72:
         ' When we have no ongoing legitimate business need to process your personal information, we will either delete or anonymize it, or, if this is not possible(for example, because your personal information has been stored in backup archives), then we will securely store your personal information and isolate it from any further processing until deletion is possible.',
       section71:
-        ' We will retain some User Provided data for as long as you use the Application and for a reasonable time thereafter.If you’d like us to delete User Provided Data that you have provided via the Application, please contact us at info@timeero.com and we will respond in a reasonable time.Please note that some or all of the User Provided Data may be required in order for the Application to function properly.',
+        ' We will retain some User Provided data for as long as you use the Application and for a reasonable time thereafter.If you’d like us to delete User Provided Data that you have provided via the Application, please contact us at privacy@gpslvn.com and we will respond in a reasonable time.Please note that some or all of the User Provided Data may be required in order for the Application to function properly.',
       section70: '7 DATA RETENTION POLICY, MANAGING YOUR INFORMATION',
       section69:
         'Opting out of email marketing: You can unsubscribe from our marketing email list at any time by clicking on the unsubscribe link in the emails that we send or by contacting us using the details provided below.You will then be removed from the marketing email list – however, we will still need to send you service- related emails that are necessary for the administration and use of your account.You can also request to opt - out via email, at info @gpslvn.com',
@@ -454,12 +454,12 @@ export default () => {
       section63:
         'GPS LVN LLC is responsible for the processing of personal information it receives, under the Privacy Shield Framework, and subsequently transfers to a third party acting as an agent on its behalf.',
       section62:
-        'GPS LVN LLC complies and will continue to comply with the EU-U.S. Privacy Shield Framework as set forth by the U.S.Department of Commerce regarding the collection, use, and retention of personal information transferred from the European Union to the United States and has certified its compliance with it.As such, GPS LVN LLC is committed to subjecting all personal information received from European Union(EU) member countries, in reliance on the Privacy Shield Framework, to the Framework’s applicable Principles.To learn more about the Privacy Shield Framework, visit the U.S.Department of Commerce’s Privacy Shield List.',
+        'GPS LVN LLC complies and will continue to comply with the EU-U.S. Privacy Shield Framework as set forth by the U.S.Department of Commerce regarding the collection, use, and retention of personal information transferred from the European Union to the Iraq and has certified its compliance with it.As such, GPS LVN LLC is committed to subjecting all personal information received from European Union(EU) member countries, in reliance on the Privacy Shield Framework, to the Framework’s applicable Principles.To learn more about the Privacy Shield Framework, visit the U.S.Department of Commerce’s Privacy Shield List.',
       section61: 'EU-U.S. Privacy Shield Framework:',
       section60:
-        'If you are a resident in the European Economic Area, then these countries may not have data protectionor other laws as comprehensive as those in your country.We will always take all necessary measures to protect your personal information in accordance with our privacy policy and applicable law.',
+        'If you are a resident in the European Economic Area, then these countries may not have data protectionor other laws as comprehensive as those in Iraq .We will always take all necessary measures to protect your personal information in accordance with our privacy policy and applicable law.',
       section59:
-        'Our servers are hosted in United States. Anyone accessing our sites or Applications from outside United States, should be aware that their information may be transferred to, stored, and processed by us in our facilities and by those third parties with whom we may share your personal information, in United States, and other countries.',
+        'Our servers are hosted in Iraq. Anyone accessing our sites or Applications from outside Iraq, should be aware that their information may be transferred to, stored, and processed by us in our facilities and by those third parties with whom we may share your personal information, in Iraq, and other countries.',
       section58:
         'We may transfer, store, and process your information in countries other than your own.',
       section57: '5 WHERE IS YOUR INFORMATION STORED OR TRANSFERRED?',
@@ -507,7 +507,7 @@ export default () => {
         'Data access requires short-lived JWT tokens managed by Auth0.',
       section31: '2 Access Control:',
       section30:
-        '1 Data Storage: Our infrastructure resides in France, hosted across OVH and AWS. All communication issecurely managed using HTTPS protocol, with further protection from Cloudflare, AWS, and Windows in-built security tools.',
+        '1 Data Storage: Our infrastructure resides in Iraq, hosted across OVH and AWS. All communication issecurely managed using HTTPS protocol, with further protection from Cloudflare, AWS, and Windows in-built security tools.',
       section29: 'Data Storage and Management',
       section28:
         'Data collected via GPS LVN SDK belongs to a product owner (Customer).',

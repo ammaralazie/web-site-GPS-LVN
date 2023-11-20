@@ -342,49 +342,49 @@ export const state = () => ({
     {
       title: 'Last Mile Delivery',
       discription:
-        'Streamline the final leg of the delivery process for faster, more efficient deliveries.​',
+        'Streamline the final leg of the delivery process for faster, more efficient deliveries.',
       icon: 'mdi-go-kart-track'
     },
     {
       title: 'Driver App',
       discription:
-        'Track the live location of any driver to ensure they are following the best routes. Send them new customer bookings so they can update their routes in real time.​',
+        'Track the live location of any driver to ensure they are following the best routes. Send them new customer bookings so they can update their routes in real time.',
       icon: 'mdi-map-marker'
     },
     {
       title: 'Route Optimization',
       discription:
-        'Find the fastest routes for every booking location to improve your business efficiency and reduce operational costs.​',
+        'Find the fastest routes for every booking location to improve your business efficiency and reduce operational costs.',
       icon: 'mdi-router-wireless'
     },
     {
       title: 'Dispatch & Delivery Planning',
       discription:
-        'Plan and dispatch the fastest journey for your fleet, in only minutes.​​',
+        'Plan and dispatch the fastest journey for your fleet, in only minutes.',
       icon: 'mdi-map-legend'
     },
     {
       title: 'Proof of Delivery',
       discription:
-        'An easier way to capture a client’s confirmation of a completed booking or delivery. Let your drivers capture an e-signature and photo proof directly from an iPhone or Android device.​​',
+        'An easier way to capture a client’s confirmation of a completed booking or delivery. Let your drivers capture an e-signature and photo proof directly from an iPhone or Android device.',
       icon: 'mdi-home-map-marker'
     },
     {
       title: 'Real Time Tracking',
       discription:
-        'You can share your trip status and live location with your customers, using a single link, to let them know where you are and when you’re going to arrive.​​',
+        'You can share your trip status and live location with your customers, using a single link, to let them know where you are and when you’re going to arrive.',
       icon: 'mdi-map-clock-outline'
     },
     {
       title: 'Route Planning App',
       discription:
-        'Build the most efficient routes increasing efficiency, improved customer satisfaction and cost savings.​​​',
+        'Build the most efficient routes increasing efficiency, improved customer satisfaction and cost savings.',
       icon: 'mdi-map-search-outline'
     },
     {
       title: 'Driver Ratings',
       discription:
-        'Streamline the final leg of the delivery process for faster, more efficient deliveries.​.​​​',
+        'Streamline the final leg of the delivery process for faster, more efficient deliveries.',
       icon: 'mdi-go-kart-track'
     }
   ]

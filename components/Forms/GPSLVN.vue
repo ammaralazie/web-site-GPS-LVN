@@ -1,10 +1,10 @@
 <template>
   <div class="page-wrap">
-    <v-snackbar :timeout="4000" :color="snackbar.color" bottom right v-model="snackbar.run" class="notification">
+    <v-snackbar :timeout="4000" color="success" bottom right v-model="snackbar" class="notification">
       <div class="action">
-        {{ $t(snackbar.text) }}
+        Message Sent
       </div>
-      <v-btn v-if="$i18n.locale != 'ar'" text icon @click="snackbar.run = false">
+      <v-btn text icon @click="snackbar = false">
         <v-icon>mdi-close</v-icon>
       </v-btn>
     </v-snackbar>
@@ -43,21 +43,7 @@
               </v-col>
             </v-row>
             <div class="btn-area">
-              <!-- <div class="form-control-label">
-                <v-checkbox
-                  v-model="checkbox"
-                  color="primary"
-                  :rules="[v => !!v || 'You must agree to continue!']"
-                  :label="$t('common.form_terms')"
-                  required
-                />
-                <span>
-                  <a href="#" class="link">
-                    {{ $t('common.form_privacy') }}
-                  </a>
-                </span>
-              </div> -->
-              <v-btn :loading="loading" :block="isMobile" color="primary" @click="validate" large>
+              <v-btn :block="isMobile" color="primary" @click="validate" large>
                 {{ $t('common.form_send') }}
               </v-btn>
             </div>
@@ -81,11 +67,7 @@ export default {
   data() {
     return {
       valid: true,
-      snackbar: {
-        run: true,
-        color: '',
-        text: ''
-      },
+      snackbar: false,
       name: '',
       nameRules: [v => !!v || 'Name is required'],
       email: '',
@@ -103,18 +85,14 @@ export default {
       checkbox: false,
       logo: logo,
       brand: brand,
-      routeLink: link,
-      loading: false
+      routeLink: link
     }
   },
   methods: {
     async validate() {
-      console.log('this.$refs.form : ', this.$refs.form)
-
       if (this.$refs.form.validate()) {
-        this.loading = true
-        const resulet = await this.$axios.post(
-          '/send_message',
+        const resulet = this.$axios.$post(
+          'send_message',
           filterNull({
             name_sender: this.name,
             email_sender: this.email,
@@ -123,28 +101,16 @@ export default {
             company_name: this.company,
             phone: this.phone
           })
-        ) // /result
-
-        if (resulet?.data?.success) {
-          this.snackbar = {
-            run: true,
-            color: 'success',
-            text: 'Message sent'
-          }
-          this.$refs.form.reset()
-          this.$refs.form.resetValidation()
-        } else {
-          this.snackbar = {
-            run: true,
-            color: 'error',
-            text: 'Same things wrong'
-          }
-        } // /if
-
-        this.loading = false
-      } // /if
+        )
+        this.snackbar = true
+        this.email = ''
+        this.message = ''
+        this.company = ''
+        this.phone = ''
+        this.name = ''
+      }
     }
-  }, // /validate
+  },
   computed: {
     isMobile() {
       const xsDown = this.$store.state.breakpoints.xsDown

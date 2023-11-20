@@ -1,19 +1,37 @@
 <template>
   <fragment>
     <v-list dense>
-      <v-list-item
-        v-for="(item, index) in menuPrimary"
-        :key="index"
-        :href="singleNav ? item.link : '/' + item.link"
-        :class="{ current: curURL === (curOrigin+langPath+item.link)}"
-        link
-      >
+      <v-list-group class="group-child">
+        <template #activator>
+          <v-list-item class="has-child">
+            <v-list-item-title class="menu-list">
+              {{ $t('common.header_products') }}
+            </v-list-item-title>
+          </v-list-item>
+        </template>
+        <v-list>
+          <v-list-item link v-for="(product, index) in products" :key="index">
+            <v-row>
+              <v-col cols="12" :class="index != (products.length - 1) ? 'mb-1 d-flex' : 'd-flex'">
+                <div class="text-caption">
+                  {{ $t(product.title) }}
+                </div>
+              </v-col>
+            </v-row>
+          </v-list-item>
+        </v-list>
+      </v-list-group>
+
+      <v-list-item v-for="(item, index) in menuPrimary" :key="index" :href="singleNav ? item.link : '/' + item.link"
+        :class="{ current: curURL === (curOrigin + langPath + item.link) }" link>
         <v-list-item-content>
           <v-list-item-title class="menu-list">
-            {{ $t('saas2.header_'+item.name) }}
+            {{ $t('saas2.header_' + item.name) }}
           </v-list-item-title>
         </v-list-item-content>
       </v-list-item>
+
+      <!-- inne  -->
       <v-list-group class="group-child">
         <template #activator>
           <v-list-item class="has-child">
@@ -22,20 +40,13 @@
             </v-list-item-title>
           </v-list-item>
         </template>
-        <v-list
-          v-for="(subitem, index) in menuSecondary"
-          :key="index"
-        >
+        <v-list v-for="(subitem, index) in menuSecondary" :key="index">
           <v-subheader class="title-mega">{{ subitem.name }}</v-subheader>
           <v-list-item-group>
-            <v-list-item
-              v-for="(item, index) in subitem.child"
-              :key="index"
-              :href="item.link"
-              :class="{ current: curURL === (curOrigin+langPath+item.link)}"
-            >
+            <v-list-item v-for="(item, index) in subitem.child" :key="index" :href="item.link"
+              :class="{ current: curURL === (curOrigin + langPath + item.link) }">
               <v-list-item-content>
-                <v-list-item-title class="menu-list" v-text="$t('common.header_'+item.name)" />
+                <v-list-item-title class="menu-list" v-text="$t('common.header_' + item.name)" />
               </v-list-item-content>
             </v-list-item>
           </v-list-item-group>
@@ -44,15 +55,10 @@
     </v-list>
     <v-divider />
     <v-list dense>
-      <v-list-item
-        v-for="(item, index) in ['login', 'register']"
-        :key="index"
-        :href="link.saas2[item]"
-        :class="{ current: curURL === (curOrigin+langPath+item)}"
-        link
-      >
+      <v-list-item v-for="(item, index) in ['login', 'register']" :key="index" :href="link.saas2[item]"
+        :class="{ current: curURL === (curOrigin + langPath + item) }" link>
         <v-list-item-content>
-          <v-list-item-title class="menu-list">{{ $t('common.header_'+item) }}</v-list-item-title>
+          <v-list-item-title class="menu-list">{{ $t('common.header_' + item) }}</v-list-item-title>
         </v-list-item-content>
       </v-list-item>
     </v-list>
@@ -73,13 +79,16 @@ export default {
       isOpen: false,
       curURL: '',
       curOrigin: '',
-      langPath: ''
+      langPath: '',
+      products: this.$store.state.products
     }
   },
   mounted() {
     this.curURL = window.location.href
     this.curOrigin = window.location.origin
     this.langPath = '/' + this.$i18n.locale
+
+    console.log('products : ', this.products)
   },
   props: {
     menuPrimary: {

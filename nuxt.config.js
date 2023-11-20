@@ -157,6 +157,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/axios.js',
     '~/plugins/lottie-vue-player.client.js',
     '~/store/index.js',
     '~/plugins/vue-fragment-config',
@@ -199,7 +200,8 @@ export default {
     ['nuxt-gmaps', { key: '' }],
     '@nuxtjs/i18n',
     '@nuxtjs/sitemap',
-    '@nuxtjs/robots'
+    '@nuxtjs/robots',
+    '@nuxtjs/axios'
   ],
   i18n: {
     locales: languages,
@@ -214,17 +216,10 @@ export default {
     },
     langDir: 'static/lang/'
   },
-  /*
-  ** vuetify module configuration
-  ** https://github.com/nuxt-community/vuetify-module
-  */
   vuetify: {
     customVariables: ['~/assets/styles.scss'],
     optionsPath: './config/vuetify.options.js'
   },
-  /*
-  ** Render configuration
-  */
   render: {
     bundleRenderer: {
       directives: {
@@ -242,9 +237,6 @@ export default {
       }
     }
   },
-  /*
-  ** Build configuration
-  */
   build: {
     /*
     ** You can extend webpack config here
@@ -271,9 +263,6 @@ export default {
       //      }
     }
   },
-  /*
-  ** Page Layout transition
-  */
   layoutTransition: {
     name: 'layout',
     mode: 'out-in',
@@ -284,10 +273,6 @@ export default {
       console.log('afterLeave', el)
     }
   },
-  /*
-  ** Application Port
-  */
-
   sitemap: {
     path: '/sitemap.xml', // The path where the sitemap will be generated
     hostname: 'https://sas.gpslvn.com', // The full URL of your website

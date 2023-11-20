@@ -14,7 +14,7 @@
 </style>
 
 <script>
-import * as cookies from "vue-cookies"
+import * as cookies from 'vue-cookies'
 export default {
   data() {
     return {
@@ -23,6 +23,10 @@ export default {
       longitude: null
     }
   }, // /data
+  created() {
+    const useCookie = JSON.parse(cookies.get('use_cookie')) || false
+    if (useCookie) this.snackbar = false
+  },
   methods: {
     // this function for eccept on use cookie
     useCookie: function() {

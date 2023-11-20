@@ -36,15 +36,18 @@
             </v-expansion-panel>
           </v-expansion-panels>
           <v-row v-if="isDesktop" justify="space-around">
-            <v-col v-for="(footer, index) in footers" :key="index" class="pa-4 site-map-item">
+            <v-col v-for="(footer, headIndex) in footers" :key="headIndex" class="pa-4 site-map-item">
               <h6 class="title mb-4">
                 {{ $t('common.footer_' + footer.title) }}
               </h6>
               <ul>
                 <li v-for="(item, index) in footer.description" :key="index">
-                  <nuxt-link :to="`/${lang}/${footer.link[index]}`">
+                  <nuxt-link v-if="headIndex != 1" :to="`/${lang}/${footer.link[index]}`">
                     {{ $t("saas2." + item) }}
                   </nuxt-link>
+                  <nuxt-link v-else :to="`/${lang}/${footer.link[index]}`">
+                      {{ $t(item) }}
+                    </nuxt-link>
                 </li>
               </ul>
             </v-col>
@@ -105,14 +108,19 @@ export default {
       {
         title: 'resources',
         description: [
-          'safe-driving',
-          'eco-driving',
-          'fleet-tracker',
-          'insights',
-          'in-vehicle-data',
-          'driver-engagements'
+          'Fleet Management Software',
+          'Delivery Management Software',
+          'Asset and Device GPS Tracking',
+          'Last Mile Delivery',
+          'Driver App'
+          //'Route Optimization'
+          // 'Dispatch & Delivery Planning',
+          // 'Proof of Delivery',
+          // 'Real Time Tracking',
+          // 'Route Planning App',
+          // 'Driver Ratings'
         ],
-        link: ['#', '#', '#', '#', '#', '#']
+        link: ['#', '#', '#', '#', '#']
       },
       {
         title: 'legal',

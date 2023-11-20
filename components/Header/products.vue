@@ -11,8 +11,8 @@
                 </v-col>
                 <v-col cols="9">
                   <p class="px-1" style="display: grid;">
-                    <strong class="text-title mb-2">{{ product.title }}</strong>
-                    {{ product.discription }}
+                    <strong class="text-title mb-2">{{ $t(product.title) }}</strong>
+                    {{ $t(product.discription) }}
                   </p>
                 </v-col>
               </v-row>
@@ -25,8 +25,6 @@
 </template>
 
 <script>
-import HeaderWithoutMenu from '~/components/Header/header-without-menu.vue'
-import Footer from '~/components/Footer'
 export default {
   data() {
     return {
@@ -35,11 +33,6 @@ export default {
   }, // /data
   mounted() {
     console.log('this page : ', this.products)
-  },
-  components: {
-    HeaderWithoutMenu,
-    // eslint-disable-next-line vue/no-unused-components
-    'main-footer': Footer
   }
 }
 </script>

@@ -32,6 +32,7 @@
 		"@babel/preset-env": "7.14.1",
 		"@chenfengyuan/vue-qrcode": "1",
 		"@lottiefiles/vue-lottie-player": "^1.1.0",
+		"@nuxtjs/axios": "^5.13.6",
 		"@nuxtjs/eslint-config": "^5.0.0",
 		"@nuxtjs/html-minifier": "^0.1.2",
 		"@nuxtjs/i18n": "^7.0.2",
