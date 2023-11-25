@@ -322,70 +322,89 @@ export const state = () => ({
   },
   products: [
     {
+      id: 1,
       title: 'Fleet Management Software',
       discription:
         'Monitor your fleet operations, enabling you to reduce costs and improve fleet efficiency.',
       icon: 'mdi-car-multiple'
     },
     {
+      id: 2,
       title: 'Delivery Management Software',
       discription:
         'Make every booking simple and efficient. Send your drivers the best routes with accurate ETAs and notifications for your customers.',
       icon: 'mdi-bank-transfer'
     },
     {
+      id: 3,
       title: 'Asset and Device GPS Tracking',
       discription:
         'Track your assets using a powerful GPS tracking device that records the exact location of your assets throughout their day-to-day use.',
       icon: 'mdi-monitor-dashboard'
     },
     {
+      id: 4,
       title: 'Last Mile Delivery',
       discription:
         'Streamline the final leg of the delivery process for faster, more efficient deliveries.',
       icon: 'mdi-go-kart-track'
     },
     {
+      id: 5,
       title: 'Driver App',
       discription:
         'Track the live location of any driver to ensure they are following the best routes. Send them new customer bookings so they can update their routes in real time.',
       icon: 'mdi-map-marker'
     },
     {
+      id: 6,
       title: 'Route Optimization',
       discription:
         'Find the fastest routes for every booking location to improve your business efficiency and reduce operational costs.',
       icon: 'mdi-router-wireless'
     },
     {
+      id: 7,
       title: 'Dispatch & Delivery Planning',
       discription:
         'Plan and dispatch the fastest journey for your fleet, in only minutes.',
       icon: 'mdi-map-legend'
     },
     {
+      id: 8,
       title: 'Proof of Delivery',
       discription:
         'An easier way to capture a client’s confirmation of a completed booking or delivery. Let your drivers capture an e-signature and photo proof directly from an iPhone or Android device.',
       icon: 'mdi-home-map-marker'
     },
     {
+      id: 9,
       title: 'Real Time Tracking',
       discription:
         'You can share your trip status and live location with your customers, using a single link, to let them know where you are and when you’re going to arrive.',
       icon: 'mdi-map-clock-outline'
     },
     {
+      id: 10,
       title: 'Route Planning App',
       discription:
         'Build the most efficient routes increasing efficiency, improved customer satisfaction and cost savings.',
       icon: 'mdi-map-search-outline'
     },
     {
+      id: 11,
       title: 'Driver Ratings',
       discription:
         'Streamline the final leg of the delivery process for faster, more efficient deliveries.',
       icon: 'mdi-go-kart-track'
     }
-  ]
+  ],
+  openNavMobile: 1
 })
+
+export const mutations = {
+  openNavMobile(state) {
+    console.log('openNavMobile mutation is working .....')
+    state.openNavMobile += 1
+  }
+}

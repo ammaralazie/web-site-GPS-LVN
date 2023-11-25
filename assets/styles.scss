@@ -45,6 +45,10 @@ body {
   background: transparent;
 }
 
-.logo{
+.logo {
   white-space: nowrap;
+}
+.nuxtLink {
+  text-decoration: unset;
+  color: unset;
 }

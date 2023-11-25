@@ -10,12 +10,12 @@
         </v-col>
         <v-col cols="12" lg="6" md="6" sm="12" xs="12">
           <v-row>
-            <v-col class="d-flex align-center justify-end">
+            <v-col :class="!isMobile ? 'd-flex align-center justify-end' : 'd-flex align-center justify-center'">
               <img width="200px" src="images/gpslvnLogo.png">
             </v-col>
             <v-col cols="12" lg="6" md="6" sm="12" xs="12">
-              <div class="text-h3">{{ $t('name_app') }}</div>
-              <div class="text-h4">{{ $t('location_tracking') }}</div>
+              <div :class="!isMobile ? 'text-h3' : 'text-h3 text-center'">{{ $t('name_app') }}</div>
+              <div :class="!isMobile ? 'text-h4':'text-h4 text-center'">{{ $t('location_tracking') }}</div>
             </v-col>
           </v-row>
           <v-row>
@@ -87,9 +87,10 @@
         <v-divider class="my-3"></v-divider>
       </no-ssr>
       <v-row class="mt-4">
-        <v-col class="leftItems" cols="12" lg="4" md="4" sm="12" xs="12">
+        <v-col class="leftItems" :style="isMobile ? 'display:unset' : ''" cols="12" lg="4" md="4" sm="12" xs="12">
           <no-ssr>
-            <v-card v-for="leftItem in leftItems" :key="leftItem" class="elevation-3">
+            <v-card :style="isMobile ? `margin-bottom: 10px` : ''" v-for="(leftItem, index) in leftItems" :key="leftItem"
+              class="elevation-3">
               <v-card-text>
                 <div :class="lang == 'en' ? 'text-h4 text-right d-flex' : 'text-h4 text-left d-flex'">
                   <div>
@@ -108,9 +109,10 @@
             <v-img src="images/Slice-39.png"></v-img>
           </no-ssr>
         </v-col>
-        <v-col class="rightItems" cols="12" lg="4" md="4" sm="12" xs="12">
+        <v-col class="rightItems" :style="isMobile ? 'display:unset' : ''" cols="12" lg="4" md="4" sm="12" xs="12">
           <no-ssr>
-            <v-card v-for="rightItem in rightItems" :key="rightItem" class="elevation-3">
+            <v-card :style="isMobile ? `margin-bottom: 10px` : ''" v-for="rightItem in rightItems" :key="rightItem"
+              class="elevation-3">
               <v-card-text>
                 <div :class="lang == 'en' ? 'text-h4 text-right d-flex' : 'text-h4 text-left d-flex'">
                   <no-ssr>

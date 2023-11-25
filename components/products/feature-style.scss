@@ -24,11 +24,11 @@
       transform: scale(2.5, 1);
     }
     @include breakpoints-up(xl) {
-      display: none;
+      display: none
     }
     @include breakpoints-down(xs) {
       transform: scale(0.5);
-      transform-origin: center left;
+      transform-origin: center left
     }
   }
 }
@@ -39,19 +39,19 @@
   margin-bottom: $spacing20;
   .desc {
     position: relative;
-    z-index: 60;
+    z-index: 60
   }
   &.last {
-    margin-bottom: $spacing10;
+    margin-bottom: $spacing10
   }
   @include breakpoints-down(md) {
-    margin-bottom: $spacing10;
+    margin-bottom: $spacing10
   }
   @include breakpoints-down(sm) {
-    text-align: center;
+    text-align: center
   }
   h6 {
-    margin-bottom: $spacing5;
+    margin-bottom: $spacing5
   }
 }
 
@@ -105,7 +105,7 @@
     @include shadow8;
     img {
       width: 100%;
-      display: block;
+      display: block
     }
   }
   &:before {
@@ -114,11 +114,7 @@
     width: calc(100% + 32px);
     height: calc(100% + 32px);
     opacity: 0.5;
-    @include use-theme(
-      background,
-      linear-gradient(120deg, $palette-primary-light, $palette-secondary-light),
-      linear-gradient(120deg, $palette-primary-dark, $palette-secondary-dark)
-    );
+    @include use-theme(background, linear-gradient(120deg, $palette-primary-light, $palette-secondary-light), linear-gradient(120deg, $palette-primary-dark, $palette-secondary-dark));
     position: absolute;
     top: -16px;
     left: -16px;
@@ -137,18 +133,14 @@
   }
 }
 
-.cardFeatuer {
-  &:hover {
+.cardFeatuer{
+  &:hover{
     cursor: pointer;
     transform: scale(1.01) translateY(-5px);
-    transition: transform 0.3s ease;
+    transition: transform .3s ease;
   }
 }
 
-.v-responsive__content {
+.v-responsive__content{
   margin: auto !important;
-}
-
-.customContainer {
-  width: 100%;
 }

@@ -14,26 +14,16 @@
           </v-col>
           <v-col cols="12" class="ma-auto d-flex justify-center">
             <v-btn text link :class="isDesktop ? 'mx-2' : ''">
-              View Demo
+              {{ $t('View Demo') }}
             </v-btn>
             <v-btn link color="success">
-              Buy Now
+              {{ $t("Buy Now") }}
             </v-btn>
           </v-col>
         </v-row>
-      <v-card>
-          <v-img
-            src="/images/lottie/vehicle-management-system.png"
-            class="align-center justify-center"
-            gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-            cover
-          >
-            <v-card-title fab class="text-white justify-center">
-              <YouTubeDialog></YouTubeDialog>
-            </v-card-title>
-          </v-img>
-
-            </v-card>
+      <v-card class="d-flex align-center justify-center">
+        <video-player playerStyles="customPlayerStyle" containerStyles="customContainer" src="https://www.youtube.com/watch?v=7rcRZAsm-A0" allow />
+      </v-card>
     </v-container>
 
       <!-- text-section -->
@@ -91,10 +81,10 @@
         </v-col>
         <v-col cols="12" class="ma-auto d-flex justify-center">
           <v-btn text link :class="isDesktop ? 'mx-2' : ''">
-            View Demo
+            {{ $t('View Demo') }}
           </v-btn>
           <v-btn link color="success">
-            Buy Now
+            {{ $t('Buy Now') }}
           </v-btn>
         </v-col>
       </v-row>
@@ -256,6 +246,9 @@
 
 <style lang="scss" scoped>
 @import './feature-style.scss';
+.customPlayerStyle {
+  width: 600px !important;
+}
 </style>
 
 <script>
@@ -264,9 +257,11 @@ import imgAPI from '~/static/images/imgAPI'
 import Title from '../../Title'
 import ImagSide from './ImagSide.vue'
 import TextSide from './TextSide.vue'
+import VideoPlayer from 'nuxt-video-player'
 
 export default {
   components: {
+    VideoPlayer,
     'title-main': Title,
     ImagSide,
     TextSide,

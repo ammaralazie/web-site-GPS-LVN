@@ -10,7 +10,9 @@
           </v-list-item>
         </template>
         <v-list>
-          <v-list-item link v-for="(product, index) in products" :key="index">
+          <a class="nuxtLink" v-for="(product, index) in products" :key="index"
+            :href="langPath + '/product/detail/' + product.id">
+          <v-list-item link>
             <v-row>
               <v-col cols="12" :class="index != (products.length - 1) ? 'mb-1 d-flex' : 'd-flex'">
                 <div class="text-caption">
@@ -19,6 +21,7 @@
               </v-col>
             </v-row>
           </v-list-item>
+          </a>
         </v-list>
       </v-list-group>
 
@@ -87,8 +90,6 @@ export default {
     this.curURL = window.location.href
     this.curOrigin = window.location.origin
     this.langPath = '/' + this.$i18n.locale
-
-    console.log('products : ', this.products)
   },
   props: {
     menuPrimary: {

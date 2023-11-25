@@ -282,6 +282,7 @@ export default {
     routes: Object.values(link.saas2)
   },
   server: {
-    port: 3012 // default: 3000
+    port: 3012, // default: 3000
+    host: '0.0.0.0'
   }
 }

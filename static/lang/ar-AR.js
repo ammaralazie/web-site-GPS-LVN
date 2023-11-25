@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import moment from 'moment'
 moment.locale('ar')
 
@@ -240,6 +241,400 @@ export default () => {
         news_readmore: 'اقرأ المزيد',
         footer_waiting: 'ماذا تنتظر؟'
       },
+      "Buy Now":"اشتري الآن",
+      "View Demo":"عرض تجريبي",
+      "Take the next step to streamline your delivery processes and improve efficiency. Sign up now for a free trial and see the difference it can make for your business.": "اتخذ الخطوة التالية لتبسيط عمليات التسليم وتحسين الكفاءة. قم بالتسجيل الآن للحصول على نسخة تجريبية مجانية وشاهد الفرق الذي يمكن أن يحدثه لعملك.",
+      "Transform Your Delivery Operations with GPS LVN's Fleet Management Software.": "قم بتحويل عمليات التسليم الخاصة بك باستخدام برنامج إدارة الأسطول الخاص بـ GPS LVN.",
+      "Take the next step to streamline your delivery processes and improve efficiency. Sign up now for a free trial and see the difference it can make for your business.": "اتخذ الخطوة التالية لتبسيط عمليات التسليم وتحسين الكفاءة. قم بالتسجيل الآن للحصول على نسخة تجريبية مجانية وشاهد الفرق الذي يمكن أن يحدثه لعملك.",
+      "Transform Your Delivery Operations with GPS LVN.": "قم بتحويل عمليات التسليم الخاصة بك باستخدام GPS LVN.",
+      "Take the next step to streamline your delivery processes and improve efficiency with GPS LVN's GPS tracking software. Sign up now for a free trial and see the difference it can make for your business.": "اتخذ الخطوة التالية لتبسيط عمليات التسليم وتحسين الكفاءة باستخدام برنامج التتبع GPS الخاص بـ GPS LVN. قم بالتسجيل الآن للحصول على نسخة تجريبية مجانية وشاهد الفرق الذي يمكن أن يحدثه لعملك.",
+      "Transform Your Delivery Operations with GPS LVN's GPS Tracking Software.": "قم بتحويل عمليات التسليم الخاصة بك باستخدام برنامج التتبع GPS الخاص بـ GPS LVN.",
+      "Take the next step to streamline your operations and improve driver productivity with GPS LVN's driver application software. Sign up now for a free trial and see the difference it can make for your business.": "اتخذ الخطوة التالية لتبسيط عملياتك وتحسين إنتاجية السائق باستخدام برنامج تطبيق السائق الخاص بـ GPS LVN. قم بالتسجيل الآن للحصول على نسخة تجريبية مجانية وشاهد الفرق الذي يمكن أن يحدثه لعملك.",
+      "Transform Your Fleet Operations with GPS LVN's Driver Application Software.": "قم بتحويل عمليات أسطولك باستخدام برنامج تطبيق برنامج التشغيل GPS LVN.",
+      "Take the next step to streamline your delivery processes and improve efficiency with GPS LVN's route optimization software. Sign up now for a free trial and see the difference it can make for your business.": "اتخذ الخطوة التالية لتبسيط عمليات التسليم وتحسين الكفاءة باستخدام برنامج تحسين المسار الخاص بـ GPS LVN. قم بالتسجيل الآن للحصول على نسخة تجريبية مجانية وشاهد الفرق الذي يمكن أن يحدثه لعملك.",
+      "Transform Your Delivery Operations with GPS LVN's Route Optimization Software.": "قم بتحويل عمليات التسليم الخاصة بك باستخدام برنامج تحسين الطريق الخاص بـ GPS LVN.",
+      "GPS LVN's Dispatch & Delivery Planning software provides everything you need to streamline your delivery process and improve your customer's delivery experience.": "يوفر برنامج تخطيط الإرسال والتسليم الخاص بـ GPS LVN كل ما تحتاجه لتبسيط عملية التسليم وتحسين تجربة التسليم لعميلك.",
+      "GPSLVN's all-in-one delivery management software provides everything you need to streamline your delivery process, including proof of delivery, real-time tracking, delivery notifications, and detailed reports and analytics.": "يوفر برنامج إدارة التسليم الشامل الخاص بـ GPSLVN كل ما تحتاجه لتبسيط عملية التسليم، بما في ذلك إثبات التسليم والتتبع في الوقت الفعلي وإشعارات التسليم والتقارير والتحليلات التفصيلية.",
+      "Start Improving Your Delivery Operations Today.": "ابدأ في تحسين عمليات التسليم لديك اليوم.",
+      "GPS LVN's real-time GPS tracking feature provides you with everything you need to gain full visibility of your vehicles and assets and optimize their usage.": "توفر لك ميزة تتبع نظام تحديد المواقع العالمي (GPS) في الوقت الفعلي من GPS LVN كل ما تحتاجه للحصول على رؤية كاملة لمركباتك وأصولك وتحسين استخدامها.",
+      "Start Improving Your Fleet Management Today.": "ابدأ في تحسين إدارة أسطولك اليوم.",
+      "Take the next step to optimize your driver journeys and improve customer service with GPS LVN's route planning app. Sign up now for a free trial and see the difference it can make for your business.": "اتخذ الخطوة التالية لتحسين رحلات السائق الخاصة بك وتحسين خدمة العملاء باستخدام تطبيق تخطيط الطريق الخاص بـ GPS LVN. قم بالتسجيل الآن للحصول على نسخة تجريبية مجانية وشاهد الفرق الذي يمكن أن يحدثه لعملك.",
+      "Transform Your Route Planning with GPS LVN's App.": "قم بتحويل تخطيط الطريق الخاص بك باستخدام تطبيق GPS LVN.",
+      "GPS LVN's driver rating software provides everything you need to track and measure driver performance, providing valuable insights into areas that need improvement.": "يوفر برنامج تصنيف السائقين الخاص بـ GPS LVN كل ما تحتاجه لتتبع أداء السائق وقياسه، مما يوفر رؤى قيمة في المجالات التي تحتاج إلى تحسين.",
+      "Start Improving Your Driver Performance Today.": "ابدأ في تحسين أداء سائقك اليوم.",
+      "Boost the security of customer goods for every delivery.": "تعزيز أمن بضائع العملاء لكل عملية تسليم.",
+      "Cut costs and improve driver efficiency.": "خفض التكاليف وتحسين كفاءة السائق.",
+      "Create specialized training programs based on driver performance.": "إنشاء برامج تدريبية متخصصة تعتمد على أداء السائق.",
+      "With driver performance data you can create specialized training programs.": "باستخدام بيانات أداء السائق، يمكنك إنشاء برامج تدريبية متخصصة.",
+      "Driver Training.": "تدريب السائقين.",
+      "Keep customers happy by minimizing the number of damaged items.": "حافظ على سعادة العملاء من خلال تقليل عدد العناصر التالفة.",
+      "Keep your drivers safe and reduce the possibility of accidents.": "حافظ على سلامة السائقين لديك وقلل من احتمالية وقوع حوادث.",
+      "Receive real-time alerts in the event of sharp turns, harsh braking and acceleration.": "احصل على تنبيهات في الوقت الفعلي في حالة المنعطفات الحادة والكبح الشديد والتسارع.",
+      "Track and enhance driver safety with real-time alerts.": "تتبع سلامة السائق وتعزيزها من خلال التنبيهات في الوقت الفعلي.",
+      "Driver Safety.": "سلامة السائق.",
+      "Improve fleet operations and cut down costs.": "تحسين عمليات الأسطول وخفض التكاليف.",
+      "Identify areas where drivers are excelling and areas where they need improvement.": "تحديد المجالات التي يتفوق فيها السائقون والمجالات التي يحتاجون إلى التحسين فيها.",
+      "Detailed insights into KPIs, such as idle time, speed and fuel usage.": "رؤى تفصيلية حول مؤشرات الأداء الرئيسية، مثل وقت الخمول والسرعة واستخدام الوقود.",
+      "Use driver performance analytics to track key performance indicators (KPIs) and identify what needs improvement.": "استخدم تحليلات أداء السائق لتتبع مؤشرات الأداء الرئيسية (KPIs) وتحديد ما يحتاج إلى تحسين.",
+      "Driver Performance Analytics.": "تحليلات أداء السائق.",
+      "Improve communication between drivers and customers.": "تحسين التواصل بين السائقين والعملاء.",
+      "Identify areas of improvement and reward good performance.": "تحديد مجالات التحسين ومكافأة الأداء الجيد.",
+      "Get customers to provide feedback and rate their driver's performance.": "اطلب من العملاء تقديم تعليقات وتقييم أداء سائقهم.",
+      "Improve driver performance with customer feedback.": "تحسين أداء السائق من خلال ملاحظات العملاء.",
+      "Driver Rating and Feedback.": "تقييم السائق وردود الفعل.",
+      "GPS LVN driver rating software allows you to track driver performance, so you can see what areas need improving. This data can be used to enhance fleet efficiency and customer satisfaction, while reducing accidents.": "يتيح لك برنامج تقييم السائقين GPS LVN تتبع أداء السائق، حتى تتمكن من معرفة المجالات التي تحتاج إلى تحسين. ويمكن استخدام هذه البيانات لتعزيز كفاءة الأسطول ورضا العملاء، مع تقليل الحوادث.",
+      "Improve driver performance and customer satisfaction.": "تحسين أداء السائق ورضا العملاء.",
+      "Leave more time to focus on other important tasks.": "اترك المزيد من الوقت للتركيز على المهام المهمة الأخرى.",
+      "Keep scheduling and planning within business hours.": "حافظ على الجدولة والتخطيط خلال ساعات العمل.",
+      "Our route planning app helps manage driver time more effectively, reducing late-night scheduling. Spend more time focusing on other business operations for ultimate efficiency.": "يساعد تطبيقنا لتخطيط الطريق على إدارة وقت السائق بشكل أكثر فعالية، مما يقلل من الجدولة في وقت متأخر من الليل. اقض المزيد من الوقت في التركيز على العمليات التجارية الأخرى لتحقيق الكفاءة القصوى.",
+      "Win back your time.": "استرجع وقتك.",
+      "Build trust and loyalty with customers by providing accurate ETAs.": "بناء الثقة والولاء مع العملاء من خلال توفير الوقت المتوقع للوصول الدقيق.",
+      "Track delivery progress and quickly resolve issues.": "تتبع تقدم التسليم وحل المشكلات بسرعة.",
+      "GPS LVN route planning app provides automatic ETA updates and real-time tracking, so you can give customers a better experience. Our route planning app lets businesses track delivery status, respond quickly to any issues, and provide accurate ETAs to customers.": "يوفر تطبيق تخطيط الطريق GPS LVN تحديثات تلقائية لوقت الوصول المتوقع وتتبعًا في الوقت الفعلي، حتى تتمكن من منح العملاء تجربة أفضل. يتيح تطبيق تخطيط المسار الخاص بنا للشركات تتبع حالة التسليم، والاستجابة بسرعة لأية مشكلات، وتوفير الوقت المتوقع للوصول الدقيق للعملاء.",
+      "Enhance customer service.": "تعزيز خدمة العملاء.",
+      "Cut down fuel costs, reduce vehicle wear and tear, and complete more successful deliveries.": "خفض تكاليف الوقود، وتقليل تآكل المركبات، وإكمال عمليات تسليم أكثر نجاحًا.",
+      "Minimize downtime and optimize driver journeys.": "تقليل وقت التوقف عن العمل وتحسين رحلات السائق.",
+      "GPS LVN route planning app optimizes driver journeys and minimizes downtime, saving your business money. With our app, businesses can save on fuel costs, reduce vehicle wear and tear, and complete more successful deliveries.": "يعمل تطبيق تخطيط الطريق GPS LVN على تحسين رحلات السائق وتقليل وقت التوقف عن العمل، مما يوفر أموال عملك. من خلال تطبيقنا، يمكن للشركات توفير تكاليف الوقود، وتقليل تآكل المركبات، وإكمال عمليات تسليم أكثر نجاحًا.",
+      "Cut costs.": "خفض التكاليف.",
+      "Better utilization of resources.": "استغلال أفضل للموارد.",
+      "Reduce fuel costs and time spent on the road.": "تقليل تكاليف الوقود والوقت الذي يقضيه على الطريق.",
+      "Build the most efficient routes using real-time weather and traffic data.": "أنشئ الطرق الأكثر كفاءة باستخدام بيانات الطقس وحركة المرور في الوقت الفعلي.",
+      "A route planning system that keeps you and your fleet on track at all times.": "نظام تخطيط الطريق الذي يبقيك أنت وأسطولك على المسار الصحيح في جميع الأوقات.",
+      "Boost your fleet efficiency with Route Planning software.": "عزز كفاءة أسطولك باستخدام برنامج تخطيط الطريق.",
+      "Easily plan and optimize your driver's journey with GPS LVN's route planning app, resulting in increased efficiency, improved customer satisfaction and cost savings.": "يمكنك تخطيط رحلة السائق وتحسينها بسهولة باستخدام تطبيق تخطيط الطريق الخاص بـ GPS LVN، مما يؤدي إلى زيادة الكفاءة وتحسين رضا العملاء وتوفير التكاليف.",
+      "Optimize your driver journeys and improve customer service.": "قم بتحسين رحلات السائق الخاصة بك وتحسين خدمة العملاء.",
+      "Have complete visibility over your delivery operations with real-time data.": "تمتع برؤية كاملة لعمليات التسليم الخاصة بك باستخدام البيانات في الوقت الفعلي.",
+      "Make last minute changes without disrupting your delivery schedule.": "قم بإجراء تغييرات في اللحظة الأخيرة دون تعطيل جدول التسليم الخاص بك.",
+      "Have complete visibility and control over your operations by monitoring the live location of your vehicles and deliveries. This is useful should you need to make changes on the fly, e.g. when there is unexpected traffic or a change in the delivery schedule.": "تمتع برؤية كاملة وتحكم في عملياتك من خلال مراقبة الموقع المباشر لمركباتك وعمليات التسليم الخاصة بك. يعد هذا مفيدًا إذا كنت بحاجة إلى إجراء تغييرات سريعة، على سبيل المثال. عندما تكون هناك حركة مرور غير متوقعة أو تغيير في جدول التسليم.",
+      "Last Mile Real-time tracking.": "تتبع الميل الأخير في الوقت الحقيقي.",
+      "Monitor the routes taken and optimize future routes to boost efficiency.": "مراقبة الطرق المتخذة وتحسين الطرق المستقبلية لتعزيز الكفاءة.",
+      "Create a timeline of where your vehicles and assets have been to see patterns and identify inefficiencies.": "أنشئ جدولًا زمنيًا للمكان الذي كانت فيه مركباتك وأصولك لرؤية الأنماط وتحديد أوجه القصور.",
+      "Review the previous movements of your vehicles and assets.": "قم بمراجعة الحركات السابقة لمركباتك وأصولك.",
+      "Historical Playback.": "التشغيل التاريخي.",
+      "Communicate with your drivers and oversee their performance.": "التواصل مع السائقين لديك والإشراف على أدائهم.",
+      "Track your vehicles and assets, schedule routine maintenance and monitor fuel consumption.": "تتبع المركبات والأصول الخاصة بك، وجدولة الصيانة الروتينية ومراقبة استهلاك الوقود.",
+      "Manage your fleet with GPS LAVN's all-in-one platform.": "قم بإدارة أسطولك باستخدام النظام الأساسي الشامل لنظام GPS LAVN.",
+      "Fleet Management.": "إدارة الأسطول.",
+      "Ensure your vehicles and assets are being used productively.": "تأكد من استخدام المركبات والأصول الخاصة بك بشكل منتج.",
+      "Track the location of your drivers to ensure efficient routes and timely deliveries.": "تتبع موقع برامج التشغيل الخاصة بك لضمان الطرق الفعالة والتسليم في الوقت المناسب.",
+      "Monitor the live location of your vehicles and assets so you know where they are and when they'll arrive.": "راقب الموقع المباشر لمركباتك وأصولك حتى تعرف مكانها ومتى ستصل.",
+      "Track the location and status of your vehicles and assets in real-time.": "تتبع موقع وحالة المركبات والأصول الخاصة بك في الوقت الحقيقي.",
+      "If you are delivering to your customers and they don’t know when you're arriving, you’re wasting your time and theirs. In a recent survey of 250 online shoppers, 82% of people wanted to track their delivery in real time.": "إذا كنت تقوم بالتوصيل إلى عملائك ولا يعرفون موعد وصولك، فأنت تضيع وقتك ووقتهم. في استطلاع حديث شمل 250 متسوقًا عبر الإنترنت، أراد 82% من الأشخاص تتبع عملية التسليم في الوقت الفعلي.",
+      "Gain full visibility of your vehicles and assets.": "احصل على رؤية كاملة لمركباتك وأصولك.",
+      "Identify patterns and make better decisions to improve your delivery process.": "تحديد الأنماط واتخاذ قرارات أفضل لتحسين عملية التسليم الخاصة بك.",
+      "Access detailed insights such as delivery times, customer feedback, routes via reporting and analytics.": "يمكنك الوصول إلى رؤى تفصيلية مثل أوقات التسليم وتعليقات العملاء والطرق عبر التقارير والتحليلات.",
+      "With GPS LVN, you can access valuable insights into your delivery operations with detailed reports and analytics.": "باستخدام GPS LVN، يمكنك الوصول إلى رؤى قيمة حول عمليات التسليم الخاصة بك من خلال التقارير والتحليلات التفصيلية.",
+      "Reduce the need for customer follow-ups by keeping them informed.": "تقليل الحاجة إلى متابعة العملاء من خلال إبقائهم على اطلاع.",
+      "Send real-time updates to customers and stakeholders on the whereabouts of their deliveries.": "إرسال تحديثات في الوقت الفعلي إلى العملاء وأصحاب المصلحة حول مكان تسليمهم.",
+      "Receive automated notifications so you know exactly where your drivers are at all times, making it easier to keep your customers informed.": "احصل على إشعارات تلقائية حتى تعرف بالضبط مكان تواجد السائقين لديك في جميع الأوقات، مما يسهل إبقاء عملائك على اطلاع.",
+      "Monitor driver locations to ensure efficient routes and on time deliveries.": "مراقبة مواقع السائقين لضمان الطرق الفعالة والتسليم في الوقت المحدد.",
+      "Access the live location of your drivers for ultimate transparency.": "قم بالوصول إلى الموقع المباشر لبرامج التشغيل الخاصة بك للحصول على الشفافية القصوى.",
+      "Real-time tracking lets you stay up to date with the status of your deliveries.": "يتيح لك التتبع في الوقت الفعلي البقاء على اطلاع بحالة عمليات التسليم الخاصة بك.",
+      "Delivery records are easily retrieved, managed and analyzed.": "يتم استرجاع سجلات التسليم وإدارتها وتحليلها بسهولة.",
+      "Signatures are electronically stored, providing a tamper-proof delivery record.": "يتم تخزين التوقيعات إلكترونيًا، مما يوفر سجل تسليم مقاومًا للتلاعب.",
+      "Electronic signature capture enables drivers to easily collect signatures from customers using their mobile device.": "يتيح التقاط التوقيع الإلكتروني للسائقين إمكانية جمع التوقيعات من العملاء بسهولة باستخدام أجهزتهم المحمولة.",
+      "Secure proof of delivery by capturing electronic signatures, improving delivery accuracy.": "إثبات آمن للتسليم من خلال التقاط التوقيعات الإلكترونية، وتحسين دقة التسليم.",
+      "Electronic Signature Capture.": "التقاط التوقيع الإلكتروني.",
+      "With GPS LVN, you can capture images and e-signatures to confirm a delivery's successful completion. This results in less paperwork, improved delivery accuracy and faster service!": "باستخدام GPS LVN، يمكنك التقاط الصور والتوقيعات الإلكترونية لتأكيد اكتمال عملية التسليم بنجاح. ويؤدي ذلك إلى تقليل الأعمال الورقية وتحسين دقة التسليم وخدمة أسرع!",
+      "Proof of delivery and so much more.": "إثبات التسليم وأكثر من ذلك بكثير.",
+      "Build trust with customers by keeping them informed.": "بناء الثقة مع العملاء من خلال إبقائهم على اطلاع.",
+      "Send real-time updates to customers and provide accurate ETAs.": "إرسال تحديثات في الوقت الفعلي إلى العملاء وتوفير الوقت المتوقع للوصول الدقيق.",
+      "Keep your customers a part of the delivery process with automated delivery notifications.": "اجعل عملائك جزءًا من عملية التسليم من خلال إشعارات التسليم التلقائية.",
+      "Delivery Notifications.": "إشعارات التسليم.",
+      "Identify patterns and make data-driven decisions to boost delivery efficiency.": "تحديد الأنماط واتخاذ القرارات المستندة إلى البيانات لتعزيز كفاءة التسليم.",
+      "Access delivery times, routes and customer feedback.": "الوصول إلى أوقات التسليم والطرق وتعليقات العملاء.",
+      "Receive detailed reports and analytics to gain valuable insight into your delivery operations.": "احصل على تقارير وتحليلات مفصلة للحصول على رؤية قيمة لعمليات التسليم الخاصة بك.",
+      "Reports and Analytics.": "التقارير والتحليلات.",
+      "Know when a driver has successfully completed a delivery.": "معرفة متى أكمل السائق عملية التسليم بنجاح.",
+      "Keep track of the location and status of your fleet in real-time.": "تتبع موقع وحالة الأسطول الخاص بك في الوقت الحقيقي.",
+      "Dynamically add last minute bookings or stops without disrupting your schedule.": "قم بإضافة حجوزات اللحظة الأخيرة أو التوقفات بشكل ديناميكي دون تعطيل جدولك الزمني.",
+      "Ensure your drivers are on the most efficient routes at all times.": "تأكد من أن السائقين لديك يسيرون على الطرق الأكثر كفاءة في جميع الأوقات.",
+      "Optimize delivery routes for your fleet in just minutes, saving you hours.": "قم بتحسين طرق التسليم لأسطولك في دقائق معدودة فقط، مما يوفر عليك ساعات.",
+      "Plan the most efficient delivery routes for your fleet using advanced algorithms that take into account traffic, road closures, weather conditions etc": "قم بتخطيط طرق التسليم الأكثر كفاءة لأسطولك باستخدام خوارزميات متقدمة تأخذ في الاعتبار حركة المرور وإغلاق الطرق والظروف الجوية وما إلى ذلك",
+      "All your bookings on autopilot.": "جميع حجوزاتك على الطيار الآلي.",
+      "GPS LVN's Dispatch & Delivery Planning systems lets you plan and dispatch the fastest journey for your fleet, in only minutes. Reduce the of hours of route planning and share accurate ETAs with customers.": "تتيح لك أنظمة تخطيط الإرسال والتسليم الخاصة بـ GPS LVN تخطيط وإرسال أسرع رحلة لأسطولك في دقائق معدودة فقط. تقليل ساعات تخطيط الطريق ومشاركة الوقت المتوقع للوصول الدقيق مع العملاء.",
+      "Improve the delivery experience and cut back operational costs.": "تحسين تجربة التسليم وخفض تكاليف التشغيل.",
+      "Make better decisions to improve efficiency.": "اتخاذ قرارات أفضل لتحسين الكفاءة.",
+      "See what's happening in your business.": "شاهد ما يحدث في عملك.",
+      "Track and analyze your delivery routes.": "تتبع وتحليل طرق التسليم الخاصة بك.",
+      "Track and analyze your routes with GPS LVN, to better understand your delivery operations and make more informed business decisions so you can improve fleet efficiency.": "قم بتتبع وتحليل مساراتك باستخدام GPS LVN، لفهم عمليات التسليم الخاصة بك بشكل أفضل واتخاذ قرارات عمل أكثر استنارة حتى تتمكن من تحسين كفاءة الأسطول.",
+      "Track and analyze your routes with GPS LVN's route optimization software.": "تتبع وتحليل مساراتك باستخدام برنامج تحسين المسار الخاص بـ GPS LVN.",
+      "Maintain your delivery schedule without disruption.": "حافظ على جدول التسليم الخاص بك دون انقطاع.",
+      "Enhance customer satisfaction with timely deliveries.": "تعزيز رضا العملاء من خلال عمليات التسليم في الوقت المناسب.",
+      "Re-route deliveries in real time.": "إعادة توجيه عمليات التسليم في الوقت الحقيقي.",
+      "Due to GPSLVN's dynamic re- routing functionality, you can easily re- route deliveries in the event of traffic delays or other delivery difficulties.This works without interfering with your delivery schedule so you can concentrate on getting products to customers.": "نظرًا لوظيفة إعادة التوجيه الديناميكية الخاصة بـ GPSLVN، يمكنك بسهولة إعادة توجيه عمليات التسليم في حالة حدوث تأخيرات في حركة المرور أو صعوبات أخرى في التسليم. ويعمل هذا دون التدخل في جدول التسليم الخاص بك حتى تتمكن من التركيز على إيصال المنتجات إلى العملاء.",
+      "Stay on schedule with dynamic re-routing.": "حافظ على الجدول الزمني مع إعادة التوجيه الديناميكي.",
+      "Improve customer satisfaction by arriving on time.": "تحسين رضا العملاء من خلال الوصول في الوقت المحدد.",
+      "Use resources more effectively.": "استخدام الموارد بشكل أكثر فعالية.",
+      "Complete more deliveries and increase business revenue.": "استكمال المزيد من عمليات التسليم وزيادة إيرادات الأعمال.",
+      "You can swiftly optimize many stops with GPS LVN's multi-stop routing capability. This helps you to complete more deliveries and raise the profitability of your business.": "يمكنك تحسين العديد من نقاط التوقف بسرعة باستخدام إمكانية التوجيه متعدد نقاط التوقف الخاصة بـ GPS LVN. يساعدك هذا على إكمال المزيد من عمليات التسليم وزيادة ربحية عملك.",
+      "Optimize routes for multiple stops with GPS LVN's route optimization software.": "قم بتحسين المسارات لمحطات توقف متعددة باستخدام برنامج تحسين المسار الخاص بـ GPS LVN.",
+      "Keep customers happy by delivering on time.": "إبقاء العملاء سعداء من خلال التسليم في الوقت المحدد.",
+      "Reduce travel time and fuel consumption.": "تقليل وقت السفر واستهلاك الوقود.",
+      "Use weather and traffic data to build the most efficient routes.": "استخدم بيانات الطقس وحركة المرور لبناء الطرق الأكثر كفاءة.",
+      "Utilizing current traffic and weather data, GPS LVN's route optimization algorithm creates the most efficient routes for your delivery to reduce travel time and fuel consumption. Our route optimization software keeps you ahead of traffic and continuously enhances your routes so that you may focus on other business-related tasks.": "باستخدام بيانات حركة المرور والطقس الحالية، تقوم خوارزمية تحسين المسار الخاصة بـ GPS LVN بإنشاء الطرق الأكثر كفاءة لتوصيلك لتقليل وقت السفر واستهلاك الوقود. يبقيك برنامج تحسين المسار الخاص بنا متقدمًا على حركة المرور ويعزز مساراتك باستمرار حتى تتمكن من التركيز على المهام الأخرى المتعلقة بالعمل.",
+      "Real-time Route Optimization.": "تحسين الطريق في الوقت الحقيقي.",
+      "GPS LVN's helps businesses streamline their delivery operations by designing the most efficient delivery routes for vehicles. This helps reduce costs and satisfies customer demand, promoting repeat business.": "يساعد GPS LVN الشركات على تبسيط عمليات التسليم من خلال تصميم طرق التسليم الأكثر كفاءة للمركبات. وهذا يساعد على تقليل التكاليف ويرضي طلب العملاء، ويعزز الأعمال المتكررة.",
+      "Reduce costs and increase efficiency with route optimization.": "خفض التكاليف وزيادة الكفاءة من خلال تحسين المسار.",
+      "Ensure deliveries are completed on time and resolve issues quickly.": "تأكد من اكتمال عمليات التسليم في الوقت المحدد وحل المشكلات بسرعة.",
+      "Track the location and status of your fleet.": "تتبع موقع وحالة الأسطول الخاص بك.",
+      "GPS LVN provides real-time tracking and automatic ETA updates, so businesses can see the location and progress of their fleet throughout the day.": "يوفر GPS LVN تتبعًا في الوقت الفعلي وتحديثات تلقائية لوقت الوصول المتوقع، حتى تتمكن الشركات من رؤية موقع أسطولها وتقدمه على مدار اليوم.",
+      "Monitor your fleet's location and progress.": "مراقبة موقع الأسطول الخاص بك والتقدم.",
+      "Have the most efficient routes planned for your team members in minutes.": "احصل على الطرق الأكثر كفاءة المخططة لأعضاء فريقك في دقائق.",
+      "Ensure team members complete more deliveries in less time.": "تأكد من قيام أعضاء الفريق بإكمال المزيد من عمليات التسليم في وقت أقل.",
+      "GPS LVN's driver application software plans the most efficient routes by taking into consideration driver availability, weather and traffic conditions, vehicle type and more.": "يخطط برنامج تطبيق السائق الخاص بـ GPS LVN للطرق الأكثر كفاءة من خلال الأخذ في الاعتبار توفر السائق، وظروف الطقس وحركة المرور، ونوع السيارة والمزيد.",
+      "Optimize your team's route.": "تحسين مسار فريقك.",
+      "Easy-to-use app available on iOS and Android.": "تطبيق سهل الاستخدام متوفر على نظامي iOS وAndroid.",
+      "Send bookings and deliveries to your team instantly.": "إرسال الحجوزات والتسليم إلى فريقك على الفور.",
+      "Send bookings or deliveries (we call these 'stops') to your team instantly, with our easy-to-use app available on both iOS and Android. This ensures that your team members access all the information they need to complete their stops successfully.": 'أرسل الحجوزات أو عمليات التسليم (نسميها "محطات التوقف") إلى فريقك على الفور، من خلال تطبيقنا سهل الاستخدام المتوفر على كل من iOS وAndroid. وهذا يضمن وصول أعضاء فريقك إلى جميع المعلومات التي يحتاجونها لإكمال توقفاتهم بنجاح.',
+      "Send bookings and deliveries to your team instantly.": "إرسال الحجوزات والتسليم إلى فريقك على الفور.",
+      "GPS LVN's driver application software increases efficiency and boosts customer satisfaction by optimizing your fleet operations. With real-time tracking, real-time ETA updates, and route optimization, our app enables businesses to send bookings or deliveries to your team instantly.": "يعمل برنامج تطبيق السائق الخاص بـ GPS LVN على زيادة الكفاءة وتعزيز رضا العملاء من خلال تحسين عمليات أسطولك. من خلال التتبع في الوقت الفعلي، وتحديثات الوقت المتوقع للوصول في الوقت الفعلي، وتحسين المسار، يمكّن تطبيقنا الشركات من إرسال الحجوزات أو التسليمات إلى فريقك على الفور.",
+      "Streamline your operations and improve driver productivity.": "تبسيط عملياتك وتحسين إنتاجية السائق.",
+      '“Because we deal with frozen pet food, it can defrost quite quickly. So if the customer is given an estimated delivery time, they can schedule their day around it. I always know which customers are using the live tracking because they arere often standing at the front of their house as I drive past.It works well." - Tayla Smith, Founder': '"نظرًا لأننا نتعامل مع أغذية الحيوانات الأليفة المجمدة، فيمكن أن تذوب بسرعة كبيرة. لذا، إذا تم إعطاء العميل وقتًا تقديريًا للتسليم، فيمكنه جدولة يومه وفقًا لذلك. أعرف دائمًا العملاء الذين يستخدمون التتبع المباشر لأنهم غالبًا ما يقفون أمام منزلهم أثناء القيادة. إنه يعمل بشكل جيد." - تايلا سميث، المؤسس',
+      "GPS LVN's driver application software increases efficiency and boosts customer satisfaction by optimizing your fleet operations. With real-time tracking, real-time ETA updates, and route optimization, our app enables businesses to send bookings or deliveries to your team instantly.": "يعمل برنامج تطبيق السائق الخاص بـ GPS LVN على زيادة الكفاءة وتعزيز رضا العملاء من خلال تحسين عمليات أسطولك. من خلال التتبع في الوقت الفعلي، وتحديثات الوقت المتوقع للوصول في الوقت الفعلي، وتحسين المسار، يمكّن تطبيقنا الشركات من إرسال الحجوزات أو التسليمات إلى فريقك على الفور.",
+      'Streamline your operations and improve driver productivity.': 'تبسيط عملياتك وتحسين إنتاجية السائق.',
+      '“Because we deal with frozen pet food, it can defrost quite quickly. So if the customer is given an estimated delivery time, they can schedule their day around it. I always know which customers are using the live tracking because they are often standing at the front of their house as I drive past. It works well." - Tayla Smith, Founder': `"نظرًا لأننا نتعامل مع أغذية الحيوانات الأليفة المجمدة، فيمكن أن تذوب بسرعة كبيرة. لذا، إذا تم إعطاء العميل وقتًا تقديريًا للتسليم، فيمكنه جدولة يومه وفقًا لذلك. أعرف دائمًا العملاء الذين يستخدمون التتبع المباشر لأنهم غالبًا ما يقفون أمام منزلهم أثناء القيادة. إنه يعمل بشكل جيد." - تايلا سميث، مؤسس`,
+      "How Happy Paws’ last mile delivery and customer experience improved with GPS LVN": "كيف تحسنت خدمة توصيل الميل الأخير وتجربة العملاء في Happy Paws باستخدام GPS LVN",
+      "Make quick and informed decisions to keep your deliveries in check.": "اتخذ قرارات سريعة ومستنيرة لمراقبة عمليات التسليم الخاصة بك.",
+      "See where your vehicles are throughout the day.": "معرفة أين المركبات الخاصة بك على مدار اليوم.",
+      "Make last minute adjustments without throwing off your schedule.": "قم بإجراء تعديلات اللحظة الأخيرة دون التخلص من جدولك الزمني.",
+      "GPS LVN provides real-time tracking of last-mile movements, so you have complete visibility and control over your delivery operations.": "يوفر GPS LVN تتبعًا فوريًا لحركات الميل الأخير، بحيث يكون لديك رؤية كاملة وتحكم في عمليات التسليم الخاصة بك.",
+      "Last Mile Real-time tracking.": "تتبع الميل الأخير في الوقت الحقيقي.",
+      "Inform customers the status of their delivery with real-time updates.": "أبلغ العملاء بحالة التسليم من خلال التحديثات في الوقت الفعلي.",
+      "Provide customers with flexibility and convenience to improve their experience.": "تزويد العملاء بالمرونة والراحة لتحسين تجربتهم.",
+      "Offer a variety of delivery options that cater to customers e.g. same day delivery, next-day delivery.": "تقديم مجموعة متنوعة من خيارات التسليم التي تلبي احتياجات العملاء على سبيل المثال. التسليم في نفس اليوم، التسليم في اليوم التالي.",
+      "A key benefit of GPS LVN's last mile delivery is the ability to customize your service to accommodate customers.": "تتمثل الميزة الرئيسية لتسليم الميل الأخير في GPS LVN في القدرة على تخصيص الخدمة الخاصة بك لاستيعاب العملاء.",
+      "Tailored to your business delivery requirements.": "مصممة خصيصًا لتلبية متطلبات تسليم أعمالك.",
+      "Complete more tasks in less time.": "أكمل المزيد من المهام في وقت أقل.",
+      "Save more time by automating and streamlining the delivery process.": "توفير المزيد من الوقت عن طريق أتمتة وتبسيط عملية التسليم.",
+      "Provide customers with full visibility of the delivery process.": "تزويد العملاء برؤية كاملة لعملية التسليم.",
+      "With real-time updates, customers can see where their deliveries are. Additionally, automating and streamlining the delivery process means businesses have more time to focus on other tasks.": "ومن خلال التحديثات في الوقت الفعلي، يمكن للعملاء معرفة مكان تسليماتهم. بالإضافة إلى ذلك، فإن أتمتة عملية التسليم وتبسيطها تعني أن الشركات لديها المزيد من الوقت للتركيز على المهام الأخرى.",
+      "Improve Customer satisfaction & automated productivity.": "تحسين رضا العملاء والإنتاجية الآلية.",
+      "Complete more bookings in shorter time frames, increasing revenue.": "أكمل المزيد من الحجوزات في أطر زمنية أقصر، مما يؤدي إلى زيادة الإيرادات.",
+      "Reduce fuel and operating costs by spending less time on the road.": "تقليل تكاليف الوقود والتشغيل من خلال قضاء وقت أقل على الطريق.",
+      "Optimize your delivery routes for faster deliveries.": "قم بتحسين طرق التسليم الخاصة بك من أجل عمليات تسليم أسرع.",
+      "Streamline and optimize the final leg of the delivery process for faster, more efficient deliveries.": "قم بتبسيط وتحسين المرحلة الأخيرة من عملية التسليم من أجل عمليات تسليم أسرع وأكثر كفاءة.",
+      "Improved efficiency & Cost Savings.": "تحسين الكفاءة وتوفير التكاليف.",
+      "GPS LVN helps you optimize the final stage of the delivery process with route planning, real-time tracking and more to increase customer satisfaction.": "يساعدك GPS LVN على تحسين المرحلة النهائية من عملية التسليم من خلال تخطيط المسار والتتبع في الوقت الفعلي والمزيد لزيادة رضا العملاء.",
+      'Optimize your last mile delivery processes today.': 'قم بتحسين عمليات تسليم الميل الأخير اليوم.',
+      'Track and analyze your fleet.': "تتبع وتحليل الأسطول الخاص بك.",
+      'Gain insight into your delivery operations.': "احصل على نظرة ثاقبة لعمليات التسليم الخاصة بك.",
+      'Make data-driven decisions to enhance fleet performance.': "اتخذ قرارات مبنية على البيانات لتحسين أداء الأسطول.",
+      "GPS LVN allows you to track and assess your delivery operations, giving critical insight into fuel consumption and delivery times. This helps you make more informed decisions surrounding your fleet to boost overall efficiency.": "يسمح لك GPS LVN بتتبع وتقييم عمليات التسليم الخاصة بك، مما يوفر نظرة ثاقبة حول استهلاك الوقود وأوقات التسليم. يساعدك هذا على اتخاذ قرارات أكثر استنارة فيما يتعلق بأسطولك لتعزيز الكفاءة الإجمالية.",
+      "Track and analyze your fleet with GPS LVN's GPS tracking software.": "تتبع وتحليل أسطولك باستخدام برنامج تتبع GPS الخاص بـ GPS LVN.",
+      'Set up virtual boundaries around geographical locations.': 'قم بإعداد حدود افتراضية حول المواقع الجغرافية.',
+      'Be alerted when a vehicle or asset enters or exits an assigned area.': 'يتم تنبيهك عندما تدخل مركبة أو أصل إلى منطقة معينة أو تخرج منها.',
+      'Improve security and driver accountability.': 'تحسين الأمن ومساءلة السائق.',
+      "Users of GPS LVN can create virtual boundaries around particular sites, such as yards, depots, and customer locations. When a vehicle or asset enters or exits a designated region, you can be notified via geofencing, increasing security and driver accountability.": "يمكن لمستخدمي GPS LVN إنشاء حدود افتراضية حول مواقع معينة، مثل الساحات والمستودعات ومواقع العملاء. عندما تدخل مركبة أو أصل إلى منطقة معينة أو تخرج منها، يمكن إعلامك عبر السياج الجغرافي، مما يزيد من الأمان ومساءلة السائق.",
+      'Enhance security and control with geofencing.': 'تعزيز الأمن والسيطرة مع تحديد الموقع الجغرافي.',
+      'Monitor vehicle wellbeing and schedule maintenance.': 'مراقبة صحة السيارة وجدولة الصيانة.',
+      'Optimize routes and use resources more effectively.': 'تحسين الطرق واستخدام الموارد بشكل أكثر فعالية.',
+      'Minimize operating costs and improve safety.': 'تقليل تكاليف التشغيل وتحسين السلامة.',
+      "GPS LVN makes it easy to manage your fleet by monitoring vehicle health, scheduling maintenance, and optimizing routes. Our GPS tracking software helps improve resource utilization, safety and, reduce operating costs.": "يعمل نظام GPS LVN على تسهيل إدارة أسطولك من خلال مراقبة صحة المركبات وجدولة الصيانة وتحسين المسارات. يساعد برنامج تتبع نظام تحديد المواقع العالمي (GPS) الخاص بنا على تحسين استخدام الموارد والسلامة وتقليل تكاليف التشغيل.",
+      "Optimize your fleet with GPS LVN's GPS tracking software.": 'قم بتحسين أسطولك باستخدام برنامج تتبع GPS الخاص بـ GPS LVN.',
+      'Track the location of vehicles and assets in real-time.': 'تتبع موقع المركبات والأصول في الوقت الحقيقي.',
+      'Monitor delivery status and respond to any issues quickly.': 'مراقبة حالة التسليم والرد على أي مشاكل بسرعة.',
+      'Improve customer service with accurate ETAs.': 'تحسين خدمة العملاء من خلال الوصول إلى الوقت المتوقع (ETAs) الدقيق.',
+      "GPS LVN's GPS tracking software lets you track the live location of your vehicles and assets, giving you full visibility of your delivery operations. Our software enables you to monitor delivery progress, respond quickly to any problems, and improve customer service.": "يتيح لك برنامج التتبع GPS الخاص بـ GPS LVN إمكانية تتبع الموقع المباشر لمركباتك وأصولك، مما يتيح لك رؤية كاملة لعمليات التسليم الخاصة بك. يمكّنك برنامجنا من مراقبة تقدم التسليم والاستجابة بسرعة لأية مشكلات وتحسين خدمة العملاء.",
+      "Stay informed with real-time location tracking.": "ابق على اطلاع من خلال تتبع الموقع في الوقت الفعلي.",
+      "GPS LVN lets you see where your vehicles and assets are at all times using real time location data. This helps you optimize delivery routes, reduce costs and improve customer satisfaction.": "يتيح لك GPS LVN معرفة مكان تواجد مركباتك وأصولك في جميع الأوقات باستخدام بيانات الموقع في الوقت الفعلي. يساعدك هذا على تحسين طرق التسليم وتقليل التكاليف وتحسين رضا العملاء.",
+      'Gain full visibility of your vehicles and assets with GPS tracking software.': 'احصل على رؤية كاملة لمركباتك وأصولك باستخدام برنامج تتبع نظام تحديد المواقع العالمي (GPS).',
+      '"As my business expands, I need that extra peace of mind and protection for new clients, without missing opportunities for my business to grow. GPS LVN can easily work for a company with up to 100 vehicles, it can also work for fleet’s with over 100 vehicles. The benefit is the extreme flexibility GPS LVN offers." - Tom Grove, Director': '"مع توسع أعمالي، أحتاج إلى مزيد من راحة البال والحماية للعملاء الجدد، دون فقدان الفرص لنمو أعمالي. يمكن أن يعمل GPS LVN بسهولة مع شركة تضم ما يصل إلى 100 مركبة، ويمكنه أيضًا العمل مع أسطول يضم أكثر من 100 مركبة 100 مركبة. والفائدة هي المرونة القصوى التي يوفرها نظام GPS LVN." - توم جروف، مخرج',
+      'Automate dispatching process with our delivery management software.': 'أتمتة عملية الإرسال من خلال برنامج إدارة التسليم الخاص بنا.',
+      'Optimize routes and track driver status in real-time.': 'تحسين الطرق وتتبع حالة السائق في الوقت الحقيقي.',
+      'Use resources more efficiently.': 'استخدام الموارد بشكل أكثر كفاءة.',
+      'Provide better customer service with accurate delivery times.': 'تقديم خدمة عملاء أفضل مع أوقات تسليم دقيقة.',
+      'GPS LVN’s dispatch management lets you plan, schedule, and dispatch deliveries easily! That way the right resources are where they need to be. Our delivery management solution optimizes routes, and tracks delivery whereabouts in real-time. This improves overall customer satisfaction and efficiency.': 'تتيح لك إدارة إرسال GPS LVN التخطيط لعمليات التسليم وجدولتها وإرسالها بسهولة! بهذه الطريقة تكون الموارد المناسبة حيث يجب أن تكون. يعمل حل إدارة التسليم الخاص بنا على تحسين الطرق وتتبع مكان التسليم في الوقت الفعلي. وهذا يؤدي إلى تحسين رضا العملاء وكفاءتهم بشكل عام.',
+      'Streamline and automate dispatching with GPS LVN’s delivery management software.': 'قم بتبسيط عملية الإرسال وأتمتتها باستخدام برنامج إدارة التسليم الخاص بـ GPS LVN.',
+      'Ensure faster delivery times and reduced operational errors.': 'ضمان أوقات تسليم أسرع وتقليل الأخطاء التشغيلية.',
+      'Use resources more effectively.': 'استخدام الموارد بشكل أكثر فعالية.',
+      'Plan and schedule deliveries easily.': 'تخطيط وجدولة التسليم بسهولة.',
+      "With the help of GPS LVN’s schedule management, you can quickly plan and schedule delivery, ensuring that the appropriate resources are available at the appropriate moment. You may use resources more effectively, reduce errors, and deliver goods to clients quickly with the aid of our software.": "بمساعدة إدارة الجدول الزمني لـ GPS LVN، يمكنك تخطيط وجدولة التسليم بسرعة، مما يضمن توفر الموارد المناسبة في اللحظة المناسبة. يمكنك استخدام الموارد بشكل أكثر فعالية وتقليل الأخطاء وتسليم البضائع للعملاء بسرعة بمساعدة برنامجنا.",
+      "Streamline and automate scheduling with GPS LVN’s delivery management software.": "يمكنك تبسيط الجدولة وأتمتتها باستخدام برنامج إدارة التسليم الخاص بـ GPS LVN.",
+      "Track the location and status of deliveries in real-time.": 'تتبع موقع وحالة التسليم في الوقت الحقيقي.',
+      "Monitor delivery progress and respond to any unforeseen challenges quickly.": 'رصد تقدم التسليم والتعامل مع أي تحديات غير متوقعة بسرعة.',
+      "Keep customers happy with improved ETAs, faster delivery times and enhanced visibility.": 'اجعل العملاء سعداء من خلال تحسين تقديرات الوقت الواصل، وتقليل أوقات التسليم، وتعزيز الرؤية.',
+      "With GPS LVN’s real-time tracking tool, you can monitor the whereabouts and progress of deliveries so that you can react promptly to any problems and ensure a quicker delivery. For you to establish enduring consumer trust, our delivery management software keeps you informed and in charge of your deliveries.": "باستخدام أداة التتبع في الوقت الفعلي الخاصة بـ GPS LVN، يمكنك مراقبة مكان وجود عمليات التسليم وتقدمها حتى تتمكن من الرد بسرعة على أي مشكلات وضمان التسليم بشكل أسرع. لكي تتمكن من بناء ثقة دائمة لدى المستهلك، فإن برنامج إدارة التسليم الخاص بنا يبقيك مطلعًا ومسؤولًا عن عمليات التسليم الخاصة بك.",
+      "Track your deliveries in real-time with GPS LVN’s delivery management software.": "تتبع عمليات التسليم الخاصة بك في الوقت الفعلي باستخدام برنامج إدارة التسليم الخاص بـ GPS LVN.",
+      "Encourage customers to provide feedback and rate their driver's performance.": 'تشجيع العملاء على تقديم ملاحظات وتقييم أداء السائقين.',
+      "Identify areas within your fleet that need improvement.": 'تحديد المجالات التي تحتاج إلى تحسين في أسطولك.',
+      "Improve communication between drivers and customers for a better delivery experience.": 'تحسين التواصل بين السائقين والعملاء لتحسين تجربة التوصيل.',
+      'GPS LVN’s route optimization solution uses real-time traffic and weather data to build the most efficient routes for your deliveries, reducing fuel costs and travel time. Our delivery management software allows you to save time and money while increasing ETA accuracy.': 'يستخدم حل تحسين المسار الخاص بـ GPS LVN بيانات حركة المرور والطقس في الوقت الفعلي لإنشاء المسارات الأكثر كفاءة لعمليات التسليم الخاصة بك، مما يقلل تكاليف الوقود ووقت السفر. يتيح لك برنامج إدارة التسليم الخاص بنا توفير الوقت والمال مع زيادة دقة الوقت المتوقع للوصول.',
+      'Optimize your delivery routes with delivery management software.': 'قم بتحسين طرق التسليم الخاصة بك باستخدام برنامج إدارة التسليم.',
+      'Streamline and manage your delivery processes, including route optimization, real-time tracking, and delivery scheduling. This results in increased customer satisfaction and operational efficiency.': 'قم بتبسيط وإدارة عمليات التسليم الخاصة بك، بما في ذلك تحسين المسار والتتبع في الوقت الفعلي وجدولة التسليم. وهذا يؤدي إلى زيادة رضا العملاء والكفاءة التشغيلية.',
+      'Effortlessly manage your delivery operations.': 'إدارة عمليات التسليم الخاصة بك بسهولة.',
+      '"مع توسع أعمالي، أحتاج إلى مزيد من راحة البال والحماية للعملاء الجدد، دون فقدان الفرص لنمو أعمالي. يمكن أن يعمل GPS LVN بسهولة مع شركة تضم ما يصل إلى 100 مركبة، ويمكنه أيضًا العمل مع أسطول يضم أكثر من 100 مركبة 100 مركبة. والفائدة هي المرونة القصوى التي يوفرها نظام GPS LVN." - توم جروف، مخرج': '"مع توسع أعمالي، أحتاج إلى مزيد من راحة البال والحماية للعملاء الجدد، دون فقدان الفرص لنمو أعمالي. يمكن أن يعمل GPS LVN بسهولة مع شركة تضم ما يصل إلى 100 مركبة، ويمكنه أيضًا العمل مع أسطول يضم أكثر من 100 مركبة 100 مركبة. والفائدة هي المرونة القصوى التي يوفرها نظام GPS LVN." - توم جروف، مخرج',
+      'GPS LVN Gives U R Drive Peace Of Mind': 'GPS LVN يمنح محرك U R راحة البال',
+      'Optimize fleet operations with efficient routes, real-time tracking, and compliance management.':
+        'تحسين عمليات الأسطول من خلال مسارات فعّالة، تتبع فوري، وإدارة الامتثال.',
+      'Reduce travel time, fuel consumption and operating costs.':
+        'تقليل وقت السفر، استهلاك الوقود، وتكاليف التشغيل.',
+      'Use resources more effectively.': 'استخدام الموارد بشكل أكثر فعالية.',
+      'You can cut down on travel time, fuel use, and operating costs by using route optimization, real-time tracking, and compliance monitoring, not to mention enhanced resource use.':
+        'يمكنك تقليل وقت السفر واستخدام الوقود وتكاليف التشغيل عن طريق استخدام تحسين المسار والتتبع في الوقت الفعلي ومراقبة الامتثال، ناهيك عن الاستخدام المحسن للموارد.',
+      'Reduce costs and improve resource utilization.':
+        'خفض التكاليف وتحسين استخدام الموارد.',
+      // eslint-disable-next-line no-dupe-keys
+      'Optimize your fleet operations by scheduling maintenance, monitoring vehicle health, and generating maintenance reports.':
+        'تحسين عمليات أسطولك عن طريق جدولة الصيانة، مراقبة صحة المركبة، وإنشاء تقارير الصيانة.',
+      // eslint-disable-next-line no-dupe-keys
+      'Improve resource utilization, reduce downtime, and enhance safety.':
+        'تحسين استخدام الموارد، تقليل الوقت الذي تكون فيه المعدات خارج الخدمة، وتعزيز السلامة.',
+      'Fleet management software works to schedule routine maintenance, generate maintenance reports and monitor vehicle health to increase longevity.':
+        'يعمل برنامج إدارة الأسطول على جدولة الصيانة الروتينية وإنشاء تقارير الصيانة ومراقبة صحة السيارة لزيادة طول العمر.',
+      'Improve efficiency and extend the life of your assets.':
+        'تحسين الكفاءة وإطالة عمر الأصول الخاصة بك.',
+      'Reduce downtime, improve asset lifespan, and enhance safety.':
+        'تقليل وقت التوقف عن العمل، وتحسين عمر الأصول، وتعزيز السلامة.',
+      'Track and monitor the location, status, and maintenance of fleet assets.':
+        'تتبع ومراقبة موقع وحالة وصيانة أصول الأسطول.',
+      'GPS LVN streamlines the management of your assets with real-time tracking, resulting in minimized disruptions and improved efficiency by increasing the lifespan of your assets.':
+        'يعمل GPS LVN على تبسيط إدارة الأصول الخاصة بك من خلال التتبع في الوقت الفعلي، مما يؤدي إلى تقليل الاضطرابات وتحسين الكفاءة من خلال زيادة عمر الأصول الخاصة بك.',
+      'Track and manage your fleet assets.':
+        'تتبع وإدارة أصول الأسطول الخاص بك.',
+      'Reduce costs and improve efficiency with data-driven decisions.':
+        'خفض التكاليف وتحسين الكفاءة من خلال القرارات المستندة إلى البيانات.',
+      'Gain valuable insights into your delivery operations.':
+        'احصل على رؤى قيمة حول عمليات التسليم الخاصة بك.',
+      'Track and analyze your fleet operations.':
+        'تتبع وتحليل عمليات الأسطول الخاص بك.',
+      "GPS LVN lets you see what's going on inside your delivery space, such as driver behavior, fuel consumption, delivery times and more. This works to improve decisions regarding your fleet so you can boost productivity.":
+        'يتيح لك GPS LVN معرفة ما يحدث داخل مساحة التسليم الخاصة بك، مثل سلوك السائق واستهلاك الوقود وأوقات التسليم والمزيد. يعمل هذا على تحسين القرارات المتعلقة بأسطولك حتى تتمكن من تعزيز الإنتاجية.',
+      'Track and analyze your fleet.': 'تتبع وتحليل الأسطول الخاص بك.',
+      'Enhance your fleet operations with routine vehicle maintenance, route optimization, real-time tracking, and compliance management.':
+        'عزز عمليات أسطولك من خلال الصيانة الروتينية للمركبات، وتحسين المسار، والتتبع في الوقت الفعلي، وإدارة الامتثال.',
+      'Gain visibility and control over your fleet and reduce costs.':
+        'احصل على الرؤية والتحكم في أسطولك وخفض التكاليف.',
+      "Use your own delivery drivers to save time and money. Send your bookings from your delivery platform to GPS LVN and we'll automatically import your bookings.":
+        'استخدم نظام تحديد المواقع العالمي (GPS) الذي يعمل بالبطارية لتتبع الموقع المباشر لشحنتك أثناء انتقالها من المستودع إلى الشاحنة. يتيح لك نظام إدارة الحجز الخاص بنا أيضًا الحصول على إثبات إلكتروني للتسليم.',
+      "No more manual jobs on paper or excel! GPS LVN optimizes your run and lets your customers know when you'll arrive. Saving you hours!":
+        'لا مزيد من المهام اليدوية على الورق أو التفوق! يعمل موقع GPS LVN على تحسين تشغيلك ويتيح لعملائك معرفة موعد وصولك. يوفر لك ساعات!',
+      'Offer customers a same day delivery experience by using your very own delivery team.':
+        'قدم للعملاء تجربة التسليم في نفس اليوم باستخدام فريق التوصيل الخاص بك.',
+      'Delivering groceries to your customers? Use GPS LVN to manage your bookings and optimize your run for a seamless delivery experience.':
+        'توصيل البقالة لعملائك؟ استخدم GPS LVN لإدارة حجوزاتك وتحسين رحلتك للحصول على تجربة توصيل سلسة.',
+      'Delivering new products to customers? Use GPS LVN to optimize routes and provide your customers with an accurate ETA.':
+        'تقديم منتجات جديدة للعملاء؟ استخدم GPS LVN لتحسين المسارات وتزويد عملائك بالوقت المتوقع للوصول الدقيق.',
+      'If you deliver food or run a food truck, GPS LVN is the perfect tool to optimize your delivery run.':
+        'إذا كنت تقوم بتوصيل الطعام أو تشغيل شاحنة طعام، فإن GPS LVN هي الأداة المثالية لتحسين عملية التسليم الخاصة بك.',
+      "If you're running a same day courier business, use GPS LVN to manage your deliveries from start to finish.":
+        'إذا كنت تدير شركة توصيل سريع في نفس اليوم، فاستخدم GPS LVN لإدارة عمليات التسليم الخاصة بك من البداية إلى النهاية.',
+      'Transform Your Delivery Operations with GPS LVN.':
+        'تحويل عمليات التسليم الخاصة بك مع GPS LVN.',
+      'You can sign up for a free trial of GPS LVN by clicking the “Sign Up for a Free Trial” button on this page.': `يمكنك الاشتراك للحصول على نسخة تجريبية مجانية من GPS LVN بالنقر فوق الزر "التسجيل للحصول على نسخة تجريبية مجانية" في هذه الصفحة.`,
+      "How can I sign up for a free trial of GPS LVN's fleet management software?":
+        'كيف يمكنني الاشتراك للحصول على نسخة تجريبية مجانية من برنامج إدارة أسطول GPS LVN؟',
+      'Yes, you can easily link our fleet management software with the systems you already have in place.':
+        'نعم، يمكنك بسهولة ربط برنامج إدارة الأسطول الخاص بنا بالأنظمة الموجودة لديك بالفعل.',
+      "Can GPS LVN's fleet management software be integrated with my existing systems?":
+        'هل يمكن دمج برنامج إدارة أسطول GPS LVN مع أنظمتي الحالية؟',
+      'GPS LVN’s fleet management software allows users to share a live tracking link with their customers for unprecedented delivery visibility. This eliminates the issue of large time windows and missed deliveries as the customer can see exactly where their order is, building trust and increasing the odds of repeat purchases.':
+        'يتيح برنامج إدارة الأسطول الخاص بـGPS LVN للمستخدمين مشاركة رابط التتبع المباشر مع عملائهم للحصول على رؤية تسليم غير مسبوقة. وهذا يلغي مشكلة الفترات الزمنية الكبيرة وعمليات التسليم الفائتة حيث يمكن للعميل رؤية مكان طلبه بالضبط، مما يؤدي إلى بناء الثقة وزيادة احتمالات تكرار عمليات الشراء.',
+      "How does GPS LVN's fleet management software improve customer service?":
+        'كيف يعمل برنامج إدارة أسطول GPS LVN على تحسين خدمة العملاء؟',
+      'Yes, GPS LVN’s fleet management software includes a route optimization feature that generates the most efficient delivery routes in seconds. This is achieved by taking into account weather and traffic conditions, driver availability, vehicle type, product type etc.':
+        'نعم، يتضمن برنامج إدارة الأسطول الخاص بـ GPS LVN ميزة تحسين المسار التي تنشئ طرق التسليم الأكثر كفاءة في ثوانٍ. ويتم تحقيق ذلك من خلال مراعاة الظروف الجوية والمرورية وتوافر السائق ونوع السيارة ونوع المنتج وما إلى ذلك.',
+      "Can GPS LVN's fleet management software be used for route optimization?":
+        'هل يمكن استخدام برنامج إدارة أسطول GPS LVN لتحسين المسار؟',
+      'The fleet management software from GPS LVN lowers operational expenses for enterprises by increasing safety, optimizing resource use, and lowering fuel usage.Through GPS LVN, fleet owners have access to data that can be used to maximize driver performance, decrease idle time, and enhance fuel efficiency.Users may make better fleet decisions by comprehending and precisely tracking fleet activity.':
+        'يعمل برنامج إدارة الأسطول من GPS LVN على خفض النفقات التشغيلية للمؤسسات من خلال زيادة السلامة وتحسين استخدام الموارد وخفض استخدام الوقود. ومن خلال GPS LVN، يتمتع أصحاب الأساطيل بإمكانية الوصول إلى البيانات التي يمكن استخدامها لزيادة أداء السائق إلى أقصى حد، وتقليل وقت الخمول، وتعزيز كفاءة استهلاك الوقود. يمكن للمستخدمين اتخاذ قرارات أفضل بشأن الأسطول من خلال فهم نشاط الأسطول وتتبعه بدقة.',
+      "How does GPS LVN's fleet management software reduce operating costs?":
+        'كيف يعمل برنامج إدارة أسطول GPS LVN على تقليل تكاليف التشغيل؟',
+      'Fleet management software is a tool used to access important information relating to fleet performance and customer service. Fleet management software works to keep up with vehicle maintenance, reduce downtime and boost operational efficiency. Learn more about fleet management software by clicking here.':
+        'يعد برنامج إدارة الأسطول أداة تستخدم للوصول إلى المعلومات المهمة المتعلقة بأداء الأسطول وخدمة العملاء. يعمل برنامج إدارة الأسطول على مواكبة صيانة المركبات وتقليل وقت التوقف عن العمل وتعزيز الكفاءة التشغيلية. تعرف على المزيد حول برنامج إدارة الأسطول بالضغط هنا.',
+      'What Is Fleet Management Software?': 'ما هو برنامج إدارة الأسطول؟',
+      'Frequently asked questions.': 'أسئلة مكررة.',
+      "I'm blown away by the effectiveness of the GPS LVN devices and the flexibility it affords my business.":
+        'لقد أذهلتني فعالية أجهزة GPS LVN والمرونة التي توفرها لعملي.',
+      'Tom Grove': 'توم جروف',
+      'Before GPS LVN, we used to have to generate new routes if we wanted to change the order of things whereas with GPS LVN we can just adjust the days deliveries on the fly, allowing us to move orders into a higher priority and it all works it out in the background pretty quickly.':
+        'قبل GPS LVN، اعتدنا على إنشاء مسارات جديدة إذا أردنا تغيير ترتيب الأشياء بينما مع GPS LVN يمكننا فقط ضبط أيام التسليم بسرعة، مما يسمح لنا بنقل الطلبات إلى أولوية أعلى وكل ذلك يعمل بشكل جيد الخلفية بسرعة كبيرة.',
+      'Aaron Clark': 'آرون كلارك',
+      'Love about GPS LVN was the live-tracking features and proof of delivery.':
+        'كان الحب في GPS LVN هو ميزات التتبع المباشر وإثبات التسليم.',
+      'Michael Godwin': 'مايكل جودوين',
+      'I trialled GPS LVN and it was perfect - Automatically increased customers by about 30% on the first day.':
+        'لقد قمت بتجربة GPS LVN وكان الأمر مثاليًا - زيادة العملاء تلقائيًا بحوالي 30% في اليوم الأول.',
+      'Aaron Clark': 'آرون كلارك',
+      'Great service and very helpful, nothing is a problem to them. I would recommend them to anyone A+.':
+        'خدمة رائعة ومفيدة للغاية، لا يوجد مشكلة بالنسبة لهم. أود أن أوصي بهم لأي شخص A+.',
+      'David Zelton': 'ديفيد زيلتون',
+      'Transform Your Delivery Operations with GPS LVN.':
+        'تحويل عمليات التسليم الخاصة بك مع GPS LVN.',
+      'Have the most efficient routes for your delivery drivers generated in seconds.':
+        'احصل على الطرق الأكثر فعالية لسائقي التوصيل لديك والتي يتم إنشاؤها في ثوانٍ.',
+      'Route Optimization': 'تحسين الطريق',
+      "Tell your customers when you're on route via our automated SMS system.Customers won't have to worry about missing the delivery.":
+        'أخبر عملائك عندما تكون في الطريق عبر نظام الرسائل النصية القصيرة الآلي الخاص بنا. لن يضطر العملاء إلى القلق بشأن فقدان التسليم.',
+      'SMS Alerts': 'تنبيهات الرسائل القصيرة',
+      'Complete more bookings in less time, reduce fuel costs and improve communication between customers and drivers.':
+        'أكمل المزيد من الحجوزات في وقت أقل، وقلل من تكاليف الوقود، وحسّن التواصل بين العملاء والسائقين.',
+      'Last Mile': 'الميل الأخير',
+      'Track the status of your vehicles and assets so you can provide customers with accurate ETAs and respond to any issues quickly.':
+        'تتبع حالة المركبات والأصول الخاصة بك حتى تتمكن من تزويد العملاء بمواعيد الوصول المتوقعة الدقيقة والاستجابة لأي مشكلات بسرعة.',
+      'GPS Tracking': 'تتبع نظام تحديد المواقع',
+      'Reduce wasted resources and labor, as well as ensuring goods arrive safely in a timely manner.':
+        'تقليل إهدار الموارد والعمالة، وكذلك ضمان وصول البضائع بأمان في الوقت المناسب.',
+      'Delivery Management': 'إدارة التسليم',
+      "Capture customer feedback upon the delivery's completion.We’ll then send an SMS allowing your customer to rate their experience and provide feedback.":
+        'احصل على تعليقات العملاء عند اكتمال التسليم. وسنرسل بعد ذلك رسالة نصية قصيرة تسمح لعميلك بتقييم تجربته وتقديم التعليقات.',
+      'Customer Reviews': 'آراء العملاء',
+      'Capture an e-signature and photo of the item upon delivery via our mobile app. Your customers can then view this information in real time.':
+        'احصل على توقيع إلكتروني وصورة للمنتج عند التسليم عبر تطبيق الهاتف المحمول الخاص بنا. ويمكن لعملائك بعد ذلك عرض هذه المعلومات في الوقت الفعلي.',
+      'Proof of Delivery': 'إثبات التسليم',
+      'Share your live location with customers, so they can see exactly where their delivery is.':
+        'شارك موقعك المباشر مع العملاء، حتى يتمكنوا من معرفة مكان التسليم بالضبط.',
+      'Live Location Tracking': 'تتبع الموقع المباشر',
+      "Whether you're managing a small local delivery service or a large national operation, GPS LVN has the tools you need to streamline your process, reduce costs, and improve customer satisfaction.":
+        'سواء كنت تدير خدمة توصيل محلية صغيرة أو عملية وطنية كبيرة، فإن GPS LVN لديه الأدوات التي تحتاجها لتبسيط عمليتك، وتقليل التكاليف، وتحسين رضا العملاء.',
+      'GPS LVN is perfect for:': 'GPS LVN مثالي لـ:',
+      '"Before GPS LVN, we used to have to generate new routes if we wanted to change the order of things whereas with GPS LVN we can just adjust the days deliveries on the fly, allowing us to move orders into a higher priority and it all works it out in the background pretty quickly”':
+        '"قبل GPS LVN، كنا نضطر إلى إنشاء مسارات جديدة إذا أردنا تغيير ترتيب الأشياء بينما مع GPS LVN يمكننا فقط ضبط أيام التسليم بسرعة، مما يسمح لنا بنقل الطلبات إلى أولوية أعلى وكل ذلك يعمل بشكل جيد في الخلفية بسرعة كبيرة"',
+      'SuperPharmacy Saves Hundreds of Hours With GPS LVN':
+        'الصيدلية الفائقة توفر مئات الساعات من خلال تطبيق GPS LVN',
+      'CASE STUDY': 'دراسة الحالة',
+      'Use your battery operated GPS to track the live location of your freight as it moves from warehouse to truck. Our booking management system also allows you to capture electronic proof of delivery.':
+        'استخدم نظام تحديد المواقع العالمي (GPS) الذي يعمل بالبطارية لتتبع الموقع المباشر لشحنتك أثناء انتقالها من المستودع إلى الشاحنة. يتيح لك نظام إدارة الحجز الخاص بنا أيضًا الحصول على إثبات إلكتروني للتسليم.',
+      'Line Haul': 'خط الرحلات',
+      "No more manual jobs on paper or excel! GPS LVN optimizes your run and lets your customers know when you'll arrive. Saving you hours!":
+        'لا مزيد من المهام اليدوية على الورق أو التفوق! يعمل موقع GPS LVN على تحسين تشغيلك ويتيح لعملائك معرفة موعد وصولك. يوفر لك ساعات!',
+      'Delivery Drivers': 'سائقين التوصيل',
+      'Offer customers a same day delivery experience by using your very own delivery team.':
+        'قدم للعملاء تجربة التسليم في نفس اليوم باستخدام فريق التوصيل الخاص بك.',
+      'Retail Delivery': 'تسليم التجزئة',
+      "Use your own delivery drivers to save time and money. Send your bookings from your delivery platform to GPS LVN and we'll automatically import your bookings.":
+        'استخدم سائقي التوصيل الخاصين بك لتوفير الوقت والمال. أرسل حجوزاتك من منصة التسليم الخاصة بك إلى GPS LVN وسنقوم باستيراد حجوزاتك تلقائيًا.',
+      'Restaurant Delivery': 'توصيل المطاعم',
+      'Delivering groceries to your customers? Use GPS LVN to manage your bookings and optimize your run for a seamless delivery experience.':
+        'توصيل البقالة لعملائك؟ استخدم GPS LVN لإدارة حجوزاتك وتحسين رحلتك للحصول على تجربة توصيل سلسة.',
+      'Grocery Delivery': 'توصيل البقالة',
+      'Delivering new products to customers? Use GPS LVN to optimize routes and provide your customers with an accurate ETA.':
+        'تقديم منتجات جديدة للعملاء؟ استخدم GPS LVN لتحسين المسارات وتزويد عملائك بالوقت المتوقع للوصول الدقيق.',
+      'Product Delivery': 'ايصال المنتج',
+      'If you deliver food or run a food truck, GPS LVN is the perfect tool to optimize your delivery run.':
+        'إذا كنت تقوم بتوصيل الطعام أو تشغيل شاحنة طعام، فإن GPS LVN هي الأداة المثالية لتحسين عملية التسليم الخاصة بك.',
+      'Food Delivery': 'توصيل طلبات الطعام',
+      "If you're running a same day courier business, use GPS LVN to manage your deliveries from start to finish.":
+        'إذا كنت تدير شركة توصيل سريع في نفس اليوم، فاستخدم GPS LVN لإدارة عمليات التسليم الخاصة بك من البداية إلى النهاية.',
+      'Same Day Couriers': 'السعاة في نفس اليوم',
+      'The complete Delivery Management Solution.':
+        'الحل الكامل لإدارة التسليم.',
+      'Start your free trial.': 'ابدأ تجربتك المجانية.',
+      'Take the next step to streamline your delivery processes and improve efficiency with GPS LVN’s delivery management software. Sign up now for a free trial and see the difference it can make for your business.':
+        'اتخذ الخطوة التالية لتبسيط عمليات التسليم وتحسين الكفاءة باستخدام برنامج إدارة التسليم الخاص بـGPS LVN. سجل الآن للحصول على نسخة تجريبية مجانية وشاهد الفرق الذي يمكن أن يحدثه لعملك',
+      // eslint-disable-next-line no-dupe-keys
+      'Transform Your Delivery Operations with GPS LVN.':
+        'تحويل عمليات التسليم الخاصة بك مع GPS LVN.',
+      'Used by:': 'استعمل من قبل:',
+      'Enter Your Email': 'أدخل بريدك الإلكتروني',
+      'Start Free Trail': 'ابدأ النسخة التجريبية المجانية',
+      'Start your free 7-day trial, no credit card necessary.':
+        'ابدأ تجربتك المجانية لمدة 7 أيام، دون الحاجة إلى بطاقة ائتمان.',
+      "GPS LVN's driver application software increases efficiency and boosts customer satisfaction by optimizing your fleet operations.With real- time tracking, real - time ETA updates, and route optimization, our app enables businesses to send bookings or deliveries to your team instantly.":
+        'يعمل برنامج تطبيق السائق الخاص بـ GPS LVN على زيادة الكفاءة وتعزيز رضا العملاء من خلال تحسين عمليات أسطولك. من خلال التتبع في الوقت الفعلي، وتحديثات الوقت المتوقع للوصول في الوقت الفعلي، وتحسين المسار، يمكّن تطبيقنا الشركات من إرسال الحجوزات أو التسليمات إلى فريقك على الفور.',
+      'Streamline your operations and improve driver productivity.':
+        'تبسيط عملياتك وتحسين إنتاجية السائق.',
+      'DRIVER APPLICATION SOFTWARE': 'برنامج تطبيق السائق',
       'Same things wrong': 'شئ ما خطاء',
       'Message sent': 'تم ارسال الرسالة',
       'Streamline the final leg of the delivery process for faster, more efficient deliveries​.​​':
@@ -253,17 +648,20 @@ export default () => {
       'Real Time Tracking': 'تتبع في الوقت الحقيقي',
       'An easier way to capture a client’s confirmation of a completed booking or delivery. Let your drivers capture an e-signature and photo proof directly from an iPhone or Android device.':
         'طريقة أسهل للحصول على تأكيد العميل لاكتمال الحجز أو التسليم. اسمح للسائقين لديك بالتقاط التوقيع الإلكتروني وإثبات الصورة مباشرةً من جهاز iPhone أو Android.',
+      // eslint-disable-next-line no-dupe-keys
       'Proof of Delivery': 'إثبات التسليم',
       'Plan and dispatch the fastest journey for your fleet, in only minutes.':
         'قم بتخطيط وإرسال أسرع رحلة لأسطولك في دقائق معدودة فقط',
       'Dispatch & Delivery Planning': 'تخطيط الإرسال والتسليم',
       'Find the fastest routes for every booking location to improve your business efficiency and reduce operational costs.':
         'ابحث عن أسرع الطرق لكل موقع حجز لتحسين كفاءة عملك وتقليل التكاليف التشغيلية.',
+      // eslint-disable-next-line no-dupe-keys
       'Route Optimization': 'تحسين الطريق',
       'Track the live location of any driver to ensure they are following the best routes. Send them new customer bookings so they can update their routes in real time.':
         'تتبع الموقع المباشر لأي سائق للتأكد من أنه يتبع أفضل الطرق. أرسل لهم حجوزات العملاء الجدد حتى يتمكنوا من تحديث مساراتهم في الوقت الفعلي.',
       'Driver App': 'تطبيق السائق',
-      'Streamline the final leg of the delivery process for faster, more efficient deliveries.': 'قم بتبسيط المرحلة الأخيرة من عملية التسليم من أجل عمليات تسليم أسرع وأكثر كفاءة.',
+      'Streamline the final leg of the delivery process for faster, more efficient deliveries.':
+        'قم بتبسيط المرحلة الأخيرة من عملية التسليم من أجل عمليات تسليم أسرع وأكثر كفاءة.',
       'Last Mile Delivery': 'تسليم الميل الأخير',
       'Track your assets using a powerful GPS tracking device that records the exact location of your assets throughout their day-to-day use.':
         'تتبع أصولك باستخدام جهاز تتبع GPS قوي يسجل الموقع الدقيق لأصولك طوال استخدامها اليومي.',
@@ -623,6 +1021,7 @@ export default () => {
       'Manage Vehicle & Requisition': 'إدارة المركبات والطلب',
       'Insurance Details': 'تفاصيل التأمين',
       'Reminder Details': 'تفاصيل التذكير',
+      // eslint-disable-next-line no-dupe-keys
       'Manage Approval Authority': 'إدارة سلطة الموافقة',
       // eslint-disable-next-line no-dupe-keys
       'Vehicle Management & Requisition': 'إدارة المركبات وطلباتها',

@@ -18,7 +18,7 @@ import imgAPI from '~/static/images/imgAPI'
 export default {
   name: 'ImagSide',
   // eslint-disable-next-line vue/require-prop-types
-  props: ['imageUrl'],
+  props: ['imageUrl', 'type'],
 
   data() {
     return {
