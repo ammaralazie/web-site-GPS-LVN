@@ -24,7 +24,7 @@ export default {
   data() {
     return {
       logos: [
-        '/images/aciasell-logo.svg',
+        '/images/logos/toltonika.png',
         '/images/logos/ITPC-removebg-preview.png',
         '/images/logos/zain-logo-removebg-preview.png',
         '/images/logos/شركة_السلام_العامة-removebg-preview.png',

@@ -1,0 +1,17 @@
+.exhibitions {
+  .section1 {
+    height: 500px;
+  }
+  .section2 {
+    .title {
+      position: relative;
+      span {
+        position: absolute;
+        width: 7%;
+        bottom: -10px;
+        height: 2px;
+        border-radius: 5px;
+      }
+    }
+  }
+}

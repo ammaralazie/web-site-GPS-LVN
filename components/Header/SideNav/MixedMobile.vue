@@ -11,7 +11,7 @@
         </template>
         <v-list>
           <a class="nuxtLink" v-for="(product, index) in products" :key="index"
-            :href="langPath + '/product/detail/' + product.id">
+            :href="langPath + '/industries/detail/' + product.id">
           <v-list-item link>
             <v-row>
               <v-col cols="12" :class="index != (products.length - 1) ? 'mb-1 d-flex' : 'd-flex'">

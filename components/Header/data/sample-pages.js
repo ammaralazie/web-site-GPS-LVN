@@ -50,18 +50,18 @@ const sample = [
     name: 'items',
     thumb: imgAPI.ui[0],
     child: [
-      {
+      /* {
         name: 'card',
         link: link.saas2.card
-      },
+      }, */
       {
-        name: 'product',
+        name: 'devices',
         link: link.saas2.product
-      },
-      {
+      }
+      /* ,{
         name: 'product detail',
         link: link.saas2.productDetail
-      }
+      } */
     ]
   },
   {

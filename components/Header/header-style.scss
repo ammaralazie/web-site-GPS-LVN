@@ -330,7 +330,6 @@ $flag: "/images/flag-logo.png";
   }
 }
 
-
 .rounded-menu2 {
   border-radius: 10px;
   padding: $spacing1 / 2;
@@ -341,11 +340,12 @@ $flag: "/images/flag-logo.png";
 }
 
 /* Top Mega Menu */
-.mega-menu-root,.mega-menu-root2 {
+.mega-menu-root,
+.mega-menu-root2 {
   background: transparent;
   box-shadow: none !important;
 }
-.mega-menu-root2{
+.mega-menu-root2 {
   top: 70px !important;
 }
 
@@ -412,7 +412,7 @@ $flag: "/images/flag-logo.png";
   &[aria-expanded="true"] {
     &:after {
       opacity: 1;
-      height: 560px;
+      /* height: 560px; */
     }
   }
 }

@@ -52,3 +52,12 @@ body {
   text-decoration: unset;
   color: unset;
 }
+
+.playerStyles {
+  width: 100%;
+  height: 100%;
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}

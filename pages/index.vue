@@ -6,7 +6,7 @@
         <div id="home">
           <banner-slider />
         </div>
-        <section>
+        <section class="mt-2">
           <company-logo />
         </section>
         <section class="space-top-short">
@@ -41,6 +41,10 @@
 
 <style scoped lang="scss">
 @import '~/assets/pages';
+
+#home {
+  overflow: hidden;
+}
 </style>
 
 <script>

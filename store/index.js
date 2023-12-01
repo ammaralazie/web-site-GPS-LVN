@@ -320,7 +320,7 @@ export const state = () => ({
       }
     }
   },
-  products: [
+  industries: [
     {
       id: 1,
       title: 'Fleet Management Software',
@@ -399,12 +399,111 @@ export const state = () => ({
       icon: 'mdi-go-kart-track'
     }
   ],
-  openNavMobile: 1
+  products: [
+    {
+      img:
+        'https://www.uffizio.com/wp-content/themes/uffizio/assets/images/menuIcon/trakzee.svg',
+      title: 'Fleet Management',
+      detail:
+        'It helps with vehicle tracking, driver monitoring, routing, fuel monitoring, tire management, & more.'
+    },
+    {
+      img:
+        'https://www.uffizio.com/wp-content/themes/uffizio/assets/images/menuIcon/taskeye.svg',
+      title: 'Field employee tracking software',
+      detail:
+        'Track tasks of traveling salesmen, field employees, and maintenance crew with TaskEye.'
+    },
+    {
+      img:
+        'https://www.uffizio.com/wp-content/themes/uffizio/assets/images/menuIcon/smartbus.svg',
+      title: 'School Bus Tracking Software',
+      detail:
+        'Get everything you need to enhance school bus visibility and student safety.'
+    },
+    {
+      img:
+        'https://www.uffizio.com/wp-content/themes/uffizio/assets/images/menuIcon/smartwaste.svg',
+      title: 'Waste collection software',
+      detail:
+        'A platform that simplifies waste collection and disposal processes'
+    },
+    {
+      img:
+        'https://www.uffizio.com/wp-content/themes/uffizio/assets/images/menuIcon/elexee.svg',
+      title: 'Electric Fleet Management',
+      detail:
+        'Get a detailed understanding of the state of charge, voltage, battery temperature, and more'
+    },
+    {
+      img:
+        'https://www.uffizio.com/wp-content/uploads/2022/08/logytrack-menu-logo.png',
+      title: 'Transport monitoring software',
+      detail:
+        'Get an state of art logistics and transportation management software for your business'
+    },
+    {
+      img:
+        'https://www.uffizio.com/wp-content/themes/uffizio/assets/images/menuIcon/trakzeemin.svg',
+      title: 'Personal Vehicle Tracking',
+      detail:
+        'Trakzee Mini offers tracking and monitoring services for your personal vehicle'
+    },
+    {
+      img:
+        'https://www.uffizio.com/wp-content/themes/uffizio/assets/images/menuIcon/trakzee-gsm.svg',
+      title: 'Sim Based Tracking Software',
+      detail:
+        'We offer a sim-based GSM tracking solution that tracks your fleet only using the driver’s mobile network'
+    }
+  ],
+  resources: [
+    {
+      title: 'Resources',
+      icon: 'mdi-lightbulb-on-10',
+      detail: `Browse informative content when you need.Quick links to blog posts, podcasts & more!`
+    },
+    {
+      title: 'Blog',
+      icon: 'mdi-pencil-outline',
+      detail: `Articles curated with care to update you on the trends of the telematics industry.`
+    },
+    {
+      title: 'eBooks',
+      icon: 'mdi-book-open-page-variant-outline',
+      detail: `Get all business-specific marketing eBooks.`
+    },
+    {
+      title: 'Webinars',
+      icon: 'mdi-laptop',
+      detail: `See what our expert speakers have to say about hot telematics topics.`
+    },
+    {
+      title: "What's New",
+      icon: 'mdi-alert-decagram',
+      detail: `Every month, we brief you on our latest software integrations & functionalities.`
+    },
+    {
+      title: 'Contact Helpdesk',
+      icon: 'mdi-phone-in-talk-outline',
+      detail: `Submit a ticket on support@uffizio.com`
+    }
+  ],
+  openNavMobile: 1,
+  productItems: []
 })
 
 export const mutations = {
   openNavMobile(state) {
-    console.log('openNavMobile mutation is working .....')
     state.openNavMobile += 1
+  }
+}
+
+export const actions = {
+  async nuxtServerInit(context) {
+    const result = await this.$axios.$get(
+      '/' + this.$i18n.locale + '/gps/product/item'
+    )
+    context.state.productItems = result?.data
   }
 }

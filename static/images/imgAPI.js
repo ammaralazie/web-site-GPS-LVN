@@ -1,7 +1,7 @@
 const img3d = {
   main: [
     '',
-    '/images/saas2/banner1_3d@2x.png',
+    'https://www.uffizio.com/wp-content/themes/uffizio/slider/banner01.svg',
     '',
     '/images/saas2/banner2_3d@2x.png',
     '',
