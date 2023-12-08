@@ -75,13 +75,23 @@ export default {
   },
   methods: {
     handleScroll: function () {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 10) {
+        this.change_color('#000')
         return (this.fixed = true)
       }
+      this.change_color('#fff')
       return (this.fixed = false)
     },
     handleToggleOpen: function () {
       this.openNavMobile = !this.openNavMobile
+    },
+    change_color(color) {
+      // let headerClass = document.getElementsByClassName('header-color')
+
+      // for (var i = 0; i < headerClass.length; i++) {
+      //   let item = headerClass[i]
+      //   item.style.setProperty('color', color, 'important')
+      // }
     }
   },
   computed: {

@@ -39,6 +39,7 @@
 		"@nuxtjs/robots": "^3.0.0",
 		"@nuxtjs/sitemap": "^2.4.0",
 		"@nuxtjs/style-resources": "^1.0.0",
+		"@phosphor-icons/vue": "^2.1.6",
 		"animate.css": "^3.7.2",
 		"babel-plugin-transform-imports": "^2.0.0",
 		"cookie": "^0.5.0",

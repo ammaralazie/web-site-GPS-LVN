@@ -2,20 +2,22 @@
   <div class="career">
     <div class="careerWrapper">
       <div class="section1">
-        <v-container>
-          <div class="text-h4">
-            Career
-          </div>
-          <p class="mt-10" style="line-height: 2.5;">
-            GPS LVN provides uncountable opportunities and scope for the individuals to share their ideas, perspectives,
-            opinions, methods on its ground to grow as a great employee. A happy employee is your best representative.
-            Making employees happy is equally important as making an employee more productive because employees
-            productivity
-            is interrelated with their emotional state. GPS LVN brings its best to make the work environment happy and
-            make
-            the individual feel as family member rather than a staff member.
-          </p>
-        </v-container>
+        <v-img height="100%" class="d-flex align-center" src="/images/background-gpslvn.gif">
+          <v-container>
+            <div class="text-h4 white-color">
+              Career
+            </div>
+            <p class="mt-10 white-color" style="line-height: 2.5;">
+              GPS LVN provides uncountable opportunities and scope for the individuals to share their ideas, perspectives,
+              opinions, methods on its ground to grow as a great employee. A happy employee is your best representative.
+              Making employees happy is equally important as making an employee more productive because employees
+              productivity
+              is interrelated with their emotional state. GPS LVN brings its best to make the work environment happy and
+              make
+              the individual feel as family member rather than a staff member.
+            </p>
+          </v-container>
+        </v-img>
       </div>
 
       <!-- search inputs  -->

@@ -2,22 +2,28 @@
   <div class="section1">
     <v-img src="/images/background-gpslvn.gif" height="700" width="100%" class="head d-flex align-center justify-center">
       <div class="align-center justify-center mx-5" style="display: grid;">
-        <div class="text-h3">White Label Fleet Management Software</div>
+        <div class="text-h3">{{ data.title }}</div>
         <div style="width: 450px;" class="text-center mx-auto my-6">
-          700,000+ units | 50,000+ happy customers | 70+ countries
-          Tracker independent | Supports multiple languages
+          {{ data.subtitle }}
         </div>
         <v-btn class="mx-auto" color="primary">Get a demo</v-btn>
       </div>
     </v-img>
     <v-responsive class="mx-auto responsive-img">
-      <img width="100%" src="https://www.uffizio.com/wp-content/uploads/2023/01/trakzee-landing-1-2.png" alt="">
+      <img width="100%" :src="'/' + data.img" alt="">
     </v-responsive>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      data: this.$store.state.products[this.$route.params.id - 1]?.page_detail
+        ?.section1
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>

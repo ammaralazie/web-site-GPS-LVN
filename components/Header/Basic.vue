@@ -1,34 +1,20 @@
 <template>
   <fragment>
-    <v-app-bar
-      v-scroll="handleScroll"
-      :class="{ fixed: fixed }"
-      class="header"
-      fixed
-      dense
-      app
-      height="auto"
-    >
+    <v-app-bar v-scroll="handleScroll" :class="{ fixed: fixed }" class="header" fixed dense app height="auto">
       <v-container>
         <div class="header-content">
           <nav class="nav-menu">
             <div class="logo start-mobile">
-              <a :href="link.saas2.home">
+              <nuxt-link :to="'/'+$i18n.locale">
                 <logo type="landscape" />
-              </a>
+              </nuxt-link>
             </div>
           </nav>
           <nav class="user-menu">
-            <v-btn
-              :href="href"
-              color="primary"
-            >
-              {{ $t('common.header_'+text) }}
+            <v-btn :href="href" color="primary">
+              {{ $t('common.header_' + text) }}
             </v-btn>
-            <v-spacer
-              v-if="isDesktop"
-              class="vertical-divider"
-            />
+            <v-spacer v-if="isDesktop" class="vertical-divider" />
             <setting-menu />
           </nav>
         </div>
@@ -63,13 +49,13 @@ export default {
     this.loaded = true
   },
   methods: {
-    handleScroll: function() {
+    handleScroll: function () {
       if (window.scrollY > 100) {
         return (this.fixed = true)
       }
       return (this.fixed = false)
     },
-    handleToggleOpen: function() {
+    handleToggleOpen: function () {
       this.openNavMobile = !this.openNavMobile
     }
   },

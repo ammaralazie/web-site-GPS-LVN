@@ -3,15 +3,17 @@
 
     <!-- section 1 -->
     <div class="section1 d-flex align-center">
-      <v-container>
-        <div class="text-h4">
-          Exhibitions
-        </div>
-        <p class="mt-10" style="line-height: 2.5;">
-          We are constantly striving to stay in touch with our valued clientele and other industry pioneers, and our
-          proactive participation in networking events validates it.
-        </p>
-      </v-container>
+      <v-img height="100%" src="/images/background-gpslvn.gif" class="d-flex align-center white-color">
+        <v-container>
+          <div class="text-h4">
+            Exhibitions
+          </div>
+          <p class="mt-10" style="line-height: 2.5;">
+            We are constantly striving to stay in touch with our valued clientele and other industry pioneers, and our
+            proactive participation in networking events validates it.
+          </p>
+        </v-container>
+      </v-img>
     </div>
 
     <!-- section 2 -->
@@ -24,7 +26,7 @@
         </v-row>
         <v-row v-for="x in 5" :key="x">
           <v-col cols="12" lg="4" md="4" sm="12" xs="12">
-            <v-carousel cycle height="250" hide-delimiter-background show-arrows-on-hover >
+            <v-carousel cycle height="250" hide-delimiter-background show-arrows-on-hover>
               <v-carousel-item v-for="(slide, i) in slides" :key="i">
                 <img :src="slide" alt="">
               </v-carousel-item>

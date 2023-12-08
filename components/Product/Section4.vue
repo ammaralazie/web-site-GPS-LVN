@@ -4,21 +4,21 @@
       <v-container class="text-white">
         <div class="text-h3 text-center mt-12">
           <v-responsive>
-            <img width="40%" src="https://www.uffizio.com/wp-content/uploads/2022/08/trakzeebyNumber1.svg" alt="">
+            <img width="40%" :src="data.img_logo" alt="">
           </v-responsive>
 
           <v-row class="mt-8">
-            <v-col cols="12" lg="3" md="3" sm="4" xs="6" v-for="item in items" :key="item.text">
-              <div class="d-flex">
+            <v-col cols="12" lg="3" md="3" sm="4" xs="6" v-for="(item, index) in data.icons" :key="item.text">
+              <div v-if="index <= 3" class="d-flex">
                 <v-icon color="primary darken-2" size="60px">
                   {{ item.icon }}
                 </v-icon>
                 <div class="mx-3">
                   <div class="text-h4 white--text">
-                    {{ item.number }}
+                    {{ item.count }}
                   </div>
                   <div class="text-h5 text-capitalize white--text" style="white-space: nowrap">
-                    {{ item.text }}
+                    {{ item.title }}
                   </div>
                 </div>
               </div>
@@ -78,7 +78,9 @@ export default {
           number: '1200+',
           text: 'supported trackers'
         }
-      ]
+      ],
+      data: this.$store.state.products[this.$route.params.id - 1]?.page_detail
+        ?.section4
     }
   }
 }

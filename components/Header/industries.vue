@@ -3,12 +3,12 @@
     <v-container>
       <v-row style="margin-top: 20px;">
         <v-col v-for="(item, index) in industries" :key="index" cols="12" lg="4" md="4" sm="12" xs="12">
-          <a class="nuxtLink" :href="'/'+$i18n.locale+'/industries/detail/'+ item.id">
+          <nuxt-link class="nuxtLink" :to="'/'+$i18n.locale+'/industries/detail/'+ item.id">
             <v-card link min-height="210" class="d-flex elevation-4">
               <v-card-content class="d-flex align-center">
                 <v-row>
                   <v-col cols="3" class="d-flex px-0 align-center justify-end">
-                    <v-icon class="px-2" color="primary" size="70">{{ item.icon }}</v-icon>
+                    <v-icon class="px-2" size="50">{{ item.icon }}</v-icon>
                   </v-col>
                   <v-col cols="9">
                     <p class="px-1" style="display: grid;">
@@ -19,7 +19,7 @@
                 </v-row>
               </v-card-content>
             </v-card>
-          </a>
+          </nuxt-link>
         </v-col>
       </v-row>
     </v-container>
@@ -33,9 +33,9 @@ export default {
       industries: this.$store.state.industries
     }
   }, // /data
-  mounted() {
-  }
+  mounted() {}
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+</style>

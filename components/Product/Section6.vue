@@ -1,29 +1,50 @@
 <template>
   <div class="section6">
     <v-container>
-      <v-expansion-panels class="mt-10">
-        <v-row>
-          <v-col cols="12" lg="6" md="6" sm="12" xs="12" v-for="(item, index) in panels" :key="index">
-            <v-expansion-panel class="mb-3 mx-3" style="max-width: 450px;">
-              <v-expansion-panel-header class="text-title" style="font-weight: 600;">
+
+      <div class="">
+        <div class="text-h3 text-center">
+          FAQ
+        </div>
+        <div class="text-body-1 text-center">Questions to ask before you invest</div>
+      </div>
+      <v-row class="mt-14">
+        <v-col class="d-flex justify-center px-5" cols="12" lg="6" md="6" sm="12" xs="12">
+          <v-expansion-panels multiple v-model="panel2">
+            <v-expansion-panel v-for="(item, index) in dividedArr[0]" :key="index" class="mb-3 mx-3">
+              <v-expansion-panel-header class="text-title pa-3" style="font-weight: 600;">
                 {{ item.question }}
               </v-expansion-panel-header>
               <v-expansion-panel-content>
                 {{ item.answer }}
               </v-expansion-panel-content>
             </v-expansion-panel>
-          </v-col>
-        </v-row>
-      </v-expansion-panels>
+          </v-expansion-panels>
+        </v-col>
+        <v-col class="d-flex justify-center px-5" cols="12" lg="6" md="6" sm="12" xs="12">
+          <v-expansion-panels multiple v-model="panel1">
+            <v-expansion-panel v-for="(item, index) in dividedArr[1]" :key="index" class="mb-3 mx-3">
+              <v-expansion-panel-header class="text-title pa-3" style="font-weight: 600;">
+                {{ item.question }}
+              </v-expansion-panel-header>
+              <v-expansion-panel-content>
+                {{ item.answer }}
+              </v-expansion-panel-content>
+            </v-expansion-panel>
+          </v-expansion-panels>
+        </v-col>
+      </v-row>
     </v-container>
   </div>
 </template>
 
 <script>
+import chunkArr from "~/helper/chunkArr"
 export default {
   data() {
     return {
-      panel: [],
+      panel1: [],
+      panel2: [],
       panels: [
         {
           question: 'How can fleet management software help me stay compliant?',
@@ -74,8 +95,12 @@ export default {
           question: 'Can your fleet management support the size of my fleet?',
           answer: `Surely, our platform is versatile, and capable of accommodating anywhere from 10 to 1000 vehicles. Furthermore, you can tailor it to match your business’s size and nature effortlessly. Furthermore, it offers simple scalability options. This certainly allows you to adapt as your business requirements evolve. Undoubtedly use our software.`
         }
-      ]
+      ],
+      dividedArr: []
     }
+  },
+  mounted() {
+    this.dividedArr = chunkArr(this.panels, Math.ceil(this.panels.length / 2))
   }
 }
 </script>
@@ -84,6 +109,6 @@ export default {
 .section6 {
   position: relative;
   z-index: 100;
-  margin-top: 70;
+  margin-top: 70px;
 }
 </style>

@@ -1,11 +1,11 @@
 <template>
-  <div class="section5">
+  <div class="section5" v-if="data">
     <v-container>
       <div class="text-h4 text-center">
-        Fleet Management Platform That Grows With You
+        {{ data.title }}
       </div>
       <div class="text-body-1 text-center ">
-        Start with lite version and upgrade as you grow, or hit the ground running with one of our premium edition
+        {{ data.subtitle }}
       </div>
       <v-row class="my-12">
         <!-- card 1 -->
@@ -21,10 +21,10 @@
             </v-card-text>
 
             <v-card-text class="px-12 mt-8 text-center">
-              Basic features to kickstart your fleet management business
+              {{ data.card1 }}
             </v-card-text>
 
-            <v-card-text>
+            <v-card-text v-if="$route.params.id - 1 == 0">
               <v-expansion-panels>
                 <v-expansion-panel class="elevation-0" style="background-color: unset;">
                   <v-expansion-panel-header class="primary--text darken-2">
@@ -33,6 +33,12 @@
                         See all features
                       </v-col>
                     </v-row>
+
+                    <template v-slot:actions>
+                      <v-icon :color="$vuetify.theme.isDark ? 'white' : ''">
+                        $expand
+                      </v-icon>
+                    </template>
                   </v-expansion-panel-header>
                   <v-expansion-panel-content>
                     <div v-for="item in items" :key="item.text" class="d-flex align-center justify-space-between mb-3">
@@ -40,7 +46,7 @@
                         <div class="mx-2"><v-icon color="success">
                             {{ item.icon1 }}
                           </v-icon></div>
-                        <div>{{ item.text }}</div>
+                        <div :style="$vuetify.theme.isDark ? 'color:white' : ''">{{ item.text }}</div>
                       </div>
                       <v-icon v-if="item.icon2">
                         {{ item.icon2 }}
@@ -66,10 +72,10 @@
             </v-card-text>
 
             <v-card-text class="px-12 mt-8 text-center">
-              Includes advanced features that will help you master fleet management
+              {{ data.card2 }}
             </v-card-text>
 
-            <v-card-text>
+            <v-card-text v-if="$route.params.id - 1 == 0">
               <v-expansion-panels>
                 <v-expansion-panel class="elevation-0" style="background-color: unset;">
                   <v-expansion-panel-header class="primary--text darken-2">
@@ -78,6 +84,11 @@
                         See all features
                       </v-col>
                     </v-row>
+                    <template v-slot:actions>
+                      <v-icon :color="$vuetify.theme.isDark ? 'white' : ''">
+                        $expand
+                      </v-icon>
+                    </template>
                   </v-expansion-panel-header>
                   <v-expansion-panel-content>
                     <div v-for="item in items2" :key="item.text" class="d-flex align-center justify-space-between mb-3">
@@ -85,7 +96,7 @@
                         <div class="mx-2"><v-icon color="purple">
                             {{ item.icon1 }}
                           </v-icon></div>
-                        <div>{{ item.text }}</div>
+                        <div :style="$vuetify.theme.isDark ? 'color:white' : ''">{{ item.text }}</div>
                       </div>
                       <v-icon v-if="item.icon2">
                         {{ item.icon2 }}
@@ -103,7 +114,8 @@
           <v-card class="elevation-3">
             <v-card-title class="d-flex justify-center white--text premium  amber">
               Premium
-              <v-img class="img right" src="https://www.uffizio.com/wp-content/themes/uffizio/assets/images/recommended.svg"></v-img>
+              <v-img class="img right"
+                src="https://www.uffizio.com/wp-content/themes/uffizio/assets/images/recommended.svg"></v-img>
             </v-card-title>
             <v-card-text class="amber d-flex justify-center addPadding">
               <v-icon size="120" color="white">
@@ -112,10 +124,10 @@
             </v-card-text>
 
             <v-card-text class="px-12 mt-8 text-center">
-              Includes customizable and cutting-edge tools that will drive your business forward
+              {{ data.card3 }}
             </v-card-text>
 
-            <v-card-text>
+            <v-card-text v-if="$route.params.id - 1 == 0">
               <v-expansion-panels>
                 <v-expansion-panel class="elevation-0" style="background-color: unset;">
                   <v-expansion-panel-header class="primary--text darken-2">
@@ -124,6 +136,11 @@
                         See all features
                       </v-col>
                     </v-row>
+                    <template v-slot:actions>
+                      <v-icon :color="$vuetify.theme.isDark ? 'white' : ''">
+                        $expand
+                      </v-icon>
+                    </template>
                   </v-expansion-panel-header>
                   <v-expansion-panel-content>
                     <div v-for="item in items2" :key="item.text" class="d-flex align-center justify-space-between mb-3">
@@ -131,7 +148,7 @@
                         <div class="mx-2"><v-icon color="amber">
                             {{ item.icon1 }}
                           </v-icon></div>
-                        <div>{{ item.text }}</div>
+                        <div :style="$vuetify.theme.isDark ? 'color:white' : ''">{{ item.text }}</div>
                       </div>
                       <v-icon v-if="item.icon2">
                         {{ item.icon2 }}
@@ -144,7 +161,7 @@
           </v-card>
         </v-col>
       </v-row>
-      <div class="mx-auto d-flex align-center justify-content my-5">
+      <div class="mx-auto d-flex align-center justify-center my-5">
         <v-btn width="200" class="rounded-0" color="primary darken-2">
           Get A Demo
         </v-btn>
@@ -278,7 +295,9 @@ export default {
           icon1: 'mdi-check',
           text: 'Login Page Customization And theme selection'
         }
-      ]
+      ],
+      data: this.$store.state.products[this.$route.params.id - 1]?.page_detail
+        ?.section5
     }
   }
 }

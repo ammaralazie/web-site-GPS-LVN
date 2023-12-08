@@ -21,8 +21,8 @@
             </v-btn>
           </v-col>
         </v-row>
-      <v-card class="d-flex align-center justify-center">
-        <video-player playerStyles="customPlayerStyle" containerStyles="customContainer" src="https://www.youtube.com/watch?v=7rcRZAsm-A0" allow />
+      <v-card class="d-flex align-center justify-center" height="90vh">
+        <video-player containerStyles="containerStyles" playerStyles="playerStyles" src="https://www.youtube.com/watch?v=7rcRZAsm-A0" allow />
       </v-card>
     </v-container>
 
@@ -296,8 +296,6 @@ Manage requisition approval
       const key = line.replace(/[^a-zA-Z ]/g, '').replace(/ /g, '_').toLowerCase
       resultObject[key] = line
     })
-
-    console.log(resultObject)
   },
   computed: {
     isDesktop() {

@@ -15,7 +15,7 @@
             </v-col>
             <v-col cols="12" lg="6" md="6" sm="12" xs="12">
               <div :class="!isMobile ? 'text-h3' : 'text-h3 text-center'">{{ $t('name_app') }}</div>
-              <div :class="!isMobile ? 'text-h4':'text-h4 text-center'">{{ $t('location_tracking') }}</div>
+              <div :class="!isMobile ? 'text-h4' : 'text-h4 text-center'">{{ $t('location_tracking') }}</div>
             </v-col>
           </v-row>
           <v-row>
@@ -58,7 +58,7 @@
           <div class="text-h5">{{ $t('Suitable') }}
           </div>
           <v-row>
-            <v-col v-for="item in items" :key="item" cols="12" lg="6" md="6" sm="12" xs="12">
+            <v-col v-for="(item, index) in items" :key="index" cols="12" lg="6" md="6" sm="12" xs="12">
               <no-ssr>
                 <v-icon right class="notranslate mx-2" color="success">
                   mdi-checkbox-marked-circle
@@ -89,7 +89,7 @@
       <v-row class="mt-4">
         <v-col class="leftItems" :style="isMobile ? 'display:unset' : ''" cols="12" lg="4" md="4" sm="12" xs="12">
           <no-ssr>
-            <v-card :style="isMobile ? `margin-bottom: 10px` : ''" v-for="(leftItem, index) in leftItems" :key="leftItem"
+            <v-card :style="isMobile ? `margin-bottom: 10px` : ''" v-for="(leftItem, index) in leftItems" :key="index"
               class="elevation-3">
               <v-card-text>
                 <div :class="lang == 'en' ? 'text-h4 text-right d-flex' : 'text-h4 text-left d-flex'">
@@ -111,7 +111,7 @@
         </v-col>
         <v-col class="rightItems" :style="isMobile ? 'display:unset' : ''" cols="12" lg="4" md="4" sm="12" xs="12">
           <no-ssr>
-            <v-card :style="isMobile ? `margin-bottom: 10px` : ''" v-for="rightItem in rightItems" :key="rightItem"
+            <v-card :style="isMobile ? `margin-bottom: 10px` : ''" v-for="(rightItem, index) in rightItems" :key="index"
               class="elevation-3">
               <v-card-text>
                 <div :class="lang == 'en' ? 'text-h4 text-right d-flex' : 'text-h4 text-left d-flex'">
@@ -136,7 +136,7 @@
             <v-divider class="my-4"></v-divider>
           </no-ssr>
           <div class="text-h4">{{ $t('data') }}</div>
-          <v-col v-for="item in dataleftitems" :key="item" cols="12">
+          <v-col v-for="(item, index) in dataleftitems" :key="index" cols="12">
             <no-ssr>
               <v-icon left class="notranslate" color="success">
                 mdi-checkbox-marked-circle
@@ -186,7 +186,7 @@
           </no-ssr>
           <v-row>
             <div class="text-h4">{{ $t('data') }}</div>
-            <v-col v-for="item in datarightitems" :key="item" cols="12">
+            <v-col v-for="(item, index) in datarightitems" :key="index" cols="12">
               <no-ssr>
                 <v-icon left class="notranslate" color="success">
                   mdi-checkbox-marked-circle
@@ -236,7 +236,7 @@
               <div class="text-h5 mx-2 mb-3">
                 {{ $t('collected_data') }}
               </div>
-              <div class="mb-2" v-for="item in firstSection" :key="item">
+              <div class="mb-2" v-for="(item, index) in firstSection" :key="index">
                 <no-ssr>
                   <v-icon right class="notranslate mx-2" color="success">
                     mdi-checkbox-marked-circle
@@ -249,7 +249,7 @@
               <div class="text-h5 mx-2 mb-3">
                 {{ $t('drive_mode') }}
               </div>
-              <div class="mb-2" v-for="item in secondeSection" :key="item">
+              <div class="mb-2" v-for="(item, index) in secondeSection" :key="index">
                 <no-ssr>
                   <v-icon right class="notranslate mx-2" color="success">
                     mdi-checkbox-marked-circle
@@ -262,7 +262,7 @@
               <div class="text-h5 mx-2 mb-3">
                 {{ $t('tracking_mode') }}
               </div>
-              <div class="mb-2" v-for="item in thirdSection" :key="item">
+              <div class="mb-2" v-for="(item, index) in thirdSection" :key="index">
                 <no-ssr>
                   <v-icon right class="notranslate mx-2" color="success">
                     mdi-checkbox-marked-circle
@@ -275,7 +275,7 @@
           </v-row>
           <v-row>
             <v-col cols="12" lg="6" md="6" sm="12" xs="12">
-              <div class="mb-2" v-for="item in underFristSection" :key="item">
+              <div class="mb-2" v-for="(item, index) in underFristSection" :key="index">
                 <no-ssr>
                   <v-icon right class="notranslate mx-2" color="success">
                     mdi-checkbox-marked-circle
@@ -285,7 +285,7 @@
               </div>
             </v-col>
             <v-col cols="12" lg="6" md="6" sm="12" xs="12">
-              <div class="mb-2" v-for="item in underSecondeSection" :key="item">
+              <div class="mb-2" v-for="(item, index) in underSecondeSection" :key="index">
                 <no-ssr>
                   <v-icon right class="notranslate mx-2" color="success">
                     mdi-checkbox-marked-circle

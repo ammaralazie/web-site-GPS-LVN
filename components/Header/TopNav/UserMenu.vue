@@ -4,6 +4,7 @@
       :href="link.saas2.login"
       v-if="isDesktop"
       text
+      class="header-color"
     >
       {{ $t('common.login') }}
     </v-btn>

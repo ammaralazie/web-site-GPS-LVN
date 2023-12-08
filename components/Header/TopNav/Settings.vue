@@ -1,26 +1,10 @@
 <template>
-  <v-menu
-    v-model="open"
-    :close-on-content-click="closeOnContentClick"
-    transition="slide-y-transition"
-    offset-y
-    nudge-top="-6"
-    bottom
-    class="menu-setting"
-  >
+  <v-menu v-model="open" :close-on-content-click="closeOnContentClick" transition="slide-y-transition" offset-y
+    nudge-top="-6" bottom class="menu-setting">
     <template #activator="{ on }">
       <div class="setting">
-        <v-btn
-          fab
-          text
-          small
-          v-on="on"
-          class="ma-1"
-        >
-          <v-icon
-            :class="{ invert: invert, active: open }"
-            class="icon"
-          >
+        <v-btn fab text small v-on="on" class="ma-1">
+          <v-icon :class="{ invert: invert, active: open }" class="icon header-color">
             settings
           </v-icon>
         </v-btn>
@@ -35,13 +19,7 @@
               <label>
                 {{ $t('common.header_light') }}
               </label>
-              <v-switch
-                v-model="dark"
-                label=""
-                class="switch-toggle"
-                color="primary"
-                @change="setDark()"
-              />
+              <v-switch v-model="dark" label="" class="switch-toggle" color="primary" @change="setDark()" />
               <label>
                 {{ $t('common.header_dark') }}
               </label>
@@ -52,25 +30,18 @@
       <v-divider />
       <v-list class="lang-menu">
         <v-subheader>{{ $t('common.header_language') }}</v-subheader>
-        <v-list-item
-          v-for="locale in $i18n.locales"
-          :key="locale.code"
-          class="lang-list"
-          @click="switchLang(locale.code)"
-        >
+        <v-list-item v-for="locale in $i18n.locales" :key="locale.code" class="lang-list"
+          @click="switchLang(locale.code)">
           <v-list-item-avatar class="flag">
             <i :class="locale.code" />
           </v-list-item-avatar>
           <v-list-item-content>
             <v-list-item-title class="lang-opt">
-              {{ $t('common.'+locale.code) }}
+              {{ $t('common.' + locale.code) }}
             </v-list-item-title>
           </v-list-item-content>
           <v-list-item-action>
-            <v-icon
-              v-if="locale.code === $i18n.locale"
-              color="primary"
-            >
+            <v-icon v-if="locale.code === $i18n.locale" color="primary">
               mdi-check
             </v-icon>
           </v-list-item-action>
@@ -110,14 +81,15 @@ export default {
     ...mapGetters(['getDir'])
   },
   methods: {
-    switchLang: function(val) {
+    switchLang: function (val) {
       this.$i18n.setLocale(val)
+      this.setDirection
     },
-    setDark: function() {
+    setDark: function () {
       localStorage.setItem('awroraDarkMode', this.dark)
       this.$vuetify.theme.dark = this.dark
     },
-    setDirection: function() {
+    setDirection: function () {
       this.$vuetify.rtl = this.rtl
       document.dir = this.rtl ? 'rtl' : 'ltr'
     }

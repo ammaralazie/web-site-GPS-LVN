@@ -53,11 +53,36 @@ body {
   color: unset;
 }
 
-.playerStyles {
+.containerStyles {
   width: 100%;
-  height: 100%;
-  iframe {
+  height: 100% !important;
+  .playerStyles {
     width: 100%;
-    height: 100%;
+    height: 100% !important;
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
   }
 }
+
+.threeDots {
+  display: inline-block;
+  overflow: hidden !important;
+  max-inline-size: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.noThreeDots {
+  display: inline; /* Set back to default value */
+  overflow: visible !important; /* Set back to default value */
+  max-inline-size: none; /* Set back to default value */
+  text-overflow: clip; /* Set back to default value */
+  white-space: normal; /* Set back to default value */
+}
+
+/* .header-color, */
+// .white-color{
+//   color: white !important;
+// }

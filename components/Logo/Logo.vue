@@ -1,5 +1,5 @@
 <template>
-  <span :class="type" class="logo">
+  <span :class="type" class="logo header-color">
     <img :src="logo" alt="logo" />
     {{ type !== 'only' ? brand.saas2.name : '' }}
   </span>
