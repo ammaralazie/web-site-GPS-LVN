@@ -1,6 +1,6 @@
 <template>
   <fragment>
-    <v-navigation-drawer v-if="isTablet" v-model="openNavMobile" fixed temporary class="mobile-nav">
+    <v-navigation-drawer  v-if="isTablet" v-model="openNavMobile" fixed temporary class="mobile-nav">
       <mobile-menu :menu-primary="menuPrimary" :menu-secondary="menuSecondary" :single-nav="home" />
     </v-navigation-drawer>
     <v-app-bar v-scroll="handleScroll" :class="{ fixed: fixed }" class="header" fixed dense app height="auto">

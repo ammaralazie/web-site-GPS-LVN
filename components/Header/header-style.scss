@@ -281,10 +281,10 @@ $flag: "/images/flag-logo.png";
   width: 240px;
   @include palette-background-default;
   padding: spacing(10, 2, 0);
-  z-index: 90;
   @include breakpoints-down(xs) {
     width: 100% !important;
   }
+  z-index:2000
 }
 
 /* Top Multi Lv Menu */

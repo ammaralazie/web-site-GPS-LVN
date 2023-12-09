@@ -19,13 +19,12 @@ const palette = {
     anchor: colors.lightBlue.base, // link
     purple: '#b159da',
     amber: '#f2b02f'
-  },
+  }
 }
 
 export const theme = {
   ...palette.mint
 }
-
 
 export default {
   rtl: false,
