@@ -2551,7 +2551,47 @@ export const state = () => ({
         }
       ]
     }
-  }
+  },
+  exhibitions_items: [
+    {
+      title: 'Ess+ Security Fair Expo',
+      date: '16 August – 18 August 2023',
+      location: 'Corferias . Bogota DC Colombia',
+      detail: `
+      We’re thrilled to announce our participation in the highly anticipated ESS+ Expo in Colombia! Join us at the event, where we’ll be showcasing the latest advancements in Fleet Management Software. Discover cutting-edge features, gain insights from industry experts, and explore exciting networking opportunities.`,
+      images: [
+        'https://www.uffizio.com/wp-content/uploads/2023/08/expo-ess-8-330x184.jpeg',
+        'https://www.uffizio.com/wp-content/uploads/2023/08/expo-ess-10-330x184.jpeg',
+        'https://www.uffizio.com/wp-content/uploads/2023/08/expo-ess-14-330x184.jpeg',
+        'https://www.uffizio.com/wp-content/uploads/2023/08/1692202075499-330x184.jpeg',
+        'https://www.uffizio.com/wp-content/uploads/2023/08/expo-booth-image-of-colombia-330x184.jpeg'
+      ]
+    },
+    {
+      title: 'Securex Expo',
+      date: '06 June – 08 June 2023',
+      location: 'Johannesburg, South Africa',
+      detail: `Relive the Unforgettable Moments: Take a glimpse into our incredible presence at Securex Expo South Africa. From the exhilarating energy to the remarkable connections made. Join us in celebrating the achievements, the innovation, and the shared commitment to a safer future.`,
+      images: [
+        'https://www.uffizio.com/wp-content/uploads/2023/06/expo-1-330x184.jpeg',
+        'https://www.uffizio.com/wp-content/uploads/2023/06/expo-2-330x184.jpeg',
+        'https://www.uffizio.com/wp-content/uploads/2023/06/expo-3-330x184.jpeg',
+        'https://www.uffizio.com/wp-content/uploads/2023/06/expo-5-330x184.jpeg',
+      ]
+    },
+    {
+      title: 'CAEV Expo',
+      date: '13 April – 14 April 2023',
+      location: 'KTPO, Bengaluru',
+      detail: `We’re filled with a sense of gratitude and joy for the wonderful experience we’ve had at Expo. The connections we’ve made, the ideas we’ve shared, and the experiences we’ve had will stay with us for a long time to come. It’s been amazing to see so many people come together to celebrate innovation and creativity, and we’re grateful for the opportunity to be a part of it. It was a truly wonderful experience.`,
+      images: [
+        'https://www.uffizio.com/wp-content/uploads/2023/06/Caev-1-330x184.jpeg',
+        'https://www.uffizio.com/wp-content/uploads/2023/06/Caev-2-330x184.jpeg',
+        'https://www.uffizio.com/wp-content/uploads/2023/06/Caev-3-330x184.jpg',
+        'https://www.uffizio.com/wp-content/uploads/2023/06/Caev-4-330x184.jpeg'
+      ]
+    }
+  ]
 })
 
 export const mutations = {
