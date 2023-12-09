@@ -218,7 +218,15 @@ export default {
   },
   vuetify: {
     customVariables: ['~/assets/styles.scss'],
-    optionsPath: './config/vuetify.options.js'
+    optionsPath: './config/vuetify.options.js',
+    theme: {
+      themes: {
+        light: {
+          amber: '$amber',
+          purple: '$purple'
+        }
+      }
+    }
   },
   render: {
     bundleRenderer: {

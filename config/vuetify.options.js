@@ -16,7 +16,9 @@ const palette = {
     accent: colors.cyan.base, // accent main
     accentlight: colors.cyan.lighten4, // accent light
     accentdark: colors.cyan.darken3, // accent dark
-    anchor: colors.lightBlue.base // link
+    anchor: colors.lightBlue.base, // link
+    purple: '#b159da',
+    amber: '#f2b02f'
   },
 }
 
