@@ -114,7 +114,7 @@
             <v-row class="ma-0">
               <v-col cols="12" lg="3" v-for="(item, index) in  resureces " :key="index">
                 <v-card link
-                  :to="index !== (resureces.length - 1)?`/${$i18n.locale}/resources/${item.title}`: `/${$i18n.locale}/contact`"
+                  :to="index !== (resureces.length - 1) ? `/${$i18n.locale}/resources/${item.title}` : `/${$i18n.locale}/contact`"
                   class="elevation-3" height="150px">
                   <v-card-title>
                     <v-icon>
@@ -136,10 +136,10 @@
       <!-- /seconde menu for resources -->
 
       <!-- seconde menu for Hardware -->
-      <v-menu :open-on-hover=" hover " :position-x=" 0 " max-height="100%" offset-y content-class="mega-menu-root2"
+      <v-menu :open-on-hover="hover" :position-x="0" max-height="100%" offset-y content-class="mega-menu-root2"
         min-width="100%" nudge-left nudge-width>
         <template #activator="{ attrs, on }">
-          <span class="button-item" v-bind=" attrs " v-on=" on ">
+          <span class="button-item" v-bind="attrs" v-on="on">
             <v-btn text class="header-color">
               {{ $t('Hardware') }}
               <v-icon right>
@@ -151,8 +151,8 @@
         <div class="mega-menu2 rounded-menu2">
           <v-container>
             <v-row class="ma-0">
-              <v-col cols="12" lg="4" v-for="( item, index ) in  hardwares " :key=" index ">
-                <v-card link :to=" `/${$i18n.locale + link}` " class="elevation-3" height="150px">
+              <v-col cols="12" lg="4" v-for="( item, index ) in  hardwares " :key="index">
+                <v-card link :to="`/${$i18n.locale + link}`" class="elevation-3" height="150px">
                   <v-card-title>
                     <v-icon>
                       {{ item.icon }}
@@ -171,48 +171,6 @@
         </div>
       </v-menu>
       <!-- /seconde menu for Hardware -->
-
-
-      <!-- <v-btn v-if="singleNav" v-for="(item, index) in menuPrimary" :key="index" :href="item.link"
-        class="anchor-link scrollactive-item" text @click="setOffset(item.offset, index)">
-        {{ $t('saas2.header_' + item.name) }}
-      </v-btn>
-      <v-btn v-if="!singleNav" v-for="(item, index) in menuPrimary" :key="index" :href="'/' + item.link" text>
-        {{ $t('saas2.header_' + item.name) }}
-      </v-btn>
-      <v-menu :open-on-hover="hover" :position-x="0" max-height="480" offset-y content-class="mega-menu-root"
-        min-width="100%" nudge-left nudge-width>
-        <template #activator="{ attrs, on }">
-          <span class="button-item" v-bind="attrs" v-on="on">
-            <v-btn text>
-              {{ $t('common.header_sample_page') }}
-              <v-icon right>
-                mdi-chevron-down
-              </v-icon>
-            </v-btn>
-          </span>
-        </template>
-        <div class="mega-menu rounded-menu">
-          <v-container class="max-md">
-            <v-row>
-              <v-col v-for="(subitem, index) in menuSecondary" :key="index" sm="3">
-                <v-list>
-                  <v-subheader class="title-mega">{{ subitem.name }}</v-subheader>
-                  <img :src="subitem.thumb" alt="thumbnail" class="thumb-menu" />
-                  <v-list-item-group>
-                    <v-list-item v-for="(item, index) in subitem.child" :key="index" :href="item.link"
-                      :class="{ current: curURL === (curOrigin + langPath + item.link) }">
-                      <v-list-item-content>
-                        <v-list-item-title class="menu-list" v-text="$t('common.header_' + item.name)" />
-                      </v-list-item-content>
-                    </v-list-item>
-                  </v-list-item-group>
-                </v-list>
-              </v-col>
-            </v-row>
-          </v-container>
-        </div>
-      </v-menu> -->
 
     </scrollactive>
   </fragment>
