@@ -1,13 +1,12 @@
 <template>
-  <div class="section3">
-    <div v-if="$route.params.id - 1 == 0" class="text-h3 text-center">{{ data.title ? data.titl : 'Key Feature' }}</div>
-    <div v-if="$route.params.id - 1 == 0" class="text-title text-center mb-12">
+  <div class="section3" v-if="data != null">
+    <div v-if="index" class="text-h4 text-center">{{ data.title ? data.titl : 'Key Feature' }}</div>
+    <div v-if="index" class="text-title text-center mb-12">
       {{ data.detail_featuer }}
     </div>
     <v-container>
-      <v-row v-if="$route.params.id - 1 == 0">
-        <v-col v-for="(item, index) in   product_card[$route.params.id - 1]  " :key="index" cols="12" lg="4" md="4" sm="6"
-          xs="12">
+      <v-row v-if="index">
+        <v-col v-for="(item, index) in   product_card[index]  " :key="index" cols="12" lg="4" md="4" sm="6" xs="12">
           <div class="align-center justify-center" style="display: grid;">
             <div class="d-flex align-center justify-center mb-4 mx-auto elevation-4"
               style="border-radius: 50% ; height:120px ; width:120px;">
@@ -28,7 +27,7 @@
       <v-row class="py-4" v-else>
         <v-col cols="12" class="d-flex align-center justify-center">
           <div>
-            <div class="text-h3 text-center mb-3">
+            <div class="text-h4 text-center mb-3">
               {{ data.title ? data.title : 'Key Feature' }}
             </div>
             <p class="text-body-1 text-center">
@@ -42,9 +41,8 @@
               <v-sheet height="100%" style="background-color: transparent;"
                 class="d-flex align-center justify-center px-3">
                 <v-row>
-                  <v-col v-for="(  item, i  ) in   dividedArray[index]  " :key="i" cols="12" lg="3" md="4" sm="6"
-                    xs="12">
-                    <v-card link :loading="loading" class="mx-auto mb-14 elevation-3" height="180px">
+                  <v-col v-for="(  item, i  ) in   dividedArray[index]  " :key="i" cols="12" lg="3" md="4" sm="6" xs="12">
+                    <v-card link :loading="loading" class="mx-auto mb-14 elevation-3 d-flex align-center" height="180px">
                       <v-card-text>
                         <div>
                           <v-icon size="50" color="primary">
@@ -65,7 +63,6 @@
               </v-sheet>
             </v-carousel-item>
           </v-carousel>
-
         </v-col>
       </v-row>
     </v-container>
@@ -74,14 +71,15 @@
 
 <script>
 import VideoPlayer from 'nuxt-video-player'
+import { filter } from '../../helper/filterObjectValue'
+
 export default {
   data() {
     return {
-      data: this.$store.state.products[this.$route.params.id - 1]?.page_detail
-        ?.section3,
+      data: null,
       tab: 'option-1',
       slides: 0,
-      features: this.$store.state.product_card[this.$route.params.id - 1],
+      features: [],
       dividedArray: [],
       screenSize: null,
       tabs: [
@@ -91,14 +89,28 @@ export default {
           detail: 'Learn more'
         }
       ],
-      product_card: this.$store.state.product_card
+      product_card: this.$store.state.product_card,
+      index: null
     }
   },
   components: {
     VideoPlayer
   },
-  created() {
-    this.sizer('lg')
+  async created() {
+    this.data = await filter(
+      'title',
+      this.$route.params.id,
+      this.$store.state.products
+    )?.page_detail?.section3
+    this.index = await filter(
+      'title',
+      this.$route.params.id,
+      this.$store.state.products,
+      true
+    )
+
+    this.features = this.$store.state.product_card[this.index]
+    this.sizer(this.$vuetify.breakpoint.name)
   },
   watch: {
     '$vuetify.breakpoint.name'(newVal) {

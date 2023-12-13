@@ -113,7 +113,7 @@ $flag: "/images/flag-logo.png";
     }
     & > * {
       @include breakpoints-up(sm) {
-        margin: 0 $spacing1;
+        margin: 0 2px;
       }
     }
     .menu-setting {
@@ -207,6 +207,9 @@ $flag: "/images/flag-logo.png";
     text-transform: capitalize;
     padding: spacing(1, 1.5);
   }
+}
+.main-menu,.user-menu,.logo{
+  margin: 0px 2px !important;
 }
 
 .user-menu {

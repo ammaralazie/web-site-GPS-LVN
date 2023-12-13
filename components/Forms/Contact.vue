@@ -109,8 +109,6 @@ export default {
   },
   methods: {
     async validate() {
-      console.log('this.$refs.form : ', this.$refs.form)
-
       if (this.$refs.form.validate()) {
         this.loading = true
         const resulet = await this.$axios.post(

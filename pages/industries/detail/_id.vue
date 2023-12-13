@@ -1,16 +1,12 @@
 <template>
   <div class="main-wrap">
     <main-header></main-header>
-    <FirstSection v-if="product" :boldHeader="product.boldHeader" :subTitle="product.subTitle" :file="product.file">
+    <FirstSection>
     </FirstSection>
-    <SecondSection v-if="product" class="mt-10" :id="id"></SecondSection>
-    <ThirdSection v-if="product" :figures="product.figures" class="mt-10" :id="id"></ThirdSection>
-    <FourthSection v-if="product && id != 4" :data="product.sectionFour" class="mt-10"></FourthSection>
-    <FifthSection v-if="product" class="mt-10" :id="id"></FifthSection>
-    <SixSection v-if="product" :imagText="product.imagText" class="mt-10" :id="id"></SixSection>
-    <SevenSection v-if="product" class="mt-10" :id="id"></SevenSection>
-    <RaitSection v-if="product" class="mt-10" :id="id"></RaitSection>
-    <LastSection v-if="product" class="mt-10 mb-10" :id="id"></LastSection>
+    <SecondSection class="mt-10"></SecondSection>
+    <ThirdSection></ThirdSection>
+    <FourthSection class="mt-10"></FourthSection>
+    <FifthSection class="mt-10"></FifthSection>
     <main-footer></main-footer>
   </div>
 </template>
@@ -21,10 +17,7 @@ import SecondSection from '~/components/industries/SecondSection.vue'
 import ThirdSection from '~/components/industries/ThirdSection.vue'
 import FourthSection from '~/components/industries/FourthSection.vue'
 import FifthSection from '~/components/industries/FifthSection.vue'
-import SixSection from '~/components/industries/SixSection.vue'
-import SevenSection from '~/components/industries/SevenSection.vue'
-import RaitSection from '~/components/industries/RaitSection.vue'
-import LastSection from '~/components/industries/LastSection.vue'
+
 
 import Header from '~/components/Header'
 import Footer from '~/components/Footer'
@@ -35,7 +28,7 @@ export default {
     return {
       id: null,
       productDetail: productDetail,
-      product: null,
+      product: null
     }
   },
   components: {
@@ -45,11 +38,7 @@ export default {
     SecondSection,
     ThirdSection,
     FourthSection,
-    FifthSection,
-    SixSection,
-    SevenSection,
-    RaitSection,
-    LastSection
+    FifthSection
   },
   mounted() {
     const id = this.$route.params.id

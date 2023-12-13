@@ -4,7 +4,7 @@
       <v-row>
         <v-col cols="12" lg="6" md="6" sm="12" xs="12">
           <v-resposive>
-            <img height="80%" src="images/Group-2717.png">
+            <img width="100%"  src="images/Group-2717.png">
           </v-resposive>
           <h2 class="text-center mt-4">{{ $t('created_app') }}</h2>
         </v-col>
@@ -14,7 +14,7 @@
               <img width="200px" src="images/gpslvnLogo.png">
             </v-col>
             <v-col cols="12" lg="6" md="6" sm="12" xs="12">
-              <div :class="!isMobile ? 'text-h3' : 'text-h3 text-center'">{{ $t('name_app') }}</div>
+              <div :class="!isMobile ? 'text-h4' : 'text-h4 text-center'">{{ $t('name_app') }}</div>
               <div :class="!isMobile ? 'text-h4' : 'text-h4 text-center'">{{ $t('location_tracking') }}</div>
             </v-col>
           </v-row>
@@ -26,18 +26,12 @@
               <v-row>
                 <v-col cols="12" lg="6" md="6" sm="12" xs="12">
                   <no-ssr>
-                    <v-btn text>
-                      <img height="70px" src="images/google-play.png" alt="">
-                    </v-btn>
-                    <v-btn text>
-                      <img height="70px" src="images/app-store.png" alt="">
-                    </v-btn>
-                    <v-btn text>
-                      <img height="70px" src="images/app-gallery.png" alt="">
-                    </v-btn>
+                    <img width="100%" src="images/google-play.png" alt="">
+                    <img width="100%" src="images/app-store.png" alt="">
+                    <img width="100%" src="images/app-gallery.png" alt="">
                   </no-ssr>
                 </v-col>
-                <v-col cols="12" lg="6" md="6" sm="12" xs="12">
+                <v-col class="d-flex align-center justify-center" cols="12" lg="6" md="6" sm="12" xs="12">
                   <no-ssr>
                     <qrcode value="set yorr link here" @change="onDataUrlChange" :options="{
                       color: {
@@ -82,7 +76,7 @@
           </div>
         </v-col>
       </v-row>
-      <div class="text-h3 text-center mt-7">{{ $t('full_function') }}</div>
+      <div class="text-h4 text-center mt-7">{{ $t('full_function') }}</div>
       <no-ssr>
         <v-divider class="my-3"></v-divider>
       </no-ssr>
@@ -104,7 +98,7 @@
             </v-card>
           </no-ssr>
         </v-col>
-        <v-col cols="12" lg="4" md="4" sm="12" xs="12">
+        <v-col class="d-flex justify-center" cols="12" lg="4" md="4" sm="12" xs="12">
           <no-ssr>
             <v-img src="images/Slice-39.png"></v-img>
           </no-ssr>
@@ -125,7 +119,7 @@
           </no-ssr>
         </v-col>
       </v-row>
-      <div class="text-h3 text-center mt-7">{{ $t('host_personal') }}</div>
+      <div class="text-h4 text-center mt-7">{{ $t('host_personal') }}</div>
       <no-ssr>
         <v-divider class="my-4"></v-divider>
       </no-ssr>
@@ -217,7 +211,7 @@
           </v-row>
         </v-col>
       </v-row>
-      <div class="text-h3 text-center mt-7">
+      <div class="text-h4 text-center mt-7">
         <div>{{ $t('powerful_solution') }}</div>
         <div>{{ $t('driven_by') }}</div>
       </div>
@@ -297,7 +291,7 @@
           </v-row>
         </v-col>
       </v-row>
-      <div class="text-h3 text-center mt-7">
+      <div class="text-h4 text-center mt-7">
         {{ $t('who_can') }}
       </div>
       <no-ssr>

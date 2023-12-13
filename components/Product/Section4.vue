@@ -1,8 +1,8 @@
 <template>
-  <div class="section4">
+  <div class="section4" v-if="data != null">
     <v-img src="https://www.uffizio.com/wp-content/uploads/2022/08/Route-bg.jpg?id=4723">
       <v-container class="text-white">
-        <div class="text-h3 text-center mt-12">
+        <div class="text-h4 text-center mt-12">
           <v-responsive>
             <img width="40%" :src="data.img_logo" alt="">
           </v-responsive>
@@ -54,6 +54,7 @@
 </template>
 
 <script>
+import { filter } from '../../helper/filterObjectValue';
 export default {
   data() {
     return {
@@ -79,9 +80,15 @@ export default {
           text: 'supported trackers'
         }
       ],
-      data: this.$store.state.products[this.$route.params.id - 1]?.page_detail
-        ?.section4
+      data: null
     }
+  },
+  async created() {
+    this.data = await filter(
+      'title',
+      this.$route.params.id,
+      this.$store.state.products
+    )?.page_detail?.section4
   }
 }
 </script>

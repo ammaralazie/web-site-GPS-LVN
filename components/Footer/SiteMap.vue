@@ -4,70 +4,188 @@
     <subscribe-form v-if="extend" />
     <v-container class="fixed-width">
       <v-row>
-        <v-col class="pa-4 py-lg-10" md="3" cols="12">
-          <div class="logo-area">
-            <logo type="landscape" />
-            <p class="body-2">
-              {{ $t('saas2.details') }}
-            </p>
-          </div>
-          <p v-if="isDesktop" class="body-2">
-            &copy;&nbsp;
-            {{ brand.saas2.footerText }}
-          </p>
-        </v-col>
-        <v-col class="pa-4" md="6" cols="12">
-          <v-expansion-panels v-if="isMobile">
-            <v-expansion-panel v-for="(footer, index) in footers" :key="index" class="accordion-content">
-              <v-expansion-panel-header>
+        <v-col cols="12" lg="4" md="4" sm="12" xs=12>
+          <v-row>
+
+            <!-- quick links -->
+            <v-col cols="12">
+              <v-expansion-panels>
+                <v-expansion-panel v-if="isMobile" class="accordion-content">
+                  <v-expansion-panel-header>
+                    {{ $t('Quick Links') }}
+                  </v-expansion-panel-header>
+                  <v-expansion-panel-content>
+                    <div v-for="(el, index) in footers[0].description" :key="index">
+                      <nuxt-link class="nuxtLink my-2" :to="footers[0].link[index]">
+                        {{ $t(el) }}
+                      </nuxt-link>
+                    </div>
+                  </v-expansion-panel-content>
+                </v-expansion-panel>
+              </v-expansion-panels>
+
+              <div v-if="isDesktop" justify="space-around">
                 <h6 class="title mb-4">
-                  {{ $t('common.footer_' + footer.title) }}
+                  {{ $t(footers[0].title) }}
                 </h6>
-              </v-expansion-panel-header>
-              <v-expansion-panel-content>
                 <ul>
-                  <li v-for="(item, index) in footer.description" :key="index">
-                    <nuxt-link :to="footer.link[index]">
-                      {{ item }}
+                  <li v-for="(item, index) in footers[0].description" :key="index">
+                    <nuxt-link :to="footers[0].link[index]">
+                      {{ $t(item) }}
                     </nuxt-link>
                   </li>
                 </ul>
-              </v-expansion-panel-content>
-            </v-expansion-panel>
-          </v-expansion-panels>
-          <v-row v-if="isDesktop" justify="space-around">
-            <v-col v-for="(footer, headIndex) in footers" :key="headIndex" class="pa-4 site-map-item">
-              <h6 class="title mb-4">
-                {{ $t('common.footer_' + footer.title) }}
-              </h6>
-              <ul>
-                <li v-for="(item, index) in footer.description" :key="index">
-                  <nuxt-link v-if="headIndex != 1" :to="`/${lang}/${footer.link[index]}`">
-                    {{ $t("saas2." + item) }}
-                  </nuxt-link>
-                  <nuxt-link v-else :to="`/${lang}/${footer.link[index]}`">
+              </div>
+            </v-col>
+
+            <!-- product links -->
+            <v-col cols="12">
+              <v-expansion-panels>
+                <v-expansion-panel v-if="isMobile" class="accordion-content">
+                  <v-expansion-panel-header>
+                    {{ $t('Products') }}
+                  </v-expansion-panel-header>
+                  <v-expansion-panel-content>
+                    <div v-for="(el, index) in footers[1].description" :key="index">
+                      <nuxt-link class="nuxtLink my-2" :to="footers[1].link[index]">
+                        {{ $t(el) }}
+                      </nuxt-link>
+                    </div>
+                  </v-expansion-panel-content>
+                </v-expansion-panel>
+              </v-expansion-panels>
+
+              <div v-if="isDesktop" justify="space-around">
+                <h6 class="title mb-4">
+                  {{ $t(footers[1].title) }}
+                </h6>
+                <ul>
+                  <li v-for="(item, index) in footers[1].description" :key="index">
+                    <nuxt-link :to="footers[1].link[index]">
                       {{ $t(item) }}
                     </nuxt-link>
-                </li>
-              </ul>
+                  </li>
+                </ul>
+              </div>
             </v-col>
           </v-row>
         </v-col>
-        <v-col md="3" cols="12" class="pa-4">
+
+        <!-- Industries links -->
+        <v-col cols="12" lg="4" md="4" sm="12" xs=12>
+          <v-expansion-panels>
+            <v-expansion-panel v-if="isMobile" class="accordion-content">
+              <v-expansion-panel-header>
+                {{ $t('Industries') }}
+              </v-expansion-panel-header>
+              <v-expansion-panel-content>
+                <div v-for="(el, index) in footers[2].description" :key="index">
+                  <nuxt-link class="nuxtLink my-2" :to="footers[2].link[index]">
+                    {{ $t(el) }}
+                  </nuxt-link>
+                </div>
+              </v-expansion-panel-content>
+            </v-expansion-panel>
+          </v-expansion-panels>
+
+          <div v-if="isDesktop" justify="space-around">
+            <h6 class="title mb-4">
+              {{ $t(footers[2].title) }}
+            </h6>
+            <ul>
+              <li v-for="(item, index) in footers[2].description" :key="index">
+                <nuxt-link :to="footers[2].link[index]">
+                  {{ $t(item) }}
+                </nuxt-link>
+              </li>
+            </ul>
+          </div>
+        </v-col>
+
+        <!-- resources links -->
+        <v-col cols="12" lg="4" md="4" sm="12" xs=12>
+          <v-row>
+            <v-col cols="12">
+              <v-expansion-panels>
+                <v-expansion-panel v-if="isMobile" class="accordion-content">
+                  <v-expansion-panel-header>
+                    {{ $t('Resources') }}
+                  </v-expansion-panel-header>
+                  <v-expansion-panel-content>
+                    <div v-for="(el, index) in footers[3].description" :key="index">
+                      <nuxt-link class="nuxtLink my-2" :to="footers[3].link[index]">
+                        {{ $t(el) }}
+                      </nuxt-link>
+                    </div>
+                  </v-expansion-panel-content>
+                </v-expansion-panel>
+              </v-expansion-panels>
+
+              <div v-if="isDesktop" justify="space-around">
+                <h6 class="title mb-4">
+                  {{ $t(footers[3].title) }}
+                </h6>
+                <ul>
+                  <li v-for="(item, index) in footers[3].description" :key="index">
+                    <nuxt-link :to="footers[3].link[index]">
+                      {{ $t(item) }}
+                    </nuxt-link>
+                  </li>
+                </ul>
+              </div>
+            </v-col>
+            <v-col cols="12">
+              <div class="rounded-lg pa-4" style="border: 1px solid;">
+                <div class="text-h5">
+                  <v-icon size="25">mdi-phone</v-icon>
+                  Let’s Talk
+                </div>
+                <div class="mt-2" style="display: grid;">
+                  <span>
+                    india
+                  </span>
+                  <span>
+                    +91-83078 83078
+                  </span>
+                </div>
+                <div class="mt-3" style="display: grid;">
+                  <span>
+                    india
+                  </span>
+                  <span>
+                    +91-83078 83078
+                  </span>
+                </div>
+              </div>
+            </v-col>
+          </v-row>
+        </v-col>
+      </v-row>
+      <v-divider></v-divider>
+      <v-row>
+        <v-col v-if="isDesktop" cols="12" class="d-flex justify-space-between align-center">
+          <div class="copyRight">
+            Copyright <v-icon>mdi-copyright</v-icon> 2023 GPS LVN. All rights reserved.
+          </div>
           <div class="socmed">
             <v-btn v-for="(item, index) in socialMediaIcons" :key="index" link text icon class="button">
               <a :href="item.link" target="_blank">
                 <span :class="item.icon" />
               </a>
             </v-btn>
-
           </div>
-          <v-select :items="langList" :value="lang" v-model="lang" label="" outlined class="select-lang"
-            prepend-inner-icon="mdi-web" @change="switchLang(lang)" />
-          <p v-if="isMobile" class="body-2 text-center">
-            &copy;&nbsp;
-            {{ brand.saas2.footerText }}
-          </p>
+        </v-col>
+        <v-col v-if="isMobile">
+          <div class="socmed">
+            <v-btn v-for="(item, index) in socialMediaIcons" :key="index" link text icon class="button">
+              <a :href="item.link" target="_blank">
+                <span :class="item.icon" />
+              </a>
+            </v-btn>
+          </div>
+          <div class="copyRight text-center mt-9">
+            Copyright <v-icon>mdi-copyright</v-icon> 2023 GPS LVN
+          </div>
         </v-col>
       </v-row>
     </v-container>
@@ -83,6 +201,7 @@ import Logo from '../Logo'
 import brand from '~/static/text/brand'
 import Decoration from './Decoration'
 import SubscribeForm from '../SubscribeForm'
+import { filter } from '../../helper/filterObjectValue'
 
 export default {
   components: {
@@ -95,37 +214,31 @@ export default {
     lang: 'en',
     footers: [
       {
-        title: 'company',
+        title: 'Quick Links',
         description: [
-          'contact',
-          'Pricing',
-          'Postman collection',
-          'Support',
-          'Blog'
+          'Home',
+          'About Us',
+          'Plans & Pricing',
+          'Career',
+          'Contact Us',
+          'Privacy Policy'
         ],
-        link: ['#', '#', '#', '#', '#']
+        link: []
       },
       {
-        title: 'resources',
-        description: [
-          'Fleet Management Software',
-          'Delivery Management Software',
-          'Asset and Device GPS Tracking',
-          'Last Mile Delivery',
-          'Driver App'
-          //'Route Optimization'
-          // 'Dispatch & Delivery Planning',
-          // 'Proof of Delivery',
-          // 'Real Time Tracking',
-          // 'Route Planning App',
-          // 'Driver Ratings'
-        ],
-        link: ['#', '#', '#', '#', '#']
+        title: 'Products',
+        description: [],
+        link: []
       },
       {
-        title: 'legal',
-        description: ['Privacy policy', 'Terms of use'],
-        link: [`privacy_policy`, '#']
+        title: 'Industries',
+        description: [],
+        link: []
+      },
+      {
+        title: 'Resources',
+        description: [],
+        link: []
       }
     ],
     socialMediaIcons: [
@@ -151,6 +264,32 @@ export default {
       }
     ]
   }),
+  created() {
+    let items = ['products', 'industries', 'resources']
+    items.forEach((item, index) => {
+      this.footers[index + 1].description = this.$store.state[item].map(
+        el => el.title
+      )
+      if (index != 2)
+        this.footers[index + 1].link = this.$store.state[item].map(
+          el => `/${this.$i18n.locale}/${item}/detail/${el.title}`
+        )
+      else
+        this.footers[index + 1].link = this.$store.state[item].map(
+          el => `/${this.$i18n.locale}/${item}/${el.title}`
+        )
+    })
+
+    this.lang = this.$i18n.locale
+    this.footers[0].link = [
+      `/${this.lang}`,
+      `/${this.lang}/discover/About`,
+      `/${this.lang}/plans%20%26%20pricing`,
+      `/${this.lang}/discover/Career`,
+      `/${this.lang}/contact`,
+      `/${this.lang}/privacy_policy`
+    ]
+  },
   mounted() {
     this.lang = this.$i18n.locale
   },

@@ -8,26 +8,25 @@
             {{ $t("DRIVER APPLICATION SOFTWARE") }}
           </v-alert>
           <v-header class="text-h2">
-            {{ $t(boldHeader) }}
+            {{ $t('Fleet and equipment tracking for the Energy industry') }}
           </v-header>
           <p class="mt-3">
-            {{ $t(subTitle) }}
+            {{ $t('Determine the safety of high-value resources like coal, crude petroleum, oil, minerals, and natural gas during their transfer. Keep track of fleet or equipment even when they are beyond coverage areas! Streamline operations for better ROIs. Stay on extraction schedules and eliminate unnecessary equipment or fleet rental charges.') }}
           </p>
-          <v-row>
-            <v-col cols="12" md="6" lg="6" sm="12" xs="12">
-              <v-text-field :label="$t('Enter Your Email')"></v-text-field>
-            </v-col>
-            <v-col cols="12" md="6" lg="6" sm="12" xs="12">
-              <v-btn block class="primary">
-                {{ $t("Start Free Trail") }}
-              </v-btn>
-            </v-col>
-          </v-row>
 
-          <p>{{ $t("Start your free 7-day trial, no credit card necessary.") }}</p>
+          <div class="mt-10">
+            <v-btn color="primary" width="140px" height="40px">Solutions</v-btn>
+            <v-btn text color="primary">
+              Plans & Pricing
+            </v-btn>
+          </div>
         </v-col>
         <v-col cols="12" md="6" lg="6" sm="12" xs="12" class="d-flex align-center justify-center">
-          <video-player :src="file" allow />
+          <v-carousel class="rounded-lg" cycle :show-arrows="false">
+            <v-carousel-item v-for="(item, i) in items" :key="i">
+              <v-img height="100%" cover width="100%" :src="item.src"></v-img>
+            </v-carousel-item>
+          </v-carousel>
         </v-col>
       </v-row>
     </v-container>
@@ -41,6 +40,24 @@ export default {
   props: ['boldHeader', 'subTitle', 'file'],
   components: {
     VideoPlayer
+  },
+  data() {
+    return {
+      items: [
+        {
+          src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
+        },
+        {
+          src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
+        },
+        {
+          src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg',
+        },
+        {
+          src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',
+        }
+      ]
+    }
   },
   computed: {
     isDesktop() {

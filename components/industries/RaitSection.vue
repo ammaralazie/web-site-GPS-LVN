@@ -1,7 +1,7 @@
 <template>
   <v-container class="mt-13" style="position: relative;
       z-index: 20;">
-    <div class="text-h3 text-center mb-10">
+    <div class="text-h4 text-center mb-10">
       {{ $t('Transform Your Delivery Operations with GPS LVN.') }}
     </div>
     <v-row>

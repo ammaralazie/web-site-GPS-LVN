@@ -2,7 +2,7 @@
   <div>
     <v-container>
       <v-row style="margin-top: 20px;">
-        <v-col v-for="(item, index) in industries" :key="index" cols="12" lg="4" md="4" sm="12" xs="12">
+        <v-col v-for="(item, index) in industries" :key="index" cols="12" lg="3" md="3" sm="12" xs="12">
           <nuxt-link class="nuxtLink" :to="'/'+$i18n.locale+'/industries/detail/'+ item.id">
             <v-card link min-height="210" class="d-flex elevation-4">
               <v-card-content class="d-flex align-center">

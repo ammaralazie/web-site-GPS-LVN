@@ -3,7 +3,7 @@
     <v-container>
       <v-row>
         <v-col cols="12" lg="4" md="4" sm="12" xs="12">
-          <div class="text-h3">
+          <div class="text-h4">
             {{ data.leftSide }}
           </div>
         </v-col>

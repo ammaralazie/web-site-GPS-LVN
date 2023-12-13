@@ -14,7 +14,7 @@
     z-index: 10
   }
   @include breakpoints-up(sm) {
-    padding-bottom: $spacing15;
+    padding-bottom: 0;
   }
   ul {
     margin: 0;
@@ -80,10 +80,10 @@
   ::v-deep .v-icon{
     padding: 0;
     .theme--dark & {
-      color: $palette-primary-light 
+      color: $palette-primary-light
     }
     .theme--light & {
-      color: $palette-primary-dark 
+      color: $palette-primary-dark
     }
   }
   ::v-deep fieldset {

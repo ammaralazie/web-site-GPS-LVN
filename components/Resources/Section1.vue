@@ -2,7 +2,7 @@
   <div class="section1">
     <v-img height="300" src="/images/background-gpslvn.gif" class="d-flex algin-center">
       <v-container class="my-auto d-flex align-center" style=" height:300px">
-        <div class="text-h3 white-color">
+        <div class="text-h4 white-color">
           {{ data.title }}
         </div>
       </v-container>

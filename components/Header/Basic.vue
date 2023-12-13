@@ -5,7 +5,7 @@
         <div class="header-content">
           <nav class="nav-menu">
             <div class="logo start-mobile">
-              <nuxt-link :to="'/'+$i18n.locale">
+              <nuxt-link :to="'/' + $i18n.locale">
                 <logo type="landscape" />
               </nuxt-link>
             </div>

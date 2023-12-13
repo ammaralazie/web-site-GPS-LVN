@@ -3,7 +3,7 @@
     <v-container>
 
       <div class="">
-        <div class="text-h3 text-center">
+        <div class="text-h4 text-center">
           FAQ
         </div>
         <div class="text-body-1 text-center">Questions to ask before you invest</div>

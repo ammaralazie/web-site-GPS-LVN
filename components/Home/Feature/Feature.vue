@@ -5,10 +5,10 @@
     <v-container :class="{fixed:isDesktop}" style="position: relative;z-index:10">
       <v-row class="text-center my-6" style="position: relative;z-index:10">
           <v-col cols="12" class="ma-auto">
-            <h2 class="text-h3 mb-9">
+            <div class="text-h4 mb-9">
               {{ $t("Vehicle Management System (GPS LVN): A One Stop Fleet Management Solution") }}
-            </h2>
-            <div class="text-h5">
+            </div>
+            <div class="text-h6">
               {{ $t("Vehicle Management System Software (GPS LVN) is the most modern system to manage large vehicles and fleets.This software will manage every single piece of data of your all vehicles.") }}
             </div>
           </v-col>
@@ -30,10 +30,10 @@
     <v-container :class="{ fixed: isDesktop }">
       <v-row class="text-center my-6" style="position: relative;z-index:10">
         <v-col cols="12" class="ma-auto">
-          <h2 class="text-h3 mb-9">
+          <h2 class="text-h4 mb-9">
             {{ $t("Be Tactical, Chose Automation, Ensure Profitability") }}
           </h2>
-          <div class="text-h5">
+          <div class="text-h6">
             {{ $t("This fleet management system provides an ordained solution for the problems, generally a transport manager faced. Have an attentive tour from top to bottom & get a complete idea about a vehicle management system.") }}
           </div>
         </v-col>
@@ -61,10 +61,10 @@
     <v-container :class="{ fixed: isDesktop }">
       <v-row class="text-center my-6" style="position: relative;z-index:10">
         <v-col cols="12" class="ma-auto">
-          <h2 class="text-h3 mb-9">
+          <h2 class="text-h4 mb-9">
             {{ $t("Vehicle Management System") }}
           </h2>
-          <div class="text-h5">
+          <div class="text-h6">
             {{ $t("Vehicle management system is an automated software for the transportation industry or an organization"+
                         "which owns a large number of vehicle & managing fleets.It is an organized code which provides management"+
                         "functions that permit corporations to get rid of or minimize the risks related to vehicles.It helps a"+
@@ -72,7 +72,7 @@
                         "management, cost & inventory management etc.") }}
           </div>
 
-          <div class="text-h5 mt-7">
+          <div class="text-h6 mt-7">
             {{ $t("Bdtask has designed the most modern vehicle management software to manage large vehicles and fleets."+
                         "This system processes and analyzes every single data of all vehicles.It is an online based software which is"+
                         "really helpful for Bus, Car, Taxi, Cover Van & Truck operators to manage everyday workflow and performance.")
@@ -94,10 +94,10 @@
     <v-container :class="{ fixed: isDesktop }">
       <v-row class="text-center" style="position: relative;z-index:10">
         <v-col cols="12" class="ma-auto">
-          <h2 class="text-h3 mb-9">
+          <h2 class="text-h4 mb-9">
             {{ $t("Why Does an Intelligent Fleet Management Agency Owner Use a Vehicle Management System?") }}
           </h2>
-          <h6 class="text-h5">
+          <h6 class="text-h6">
             {{ $t("Only hard work is not the key to good luck. If it were, then the donkey would have been the king of the"+
                         "jungle but Lion.So, to be successful, you have to be tactful. & only an intelligent transportation business"+
                         "owner chose an automation system like vehicle management system to get following benefits:") }}
@@ -121,7 +121,7 @@
     <v-container :class="{ fixed: isDesktop }">
       <v-row class="text-center">
         <v-col cols="12" class="ma-auto">
-          <h2 class="text-h3 mb-9">
+          <h2 class="text-h4 mb-9">
             {{ $t("Which Features Make The GPS LVN System Best ?") }}
           </h2>
         </v-col>

@@ -1,18 +1,10 @@
 <template>
   <div style="    z-index: 20;
     position: relative;">
-    <u-animate :offset="250" name="fadeInLeftShort" duration="0.5s">
-      <div class="screen-wrap">
-        <img class="plant1 img-2d3d" :src="imgAPI.saas2[10]" :data-2d="imgAPI.saas2[9]" :data-3d="imgAPI.saas2[10]"
-          alt="plant" />
-        <div class="illustration">
-          <figure>
-            <img v-if="type == 'img'" :src="imageUrl" alt="screen" />
-            <video-player v-else src="https://www.youtube.com/watch?v=1kSNYz_5DeQ" allow />
-          </figure>
-        </div>
-      </div>
-    </u-animate>
+    <v-card class="elevation-3">
+      <v-img src="https://placehold.co/600x400" alt="screen"></v-img>
+      <!-- <video-player v-else src="https://www.youtube.com/watch?v=1kSNYz_5DeQ" allow /> -->
+    </v-card>
   </div>
 </template>
 

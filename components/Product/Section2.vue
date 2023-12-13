@@ -1,9 +1,9 @@
 <template>
-  <div class="section2">
+  <div class="section2" v-if="data != null">
     <v-row>
       <v-col cols="12" lg="6" md="6" class="d-flex align-center justify-center" sm="12" xs="12">
         <div class="justify-center" style="display: grid;">
-          <div class="text-h3" style="max-width: 450px;">
+          <div class="text-h4" style="max-width: 450px;">
             {{ data.title ? data.title : 'Fleet Management System' }}
 
           </div>
@@ -34,7 +34,7 @@
       <v-col class="pa-10" cols="12" lg="6" md="6" sm="12" xs="12">
         <VideoPlayer v-if="data.video" containerStyles="containerStyles" playerStyles="playerStyles" :src="data.video"
           allow></VideoPlayer>
-        <img v-else :src="data.img"/>
+        <img v-else :src="data.img" />
       </v-col>
     </v-row>
   </div>
@@ -42,15 +42,19 @@
 
 <script>
 import VideoPlayer from 'nuxt-video-player'
+import { filter } from '../../helper/filterObjectValue'
 export default {
   data() {
     return {
-      data: this.$store.state.products[this.$route.params.id - 1]?.page_detail
-        ?.section2
+      data: null
     }
   },
-  mounted() {
-    console.log('data : ', this.data)
+  async created() {
+    this.data = this.data = await filter(
+      'title',
+      this.$route.params.id,
+      this.$store.state.products
+    )?.page_detail?.section2
   },
   components: {
     VideoPlayer

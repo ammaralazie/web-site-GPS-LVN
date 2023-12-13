@@ -58,7 +58,7 @@
           <v-container>
             <v-row class="ma-0 mb-2">
               <v-col v-for="item in $store.state.products" :key="item.title" cols="12" lg="4" md="4" sm="6" xs="12">
-                <v-card link :to="`/${$i18n.locale}/product/detail/${item.id}`" class="elevation-3" height="170">
+                <v-card link :to="`/${$i18n.locale}/products/detail/${item.title}`" class="elevation-3" height="170">
                   <v-card-text>
                     <img :src="item.img" />
                     <br>

@@ -24,7 +24,7 @@
               {{ data.card1 }}
             </v-card-text>
 
-            <v-card-text v-if="$route.params.id - 1 == 0">
+            <v-card-text v-if="position == 0">
               <v-expansion-panels>
                 <v-expansion-panel class="elevation-0" style="background-color: unset;">
                   <v-expansion-panel-header class="primary--text darken-2">
@@ -34,7 +34,7 @@
                       </v-col>
                     </v-row>
 
-                    <template v-slot:actions>
+                    <template #actions>
                       <v-icon :color="$vuetify.theme.isDark ? 'white' : ''">
                         $expand
                       </v-icon>
@@ -48,9 +48,14 @@
                           </v-icon></div>
                         <div :style="$vuetify.theme.isDark ? 'color:white' : ''">{{ item.text }}</div>
                       </div>
-                      <v-icon v-if="item.icon2">
-                        {{ item.icon2 }}
-                      </v-icon>
+                      <v-tooltip style="z-index: 100" top v-if="item.icon2">
+                        <template v-slot:activator="{ on, attrs }">
+                          <v-icon v-bind="attrs" v-on="on">
+                            {{ item.icon2 }}
+                          </v-icon>
+                        </template>
+                        <div style='max-width:300px'>{{ item.tooltipContent }}</div>
+                      </v-tooltip>
                     </div>
                   </v-expansion-panel-content>
                 </v-expansion-panel>
@@ -75,7 +80,7 @@
               {{ data.card2 }}
             </v-card-text>
 
-            <v-card-text v-if="$route.params.id - 1 == 0">
+            <v-card-text v-if="position == 0">
               <v-expansion-panels>
                 <v-expansion-panel class="elevation-0" style="background-color: unset;">
                   <v-expansion-panel-header class="primary--text darken-2">
@@ -84,7 +89,7 @@
                         See all features
                       </v-col>
                     </v-row>
-                    <template v-slot:actions>
+                    <template #actions>
                       <v-icon :color="$vuetify.theme.isDark ? 'white' : ''">
                         $expand
                       </v-icon>
@@ -98,9 +103,14 @@
                           </v-icon></div>
                         <div :style="$vuetify.theme.isDark ? 'color:white' : ''">{{ item.text }}</div>
                       </div>
-                      <v-icon v-if="item.icon2">
-                        {{ item.icon2 }}
-                      </v-icon>
+                      <v-tooltip style="z-index: 100" top v-if="item.icon2">
+                        <template v-slot:activator="{ on, attrs }">
+                          <v-icon v-bind="attrs" v-on="on">
+                            {{ item.icon2 }}
+                          </v-icon>
+                        </template>
+                        <div style='max-width:300px'>{{ item.tooltipContent }}</div>
+                      </v-tooltip>
                     </div>
                   </v-expansion-panel-content>
                 </v-expansion-panel>
@@ -127,7 +137,7 @@
               {{ data.card3 }}
             </v-card-text>
 
-            <v-card-text v-if="$route.params.id - 1 == 0">
+            <v-card-text v-if="position == 0">
               <v-expansion-panels>
                 <v-expansion-panel class="elevation-0" style="background-color: unset;">
                   <v-expansion-panel-header class="primary--text darken-2">
@@ -136,23 +146,28 @@
                         See all features
                       </v-col>
                     </v-row>
-                    <template v-slot:actions>
+                    <template #actions>
                       <v-icon :color="$vuetify.theme.isDark ? 'white' : ''">
                         $expand
                       </v-icon>
                     </template>
                   </v-expansion-panel-header>
                   <v-expansion-panel-content>
-                    <div v-for="item in items2" :key="item.text" class="d-flex align-center justify-space-between mb-3">
+                    <div v-for="item in items3" :key="item.text" class="d-flex align-center justify-space-between mb-3">
                       <div class="d-flex">
                         <div class="mx-2"><v-icon color="amber">
                             {{ item.icon1 }}
                           </v-icon></div>
                         <div :style="$vuetify.theme.isDark ? 'color:white' : ''">{{ item.text }}</div>
                       </div>
-                      <v-icon v-if="item.icon2">
-                        {{ item.icon2 }}
-                      </v-icon>
+                      <v-tooltip style="z-index: 100" top v-if="item.icon2">
+                        <template v-slot:activator="{ on, attrs }">
+                          <v-icon v-bind="attrs" v-on="on">
+                            {{ item.icon2 }}
+                          </v-icon>
+                        </template>
+                        <div style='max-width:300px'>{{ item.tooltipContent }}</div>
+                      </v-tooltip>
                     </div>
                   </v-expansion-panel-content>
                 </v-expansion-panel>
@@ -171,6 +186,7 @@
 </template>
 
 <script>
+import { filter } from '../../helper/filterObjectValue'
 export default {
   data() {
     return {
@@ -178,7 +194,8 @@ export default {
         {
           icon1: 'mdi-check',
           text: 'Complete Vehicle Analysis',
-          icon2: 'mdi-information'
+          icon2: 'mdi-information',
+          tooltipContent: `Get insights into fleet travel time, distance, status, work hours, and GPS parameters.`
         },
         {
           icon1: 'mdi-check',
@@ -187,7 +204,8 @@ export default {
         {
           icon1: 'mdi-check',
           text: 'Fleet immobilization',
-          icon2: 'mdi-information'
+          icon2: 'mdi-information',
+          tooltipContent: ` The perfect anti-theft feature that allows you to disable vehicle ignition remotely.`
         },
         {
           icon1: 'mdi-check',
@@ -196,12 +214,14 @@ export default {
         {
           icon1: 'mdi-check',
           text: 'Technician Module',
-          icon2: 'mdi-information'
+          icon2: 'mdi-information',
+          tooltipContent: ` Track everyday tasks. Get maintenance and installation analytics`
         },
         {
           icon1: 'mdi-check',
           text: 'Multi-level user management',
-          icon2: 'mdi-information'
+          icon2: 'mdi-information',
+          tooltipContent: `Create User hierarchies. Manage billing through flexible tariff plans.`
         },
         {
           icon1: 'mdi-check',
@@ -223,8 +243,9 @@ export default {
         },
         {
           icon1: 'mdi-check',
-          text: '35+ Alerts',
-          icon2: 'mdi-information'
+          text: 'Temperature Monitoring',
+          icon2: 'mdi-information',
+          tooltipContent: `Real-time temperature drop or spike alerts to facilitate smooth cold chain logistics`
         },
         {
           icon1: 'mdi-check',
@@ -241,12 +262,14 @@ export default {
         {
           icon1: 'mdi-check',
           text: 'RPM monitoring',
-          icon2: 'mdi-information'
+          icon2: 'mdi-information',
+          tooltipContent: `Monitor RPM, work hours, and efficiency of your stationary equipment​​`
         },
         {
           icon1: 'mdi-check',
           text: 'Sensor status & analytics',
-          icon2: 'mdi-information'
+          icon2: 'mdi-information',
+          tooltipContent: `Compatible with analog and digital sensors`
         }
       ],
       items3: [
@@ -257,7 +280,8 @@ export default {
         {
           icon1: 'mdi-check',
           text: 'Trakzee Driver App',
-          icon2: 'mdi-information'
+          icon2: 'mdi-information',
+          tooltipContent: `A distinct app that your driver can use to track their daily tripss`
         },
         {
           icon1: 'mdi-check',
@@ -266,22 +290,26 @@ export default {
         {
           icon1: 'mdi-check',
           text: 'Video Telematics',
-          icon2: 'mdi-information'
+          icon2: 'mdi-information',
+          tooltipContent: `ADAS and DMS Analysis with live-streaming & playback. Integrate AI dashams.`
         },
         {
           icon1: 'mdi-check',
           text: 'Trip Planning & Classification',
-          icon2: 'mdi-information'
+          icon2: 'mdi-information',
+          tooltipContent: ` Assign stops or delivery points along the way. Get alerts for missed, delayed, upcoming stops. Also, classify trips into different  categories like business or personal`
         },
         {
           icon1: 'mdi-check',
           text: 'Tire Management',
-          icon2: 'mdi-information'
+          icon2: 'mdi-information',
+          tooltipContent: ` Real-time tire temperature and pressure analytics can be a lifesaver!`
         },
         {
           icon1: 'mdi-check',
           text: 'Load Monitoring',
-          icon2: 'mdi-information'
+          icon2: 'mdi-information',
+          tooltipContent: `Avoid overloading your trucks with an axle load monitoring system `
         },
         {
           icon1: 'mdi-check',
@@ -296,9 +324,26 @@ export default {
           text: 'Login Page Customization And theme selection'
         }
       ],
-      data: this.$store.state.products[this.$route.params.id - 1]?.page_detail
-        ?.section5
+      data: null,
+      position: null
     }
+  },
+  async created() {
+    this.data = this.data = await filter(
+      'title',
+      this.$route.params.id,
+      this.$store.state.products
+    )?.page_detail?.section5
+
+    this.position = await filter(
+      'title',
+      this.$route.params.id,
+      this.$store.state.products,
+      true
+    )
+
+    console.log('position : ', this.position)
+    console.log('this.data : ', this.data)
   }
 }
 </script>

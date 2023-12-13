@@ -37,7 +37,7 @@
         </template>
         <v-list>
           <nuxt-link class="nuxtLink" v-for="(product, index) in $store.state.products" :key="index"
-            :to="`/${$i18n.locale}/product/detail/${product.id}`">
+            :to="`/${$i18n.locale}/products/detail/${product.title}`">
             <v-list-item link>
               <v-row>
                 <v-col cols="12" :class="index != (products.length - 1) ? 'mb-1 d-flex' : 'd-flex'">
@@ -62,7 +62,7 @@
         </template>
         <v-list>
           <nuxt-link class="nuxtLink" v-for="(item, index) in $store.state.industries" :key="index"
-            :to="'/' + $i18n.locale + '/industries/detail/' + item.id">
+            :to="'/' + $i18n.locale + '/industries/detail/' + item.title">
             <v-list-item link>
               <v-row>
                 <v-col cols="12">
@@ -102,30 +102,36 @@
       </v-list-group>
 
       <!-- Hardware items -->
-        <v-list-group class="group-child">
-          <template #activator>
-            <v-list-item class="has-child">
-              <v-list-item-title class="menu-list">
-                {{ $t('Hardware') }}
-              </v-list-item-title>
+      <v-list-group class="group-child">
+        <template #activator>
+          <v-list-item class="has-child">
+            <v-list-item-title class="menu-list">
+              {{ $t('Hardware') }}
+            </v-list-item-title>
+          </v-list-item>
+        </template>
+        <v-list>
+          <nuxt-link class="nuxtLink" v-for="( item, index ) in  hardwares " :key="index"
+            :to="`/${$i18n.locale + link.saas2.comingSoon}`">
+            <v-list-item link>
+              <v-row>
+                <v-col cols="12">
+                  <div class="text-caption">
+                    {{ $t(item.title) }}
+                  </div>
+                </v-col>
+              </v-row>
             </v-list-item>
-          </template>
-          <v-list>
-            <nuxt-link class="nuxtLink" v-for="( item, index ) in  hardwares " :key="index"
-              :to="`/${$i18n.locale + link.saas2.comingSoon}`">
-              <v-list-item link>
-                <v-row>
-                  <v-col cols="12">
-                    <div class="text-caption">
-                      {{ $t(item.title) }}
-                    </div>
-                  </v-col>
-                </v-row>
-              </v-list-item>
-            </nuxt-link>
-          </v-list>
-        </v-list-group>
+          </nuxt-link>
+        </v-list>
+      </v-list-group>
+      <v-list-item :to="'/'+$i18n.locale + '/plans%20%26%20pricing'" class="has-child px-4">
+        <v-list-item-title class="menu-list">
+          {{ $t('Plans & Pricing') }}
+        </v-list-item-title>
+      </v-list-item>
     </v-list>
+
     <v-divider />
     <v-list dense>
       <v-list-item v-for="(item, index) in ['login', 'register']" :key="index" :href="link.saas2[item]"
@@ -144,6 +150,7 @@
 
 <script>
 import link from '~/static/text/link'
+import { filter } from '../../../helper/filterObjectValue'
 
 export default {
   data() {

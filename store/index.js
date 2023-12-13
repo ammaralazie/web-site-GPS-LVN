@@ -323,80 +323,86 @@ export const state = () => ({
   industries: [
     {
       id: 1,
-      title: 'Fleet Management Software',
+      title: 'Sales & Services',
       discription:
-        'Monitor your fleet operations, enabling you to reduce costs and improve fleet efficiency.',
-      icon: 'mdi-car-multiple'
+        'Electrical & utilities maintenance, GPS tracking  device service & maintenance, health care & medical sales',
+      icon: 'mdi-toolbox-outline'
     },
     {
       id: 2,
-      title: 'Delivery Management Software',
+      title: 'Energy',
       discription:
-        'Make every booking simple and efficient. Send your drivers the best routes with accurate ETAs and notifications for your customers.',
-      icon: 'mdi-bank-transfer'
+        'Electric utility companies, gas and water utility providers, renewable energy installation & maintenance',
+      icon: 'mdi-transmission-tower'
     },
     {
       id: 3,
-      title: 'Asset and Device GPS Tracking',
+      title: 'Passenger Transport',
       discription:
-        'Track your assets using a powerful GPS tracking device that records the exact location of your assets throughout their day-to-day use.',
-      icon: 'mdi-monitor-dashboard'
+        'Bus services, school bus transportation, airport shuttle services, tour & charter bus operators, ferries',
+      icon: 'mdi-van-passenger'
     },
     {
       id: 4,
-      title: 'Last Mile Delivery',
+      title: 'Healthcare',
       discription:
-        'Streamline the final leg of the delivery process for faster, more efficient deliveries.',
-      icon: 'mdi-go-kart-track'
+        'Medical equipment transport, pharmaceutical distribution, blood & organ transport services',
+      icon: 'mdi-bottle-tonic-plus-outline'
     },
     {
       id: 5,
-      title: 'Driver App',
+      title: 'Agriculture',
       discription:
-        'Track the live location of any driver to ensure they are following the best routes. Send them new customer bookings so they can update their routes in real time.',
-      icon: 'mdi-map-marker'
+        'Farming operations fleets, precision agriculture for crop management, livestock transportation',
+      icon: 'mdi-compost'
     },
     {
       id: 6,
-      title: 'Route Optimization',
+      title: 'Construction',
       discription:
-        'Find the fastest routes for every booking location to improve your business efficiency and reduce operational costs.',
-      icon: 'mdi-router-wireless'
+        'Construction companies, excavation & earthmoving, equipment rental businesses',
+      icon: 'mdi-account-hard-hat-outline'
     },
     {
       id: 7,
-      title: 'Dispatch & Delivery Planning',
+      title: 'Tracking',
       discription:
-        'Plan and dispatch the fastest journey for your fleet, in only minutes.',
-      icon: 'mdi-map-legend'
+        'Freight transportation & logistics, long-haul trucking, local delivery services, refrigerated trucking',
+      icon: 'mdi-car-wireless'
     },
     {
       id: 8,
-      title: 'Proof of Delivery',
+      title: 'FMCG',
       discription:
-        'An easier way to capture a client’s confirmation of a completed booking or delivery. Let your drivers capture an e-signature and photo proof directly from an iPhone or Android device.',
-      icon: 'mdi-home-map-marker'
+        'Food and beverage distribution, frozen foods & dairy products, retail supply chain, E-commerce delivery',
+      icon: 'mdi-sprout'
     },
     {
       id: 9,
-      title: 'Real Time Tracking',
+      title: 'Emergency & Security',
       discription:
-        'You can share your trip status and live location with your customers, using a single link, to let them know where you are and when you’re going to arrive.',
-      icon: 'mdi-map-clock-outline'
+        'Police & law enforcement agencies, fire departments & EMS, ambulance services, disaster recovery services',
+      icon: 'mdi-car-emergency'
     },
     {
       id: 10,
-      title: 'Route Planning App',
+      title: 'Hire & Rental',
       discription:
-        'Build the most efficient routes increasing efficiency, improved customer satisfaction and cost savings.',
-      icon: 'mdi-map-search-outline'
+        'Vehicle rental companies, equipment leasing businesses, short-term & long-term rentals',
+      icon: 'mdi-security'
     },
     {
       id: 11,
-      title: 'Driver Ratings',
+      title: 'Marine & Boating',
+      discription: 'Commercial fishing fleets, yacht & boat rental companies',
+      icon: 'mdi-submarine'
+    },
+    {
+      id: 12,
+      title: 'Security',
       discription:
-        'Streamline the final leg of the delivery process for faster, more efficient deliveries.',
-      icon: 'mdi-go-kart-track'
+        'Cash carry vans, secure cargo transport, government & military transport',
+      icon: 'mdi-shield-account-outline'
     }
   ],
   products: [

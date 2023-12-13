@@ -1,22 +1,19 @@
 <template>
-  <v-container>
-    <div class="text-h3 justify-center mx-auto my-10 d-flex ">
-      {{ $t("The complete Delivery Management Solution.") }}
-    </div>
-    <v-row>
-      <v-col v-for="(item,i) in items" :key="item.title" cols="12" xl="3" md="3" sm="6" xs="6">
-        <v-card :min-height="i > 3 ? '100%':'290'" class="pa-4 elevation-3">
-          <v-card-content class="justify-center algin-center cardContent">
-            <v-icon class="mx-auto" size="90" color="primary">{{ item.icon }}</v-icon>
-            <div class="text-h5">{{ $t(item.title) }}</div>
-            <p>
-              {{ $t(item.detail) }}
-            </p>
-          </v-card-content>
-        </v-card>
-      </v-col>
-    </v-row>
-  </v-container>
+  <div class="section5">
+    <v-container>
+      <div class="text-h4 mb-14">
+        Ready to get started? Get in touch with us!
+      </div>
+      <div class="mt-14">
+        <v-btn color="primary rounded-lg" height="60px">
+          Schedule a Meeting
+        </v-btn>
+        <v-btn color="primary rounded-0" text height="60px">
+          Plans & Pricing
+        </v-btn>
+      </div>
+    </v-container>
+  </div>
 </template>
 
 <script>
@@ -89,7 +86,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.cardContent {
-  display: grid;
+.section5 {
+  margin-top: 160px;
+  margin-bottom: 100px;
 }
 </style>

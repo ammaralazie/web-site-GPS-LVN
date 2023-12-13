@@ -1,8 +1,8 @@
 <template>
-  <div class="section1">
+  <div class="section1" v-if="data != null">
     <v-img src="/images/background-gpslvn.gif" height="700" width="100%" class="head d-flex align-center justify-center">
       <div class="align-center justify-center mx-5" style="display: grid;">
-        <div class="text-h3">{{ data.title }}</div>
+        <div class="text-h4">{{ data.title }}</div>
         <div style="width: 450px;" class="text-center mx-auto my-6">
           {{ data.subtitle }}
         </div>
@@ -16,12 +16,19 @@
 </template>
 
 <script>
+import { filter } from '../../helper/filterObjectValue'
 export default {
   data() {
     return {
-      data: this.$store.state.products[this.$route.params.id - 1]?.page_detail
-        ?.section1
+      data: null
     }
+  },
+  async created() {
+    this.data = await filter(
+      'title',
+      this.$route.params.id,
+      this.$store.state.products
+    )?.page_detail?.section1
   }
 }
 </script>

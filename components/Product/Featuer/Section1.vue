@@ -1,7 +1,7 @@
 <template>
   <div class="section1">
     <v-container>
-      <div class="text-h3 text-center  my-14">
+      <div class="text-h4 text-center  my-14">
         {{ data.title }}
       </div>
 

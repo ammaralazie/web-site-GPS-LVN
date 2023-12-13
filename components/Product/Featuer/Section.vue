@@ -3,7 +3,7 @@
     <v-img height="1000px" src="/images/background-gpslvn.gif">
       <v-container style="display:grid;width:100%;height:100%" class="align-center justify-center">
         <div style="display:grid" class="mx-auto justify-center">
-          <div style="width:70%" class="mx-auto text-h3 text-center mb-3">
+          <div style="width:70%" class="mx-auto text-h4 text-center mb-3">
             {{ data.title }}
           </div>
           <div style="width:70%" class="mx-auto text-h6 text-center">
@@ -50,9 +50,6 @@ export default {
       const smDown = this.$store.state.breakpoints.smDown
       return smDown.indexOf(this.$mq) > -1
     }
-  },
-  mounted() {
-    console.log('data : ', this.data)
   }
 }
 </script>
