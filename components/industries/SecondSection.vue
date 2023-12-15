@@ -1,28 +1,26 @@
 <template>
-  <div class="section2">
+  <div class="section2" v-if="data">
     <div class="frame"></div>
     <v-container>
       <div class="primary--text text-h5">
         Tools that help you excel
       </div>
       <div class="text-h4 mt-9">
-        Benefits of Employee Management
+        {{ data.title }}
       </div>
       <div class="text-subtitle1 mt-9" :style="!isMobile ? 'width: 60%;' : 'width: 100%;'">
-        Keep tabs on your sales representatives and out-of-office crew. Collaborate better with your team for greater
-        transparency.
+        {{ data.subtitle }}
       </div>
-
       <v-row class="mt-10">
-        <v-col v-for="i in 4" :key="i" cols="12" lg="3" md="3" sm="6" xs="12">
+        <v-col v-for="(item, i) in data.cards" :key="i" cols="12" lg="3" md="3" sm="6" xs="12">
           <v-icon color="primary" class="px-3" size="40px">
-            mdi-home
+            {{ item.icon }}
           </v-icon>
           <v-alert class="mt-3 px-3" height="50px" colored-border>
-            Aliquam eu nunc. Fusce
+            {{ item.title }}
           </v-alert>
           <div class="px-3">
-            Manage on-site operations from your desk! Use our live-tracking screen and video telematics to track progress.
+            {{ item.detail }}
           </div>
         </v-col>
       </v-row>
@@ -31,15 +29,25 @@
 </template>
 
 <script>
+import { filter } from '../../helper/filterObjectValue'
 export default {
   data() {
     return {
-      computed: {
-        isMobile() {
-          const smDown = this.$store.state.breakpoints.smDown
-          return smDown.indexOf(this.$mq) > -1
-        }
-      }
+      data: null
+    }
+  },
+  async created() {
+    this.data = await filter(
+      'title',
+      this.$route.params.id,
+      this.$store.state.industries
+    )?.detail_page?.section2
+    console.log('industries : ', this.data)
+  },
+  computed: {
+    isMobile() {
+      const smDown = this.$store.state.breakpoints.smDown
+      return smDown.indexOf(this.$mq) > -1
     }
   }
 }

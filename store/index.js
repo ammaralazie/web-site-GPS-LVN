@@ -326,14 +326,273 @@ export const state = () => ({
       title: 'Sales & Services',
       discription:
         'Electrical & utilities maintenance, GPS tracking  device service & maintenance, health care & medical sales',
-      icon: 'mdi-toolbox-outline'
+      icon: 'mdi-toolbox-outline',
+      detail_page: {
+        section1: {
+          title: `Employee Management System for Field Sales and Services`,
+          subtitle: `Are you unsure of your sales representatives’ whereabouts? Do you have difficulty managing time? Losing track of bills and expenses? Uffizio’s dynamic and flexible employee management system can help with all the above.`,
+          img: [
+            'https://www.uffizio.com/wp-content/uploads/2022/06/field-sales-and-services-1.jpg',
+            'https://www.uffizio.com/wp-content/uploads/2022/06/field-sales-and-services-2.jpg',
+            'https://www.uffizio.com/wp-content/uploads/2022/06/field-sales-and-services-3.jpg',
+            'https://www.uffizio.com/wp-content/uploads/2022/06/field-sales-and-services-4.jpg',
+            'https://www.uffizio.com/wp-content/uploads/2022/06/field-sales-and-services-5.jpg',
+            'https://www.uffizio.com/wp-content/uploads/2022/06/field-sales-and-services-6.jpg'
+          ]
+        },
+        section2: {
+          title: 'Benefits of Employee Management',
+          subtitle:
+            'Keep tabs on your sales representatives and out-of-office crew. Collaborate better with your team for greater transparency.',
+          cards: [
+            {
+              icon: 'mdi-account',
+              title: 'Administer Remotely',
+              detail: `Manage on-site operations from your desk! Use our live-tracking screen and video telematics to track progress.`
+            },
+            {
+              icon: 'mdi-account-credit-card-outline',
+              title: 'Simplify Processes',
+              detail: `Our solutions supplement on-premise CRM/ERPs. You can upload all your essential data using excel or CSV files.`
+            },
+            {
+              icon: 'mdi-cogs',
+              title: 'Manage Costs',
+              detail: `We help managers keep track of expenses and simplify reimbursements for the employees.`
+            },
+            {
+              icon: 'mdi-file-sign',
+              title: 'Schedule Tasks',
+              detail: `Automate task allocation based on priority, deadlines, and employee availability.`
+            }
+          ]
+        },
+        section3: {
+          title: `Features of Employee Management System`,
+          subtitle: `Here's why our employee management stand out from the rest`,
+          cards: [
+            {
+              imageSide: {
+                right: true,
+                left: false,
+                imageUrl: `https://www.uffizio.com/wp-content/uploads/2022/06/report.png`
+              },
+              textForm: {
+                right: true,
+                left: false,
+                title: 'Expense Reports',
+                detail: `They help you stay on top of company expenditures. Keep track of your employee’s expenses and facilitate easy reimbursement. By checking on fuel or a business trip’s expenses—you can avoid financial discord. Upload receipts or invoices for ultimate transparency.`,
+                icon: 'mdi-currency-usd'
+              }
+            },
+            {
+              imageSide: {
+                right: false,
+                left: true,
+                imageUrl: `https://www.uffizio.com/wp-content/uploads/2022/06/live.png`
+              },
+              textForm: {
+                right: true,
+                left: false,
+                title: 'Live-tracking and ETAs',
+                detail: `Do you have trouble keeping track of your teams when they work remotely? Track employees in real-time and collaborate better. Getting your crews on the job sites in good time is essential for customer satisfaction. Never make your customers wait!
+                Share live ETAs and notify them ahead of time in case of delays or cancellations.`,
+                icon: 'mdi-map-marker-multiple-outline'
+              }
+            },
+            {
+              imageSide: {
+                right: true,
+                left: false,
+                imageUrl: `https://www.uffizio.com/wp-content/uploads/2022/06/live.png`
+              },
+              textForm: {
+                right: true,
+                left: false,
+                title: 'Job Module',
+                detail: `Automate and monitor employee task assignments. The job module keeps you updated with completed tasks and missed tasks. Check up on your employees when they’ve missed a designated task and resolve issues preemptively.`,
+                icon: 'mdi-go-kart-track'
+              }
+            },
+            {
+              imageSide: {
+                right: false,
+                left: true,
+                imageUrl: `https://www.uffizio.com/wp-content/uploads/2022/06/route-1.png`
+              },
+              textForm: {
+                right: true,
+                left: false,
+                title: 'Route Optimization',
+                detail: `Wouldn’t you like it if your teams were taking the shortest routes while moving from one job site to another? Accessing optimized routes means more on-time visits, lesser fuel costs, and increased productivity! Route optimization allows your crew to complete more tasks on time than before —by eliminating transit times.`,
+                icon: 'mdi-wallet-travel'
+              }
+            }
+          ]
+        },
+        section4: {
+          subtitle:
+            'See how businesses in this industry are using our platform for greater productivity and profits!',
+          cards: [
+            {
+              img:
+                'https://www.uffizio.com/wp-content/uploads/2022/06/field-sales-and-services-1.jpg',
+              detail: `Solid waste management with GPS tracking software `
+            },
+            {
+              img:
+                'https://www.uffizio.com/wp-content/uploads/2022/06/field-sales-and-services-2.jpg',
+              detail: `Tracking railway workforce `
+            },
+            {
+              img:
+                'https://www.uffizio.com/wp-content/uploads/2022/06/field-sales-and-services-3.jpg',
+              detail: `Tracking without the added cost of GPS devices - MobiGPS `
+            },
+            {
+              img:
+                'https://www.uffizio.com/wp-content/uploads/2022/06/field-sales-and-services-5.jpg',
+              detail: `Monitoring driving behaviors `
+            }
+          ]
+        }
+      }
     },
     {
       id: 2,
       title: 'Energy',
       discription:
         'Electric utility companies, gas and water utility providers, renewable energy installation & maintenance',
-      icon: 'mdi-transmission-tower'
+      icon: 'mdi-transmission-tower',
+      detail_page: {
+        section1: {
+          title: `Fleet and equipment tracking for the Energy industry`,
+          subtitle: `Determine the safety of high-value resources like coal, crude petroleum, oil, minerals, and natural gas during their transfer. Keep track of fleet or equipment even when they are beyond coverage areas! Streamline operations for better ROIs. Stay on extraction schedules and eliminate unnecessary equipment or fleet rental charges.`,
+          img: [
+            'https://www.uffizio.com/wp-content/uploads/2022/06/oil-and-gas-businesses.png',
+            'https://www.uffizio.com/wp-content/uploads/2022/06/Tracking-mining-workers-and-vehicles.png',
+            'https://www.uffizio.com/wp-content/uploads/2022/06/construction-img-1.png',
+            'https://www.uffizio.com/wp-content/uploads/2022/06/field-sales-and-services-5.jpg',
+            'https://www.uffizio.com/wp-content/uploads/2022/06/trucking-3.jpg',
+            'https://www.uffizio.com/wp-content/uploads/2022/06/agriculture-3.jpg'
+          ]
+        },
+        section2: {
+          title: 'Benefits',
+          subtitle:
+            'Manage equipment and construction fleets over multiple job sites. Boost productivity by streamlining operations.',
+          cards: [
+            {
+              icon: 'mdi-car-door-lock',
+              title: 'Reduced Thefts',
+              detail: `Alerts for route deviation, unauthorized stops, and consignment tampering, and more.`
+            },
+            {
+              icon: 'mdi-wrench-cog',
+              title: 'Fewer Repairs',
+              detail: `Access actionable maintenance data and save a fortune on equipment repairs.`
+            },
+            {
+              icon: 'mdi-shield-lock',
+              title: 'Enhanced Safety',
+              detail: `Get live alerts for site accidents and protect your on-site workers and drivers.`
+            },
+            {
+              icon: 'mdi-monitor-dashboard',
+              title: 'Customizable Features',
+              detail: `Our platform is configurable and allows 3rd party API integration.`
+            }
+          ]
+        },
+        section3: {
+          title: `Features`,
+          subtitle: `Here's why we stand out from the rest`,
+          cards: [
+            {
+              imageSide: {
+                right: true,
+                left: false,
+                imageUrl: `https://www.uffizio.com/wp-content/uploads/2022/06/workhour-blue.png`
+              },
+              textForm: {
+                right: false,
+                left: true,
+                title: 'Workhour and RPM reports',
+                detail: `Work hour or RPM reports help you understand how much work gets by done your workforce as well as your machinery. It gives you insights into equipment utilization and can help you optimize your assets for higher scalability. These analytics help you gain leading-edge business acumen.`,
+                icon: 'mdi-signal-cellular-3'
+              }
+            },
+            {
+              imageSide: {
+                right: false,
+                left: true,
+                imageUrl: `https://www.uffizio.com/wp-content/uploads/2022/06/elock-blue.png`
+              },
+              textForm: {
+                right: true,
+                left: false,
+                title: 'E-locks',
+                detail: `We offer e-lock integration for the uncompromising safety of your valued goods. E-locks help you protect your cargo containers or oil tankers. You’ll get notified in case of e-lock tampering or unauthorized access. Eliminate losses because of theft or pilferage using e-locks!`,
+                icon: 'mdi-archive-lock-open-outline'
+              }
+            },
+            {
+              imageSide: {
+                right: true,
+                left: false,
+                imageUrl: `https://www.uffizio.com/wp-content/uploads/2022/06/live.png`
+              },
+              textForm: {
+                right: true,
+                left: false,
+                title: 'Alerts',
+                detail: `Get notified when a certain vehicle enters or exits a POI. You can also set alerts for problematic drivers and monitor their driving activities closely. Besides, you can protect your assets, even when they are on the road by setting alerts for unauthorized actions and route deviations.`,
+                icon: 'mdi-alert'
+              }
+            },
+            {
+              imageSide: {
+                right: false,
+                left: true,
+                imageUrl: `https://www.uffizio.com/wp-content/uploads/2022/06/sos-blue.png`
+              },
+              textForm: {
+                right: true,
+                left: false,
+                title: 'SOS Module',
+                detail: `Working in robust conditions like underground mines or tunnels poses a concern regarding worker safety. Track your workers and equip them with SOS buttons. So, they can request help—even when they are working remotely. Send timely assistance and save lives!`,
+                icon: 'mdi-wallet-travel'
+              }
+            }
+          ]
+        },
+        section4: {
+          subtitle:
+            'See how businesses in this industry are using our platform for greater productivity and profits!',
+          cards: [
+            {
+              img:
+                'https://www.uffizio.com/wp-content/uploads/2022/06/oil-and-gas-businesses.png',
+              detail: `GPS solutions for oil and gas businesses`
+            },
+            {
+              img:
+                'https://www.uffizio.com/wp-content/uploads/2022/06/Tracking-mining-workers-and-vehicles.png',
+              detail: `Tracking mining workers and vehicles `
+            },
+            {
+              img:
+                'https://www.uffizio.com/wp-content/uploads/2022/06/construction-img-1.png',
+              detail: `LBS solutions for remote areas `
+            },
+            {
+              img:
+                'https://www.uffizio.com/wp-content/uploads/2022/06/field-sales-and-services-5.jpg',
+              detail: `Monitoring driving behaviors `
+            }
+          ]
+        }
+      }
     },
     {
       id: 3,
@@ -402,7 +661,116 @@ export const state = () => ({
       title: 'Security',
       discription:
         'Cash carry vans, secure cargo transport, government & military transport',
-      icon: 'mdi-shield-account-outline'
+      icon: 'mdi-shield-account-outline',
+      detail_page: {
+        section1: {
+          title: `Fleet security solutions for the Financial Institutions`,
+          subtitle: `We help financial institutions track cash vans along the route. Our software provides unbelievable visibility into cash-transfer operations, making sure your valuables never go off the radar. We provide you with real-time data, so you can take corrective actions before it’s too late!`,
+          img: [
+            'https://www.uffizio.com/wp-content/uploads/2022/06/financial-institutions.png'
+          ]
+        },
+        section2: {
+          title: 'Benefits',
+          subtitle:
+            'Prevent theft or unauthorized activities using our world-class security tool. Follow multiple fleets from a single screen.',
+          cards: [
+            {
+              icon: 'mdi-car-door-lock',
+              title: 'Reduced Thefts',
+              detail: `Receive calls or text messages for unauthorized activities and greatly reduce the chance of theft.`
+            },
+            {
+              icon: 'mdi-camcorder',
+              title: 'Transparency',
+              detail: `Driver-facing and road-facing footage help you monitor driving patterns and behaviors.`
+            },
+            {
+              icon: 'mdi-account-card-outline',
+              title: 'Driver Safety',
+              detail: `Equip your drivers with SOS buttons and precise directions to the nearest police stations.`
+            },
+            {
+              icon: 'mdi-signal',
+              title: 'Better Analytics',
+              detail: `Intelligent analytical reports keep you updated with the vehicle’s current status, past trips, stoppages, & ETAs.`
+            }
+          ]
+        },
+        section3: {
+          title: `Features`,
+          subtitle: `Here's why we stand out from the rest`,
+          cards: [
+            {
+              imageSide: {
+                right: true,
+                left: false,
+                imageUrl: `https://www.uffizio.com/wp-content/uploads/2022/06/elock-img.png`
+              },
+              textForm: {
+                right: true,
+                left: false,
+                title: 'E-locks',
+                detail: `Use e-locks and facilitate keyless consignment delivery. E-locks can be unlocked remotely by authorized personnel only, thus are an ideal choice. You’ll get alerts for tampering or unauthorized opening of your fleet doors. You’ll also be updated with the e-lock’s battery status—so you’ll know when it’s running out of battery.`,
+                icon: 'mdi-file-lock-open-outline'
+              }
+            },
+            {
+              imageSide: {
+                right: false,
+                left: true,
+                imageUrl: `https://www.uffizio.com/wp-content/uploads/2022/06/share-location-img.png`
+              },
+              textForm: {
+                right: true,
+                left: false,
+                title: "Sharing Fleets' Location via Links",
+                detail: `Share the location of your financial fleets using location link share functionality. All concerned stakeholders will be able to see their crew’s location in real-time. Choose the link’s validity, ranging from minutes, hours, or days and multiple stakeholders can check up on the fleets—whenever they want.`,
+                icon: 'mdi-archive-lock-open-outline'
+              }
+            },
+            {
+              imageSide: {
+                right: true,
+                left: false,
+                imageUrl: `https://www.uffizio.com/wp-content/uploads/2022/06/live.png`
+              },
+              textForm: {
+                right: true,
+                left: false,
+                title: 'Live-streaming (DVR/MDVR Integration)',
+                detail: `For an added sense of security, we allow DVR and MDVR integration. This gives you a holistic view of your fleets and intelligent insights into driver behaviors. You’ll be able to live-stream, playback, and store video recordings for future references.`,
+                icon: 'mdi-cast-education'
+              }
+            },
+            {
+              imageSide: {
+                right: false,
+                left: true,
+                imageUrl: `https://www.uffizio.com/wp-content/uploads/2022/06/sos-img.png`
+              },
+              textForm: {
+                right: true,
+                left: false,
+                title: 'SOS Module',
+                detail: `Cash-carrying vans are susceptible to theft or misappropriation. That being the case, protect your assets and drivers by equipping cash vans with the SOS module. This will empower your drivers to request timely help. Besides, SOS module help you protect your assets from getting stolen.`,
+                icon: 'mdi-wallet-travel'
+              }
+            }
+          ]
+        },
+        section4: {
+          subtitle:
+            'See how businesses in this industry are using our platform for greater productivity and profits!',
+          cards: [
+            {
+              img:
+                'https://www.uffizio.com/wp-content/uploads/2022/08/securing-fund-transfer-vans-for-financial-institutions-banner.png',
+              detail: `Helping banks transfer money safely `
+            }
+          ]
+        }
+      }
     }
   ],
   products: [
@@ -2582,7 +2950,7 @@ export const state = () => ({
         'https://www.uffizio.com/wp-content/uploads/2023/06/expo-1-330x184.jpeg',
         'https://www.uffizio.com/wp-content/uploads/2023/06/expo-2-330x184.jpeg',
         'https://www.uffizio.com/wp-content/uploads/2023/06/expo-3-330x184.jpeg',
-        'https://www.uffizio.com/wp-content/uploads/2023/06/expo-5-330x184.jpeg',
+        'https://www.uffizio.com/wp-content/uploads/2023/06/expo-5-330x184.jpeg'
       ]
     },
     {

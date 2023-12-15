@@ -7,7 +7,7 @@ if (typeof Storage !== 'undefined') { // eslint-disable-line
 
 const palette = {
   mint: {
-    primary: colors.lightBlue.base, // primary main
+    primary: '#01CBBD', // primary main
     primarylight: colors.lightBlue.lighten4, // primary light
     primarydark: colors.lightBlue.darken4, // primary dark
     secondary: colors.green.base, // secondary main
@@ -18,7 +18,9 @@ const palette = {
     accentdark: colors.cyan.darken3, // accent dark
     anchor: colors.lightBlue.base, // link
     purple: '#b159da',
-    amber: '#f2b02f'
+    amber: '#f2b02f',
+    greenLight: '#01CBBD',
+    grayLight: '#D2D3D5'
   }
 }
 

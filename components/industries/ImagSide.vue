@@ -2,7 +2,7 @@
   <div style="    z-index: 20;
     position: relative;">
     <v-card class="elevation-3">
-      <v-img src="https://placehold.co/600x400" alt="screen"></v-img>
+      <v-img :src="imageUrl ? imageUrl : 'https://placehold.co/600x400'" alt="screen"></v-img>
       <!-- <video-player v-else src="https://www.youtube.com/watch?v=1kSNYz_5DeQ" allow /> -->
     </v-card>
   </div>

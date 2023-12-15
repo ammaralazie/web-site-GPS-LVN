@@ -22,7 +22,7 @@
               <header-menu :menu-primary="menuPrimary" :menu-secondary="menuSecondary" :single-nav="home" />
             </div>
             <user-menu />
-            <v-btn v-if="isDesktop" :to="'/'+$i18n.locale + '/plans & pricing'" height="30px">
+            <v-btn color="primary" v-if="isDesktop" :to="'/'+$i18n.locale + '/plans & pricing'" height="30px">
               Plans & Pricing
             </v-btn>
           </nav>

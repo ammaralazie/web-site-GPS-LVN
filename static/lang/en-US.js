@@ -181,7 +181,7 @@ export default () => {
         'fleet management': 'Fleet Management',
         'slid2-title':
           'Fleet Management and Scalability Reliability in Challenging Environments in iraq State institutions',
-        'slid2-subtitle1': 'Integration with Local Infrastructure:',
+        'slid2-subtitle1': 'Integration with Local Infrastructure',
         'slid2-subtitle':
           'LVN systems are designed to be low-maintenance, which can be an advantage in areas where infrastructure and support for fleet management technology may be limited.',
         'Tracking Server': 'Tracking Server',

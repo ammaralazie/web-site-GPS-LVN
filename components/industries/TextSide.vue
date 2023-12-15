@@ -1,5 +1,6 @@
 <template>
   <div class="desc">
+    <v-icon>{{ icon }}</v-icon>
     <title-main :align="isMobile ? 'center' : 'left'">
       <span>
         {{ $t(title) }}
@@ -11,8 +12,8 @@
 
     <template v-if="items">
       <v-row class="mt-5">
-        <v-col class="pa-0 d-flex" v-for="(item, key) in items" :key="key" style="text-align:-webkit-auto"
-          cols="12" lg="6" md="6" sm="12" xs="12">
+        <v-col class="pa-0 d-flex" v-for="(item, key) in items" :key="key" style="text-align:-webkit-auto" cols="12"
+          lg="6" md="6" sm="12" xs="12">
           <div>
             <v-icon right class="notranslate mx-2" color="success">
               mdi-checkbox-marked-circle
@@ -48,6 +49,10 @@ export default {
     },
     items: {
       type: Array
+    },
+    icon: {
+      required: true,
+      type: String
     }
   },
   components: {
