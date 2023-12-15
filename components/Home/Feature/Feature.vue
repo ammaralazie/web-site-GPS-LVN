@@ -16,7 +16,7 @@
             <v-btn text link :class="isDesktop ? 'mx-2' : ''">
               {{ $t('View Demo') }}
             </v-btn>
-            <v-btn link color="success">
+            <v-btn link color="primary">
               {{ $t("Buy Now") }}
             </v-btn>
           </v-col>
@@ -44,12 +44,17 @@
     <v-container :class="{ fixed: isDesktop }">
       <v-row style="position: relative;z-index:10">
         <v-col cols="12" lg="4" md="4" sm="6" xs="12" v-for="item in bigCards" :key="item.title">
-          <v-card class="cardFeatuer" link height="400px">
-            <v-img :src="item.img" width="180px" class="ma-auto" cover></v-img>
+          <v-card class="cardFeatuer" link height="500px">
+            <!-- <v-img :src="item.img" width="180px" class="ma-auto" cover></v-img> -->
+            <div style="height: 60%;" class="mt-14 text-h2 d-flex align-center justify-center">
+              <v-icon color="primary" size="140">
+                {{ item.icon }}
+              </v-icon>
+            </div>
             <v-card-title>
               {{ $t(item.title) }}
             </v-card-title>
-            <v-card-subtitle>
+            <v-card-subtitle class="subtitleCard">
               {{ $t(item.subtitle) }}
             </v-card-subtitle>
         </v-card>

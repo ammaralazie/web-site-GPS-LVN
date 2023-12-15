@@ -35,7 +35,7 @@
                   <no-ssr>
                     <qrcode value="set yorr link here" @change="onDataUrlChange" :options="{
                       color: {
-                        dark: '#215bad',
+                        dark: '#541aac',
                         light: '#0000000',
                       },
                       width: 250,

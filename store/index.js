@@ -271,33 +271,33 @@ export const state = () => ({
     {
       title: 'Manage your vehicle from home',
       subtitle: 'gps_lvn_includes',
-      img: '/images/lottie/manage-vehicle-from-home.png'
+      icon: 'mdi-remote'
     },
 
     {
       title: 'Take authentic decision',
       subtitle: 'computer_based_management_system',
-      img: '/images/lottie/authentic-decision.png'
+      icon: 'mdi-window-shutter-cog'
     },
     {
       title: 'Be the market leader of your industry',
       subtitle: 'organization_get_reports',
-      img: '/images/lottie/market-leader-of-industry.png'
+      icon: 'mdi-cash-clock'
     },
     {
       title: 'Own a competent workforce',
       subtitle: 'automation_system_makes_easy',
-      img: '/images/lottie/competent-workforce.png'
+      icon: 'mdi-diving-flippers'
     },
     {
       title: 'Manage inventory & expenses under control',
       subtitle: 'get_all_inventory_records',
-      img: '/images/lottie/inventory-expense.png'
+      icon: 'mdi-wallet-bifold-outline'
     },
     {
       title: 'Ensure the best profitability',
       subtitle: 'use_automation_in_every',
-      img: '/images/lottie/ensuring-profitability.png'
+      icon: 'mdi-currency-usd'
     }
   ],
   options: {

@@ -116,8 +116,8 @@
     opacity: 0.5;
     @include use-theme(
       background,
-      linear-gradient(120deg, $palette-primary-light, $palette-secondary-light),
-      linear-gradient(120deg, $palette-primary-dark, $palette-secondary-dark)
+      linear-gradient(120deg, $grayLight, $purpleLight),
+      linear-gradient(120deg, $grayLight, $purpleLight)
     );
     position: absolute;
     top: -16px;
@@ -138,6 +138,11 @@
 }
 
 .cardFeatuer {
+  background-color: $cardBg !important;
+  color: white;
+  .subtitleCard {
+    color: white;
+  }
   &:hover {
     cursor: pointer;
     transform: scale(1.01) translateY(-5px);

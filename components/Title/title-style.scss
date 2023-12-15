@@ -44,7 +44,7 @@
     height: 12px;
     bottom: -32px;
     border-radius: 12px;
-    @include use-theme(background, linear-gradient(120deg, $palette-primary-light, $palette-secondary-light), linear-gradient(120deg, $palette-primary-dark, $palette-secondary-dark));
+    @include use-theme(background, linear-gradient(120deg,$greenLight, $purpleLight), linear-gradient(120deg, $palette-primary-dark, $palette-secondary-dark));
     position: absolute
   }
   & strong {

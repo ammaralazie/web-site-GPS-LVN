@@ -20,7 +20,8 @@ const palette = {
     purple: '#b159da',
     amber: '#f2b02f',
     greenLight: '#01CBBD',
-    grayLight: '#D2D3D5'
+    grayLight: '#D2D3D5',
+    success: '#01cbbd'
   }
 }
 

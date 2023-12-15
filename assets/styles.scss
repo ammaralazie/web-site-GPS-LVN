@@ -91,3 +91,11 @@ body {
   display: none;
 }
 
+.v-main {
+  .theme--dark & {
+    background-color: $dark-background-default;
+  }
+  .theme--light & {
+    background-color: $grayLight;
+  }
+}
